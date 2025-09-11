@@ -1,19 +1,70 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
+  <meta charset="UTF-8" />
   <title>astrasics repo</title>
   <style>
-    body { font-family: monospace; margin: 20px; }
-    ul { list-style-type: none; padding: 0; }
-    a { text-decoration: none; color: #000; }
-    a:hover { text-decoration: underline; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #ffffff;
+      color: #333333;
+      margin: 30px;
+      line-height: 1.8;
+    }
+    h1 {
+      color: #673AB7;
+      font-size: 1.6em;
+      border-bottom: 2px solid #E0E0E0;
+      padding-bottom: 8px;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+    li {
+      margin: 0;
+    }
+    a {
+      color: #4CAF50;
+      text-decoration: none;
+      font-size: 1.1em;
+      font-family: 'Consolas', monospace;
+    }
+    a:hover {
+      color: #673AB7;
+      text-decoration: underline;
+      transition: color 0.2s;
+    }
+    a:visited {
+      color: #8E24AA;
+    }
+    footer {
+      margin-top: 30px;
+      font-size: 0.9em;
+      color: #777;
+      text-align: center;
+    }
+    footer a {
+      color: #673AB7;
+      text-decoration: none;
+    }
+    footer a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
   <h1>astrasics/</h1>
   <ul>
-    <li><a href="dists/">dists/</a></li>
-    <li><a href="pool/">pool/</a></li>
+    <li>📁 <a href="dists/">dists/</a></li>
+    <li>📁 <a href="pool/">pool/</a></li>
   </ul>
+
+  <footer>
+    APT repository for Debian/Ubuntu • 
+    <a href="https://github.com/SpacelessWay/astrasics">View source on GitHub</a>
+  </footer>
 </body>
 </html>
