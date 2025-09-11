@@ -1,106 +1,135 @@
 #!/bin/bash
 
-echo "Генерация index.html — светлая тема, без точек, с зелёно-фиолетовым стилем..."
+echo "Генерация index.html в стиле http.kali.org — дата из Git, без index.html и ls-lR.gz"
 
-# Светлый стиль с акцентами: зелёный (#4CAF50) и фиолетовый (#673AB7)
 CSS_STYLE="
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   background: #ffffff;
-  color: #333333;
-  margin: 30px;
-  line-height: 1.8;
+  color: #000;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+  line-height: 1.6;
 }
 h1 {
-  color: #673AB7; /* Фиолетовый заголовок */
-  font-size: 1.6em;
-  border-bottom: 2px solid #E0E0E0;
-  padding-bottom: 8px;
-  margin-bottom: 20px;
-  font-weight: normal;
-}
-ul {
-  list-style-type: none;        /* Убираем все маркеры */
-  padding: 0;
-}
-li {
   margin: 0;
+  font-size: 1.8em;
+  color: #000;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+th {
+  background: #f5f5f5;
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: bold;
+  color: #000;
+  border-bottom: 1px solid #ddd;
+}
+td {
+  padding: 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+tr:nth-child(even) {
+  background: #f9f9f9;
 }
 a {
-  color: #4CAF50;               /* Зелёные ссылки */
-  text-decoration: none;
-  font-size: 1.1em;
-  font-family: 'Consolas', monospace;
+  color: #007a3d;
+  text-decoration: underline;
 }
 a:hover {
-  color: #673AB7;               /* При наведении — фиолетовый */
-  text-decoration: underline;
-  transition: color 0.2s;
+  color: #2d9f00;
 }
-a:visited {
-  color: #8E24AA;               /* Посещённые — глубже фиолетовый */
-}
-footer {
-  margin-top: 30px;
+.footer {
   font-size: 0.9em;
-  color: #777;
-  text-align: center;
-}
-footer a {
-  color: #673AB7;
-  text-decoration: none;
-}
-footer a:hover {
-  text-decoration: underline;
+  color: #666;
+  margin-top: 15px;
 }
 "
 
-# Функция для создания index.html
-create_index() {
-  local dir="$1"
-  local path_in_repo="${dir#./}"
-
-  cat > "$dir/index.html" << EOF
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-  <meta charset="UTF-8" />
-  <title>/$path_in_repo</title>
-  <style>$CSS_STYLE</style>
-</head>
-<body>
-  <h1>/$path_in_repo</h1>
-  <ul>
-EOF
-
-  # Читаем содержимое папки, фильтруем . .. и index.html
-  ls -la "$dir" | tail -n +4 | while read perms links owner group size date time name; do
-    [[ "$name" == "index.html" ]] && continue
-
-    if [ -d "$dir/$name" ]; then
-      icon="📁"
-      link="$name/"
-    else
-      icon="📄"
-      link="$name"
-    fi
-
-    echo "    <li>$icon <a href=\"$link\">$name</a></li>" >> "$dir/index.html"
-  done
-
-  # Подвал
-  cat >> "$dir/index.html" << EOF
-  </ul>
-  <footer>
-    APT repository for Astrasics• 
-    <a href="https://github.com/SpacelessWay/astrasics">View source on GitHub</a>
-  </footer>
-</body>
-</html>
-EOF
+# Получить дату последнего коммита для пути
+get_git_date() {
+  local path="$1"
+  git log -1 --format="%at" -- "$path" 2>/dev/null || echo $(date +%s)
 }
 
-# Генерируем для всех подпапок dists/ и pool/
+# Формат: Aug-24 12:00
+format_datetime() {
+  date -d "@$1" "+%Y-%b-%d %H:%M" | awk '{split($1,d,"-"); printf "%s-%s %s", d[2], substr(d[1],3,2), $2}'
+}
+
+# Формат: только дата, без времени → 2025-Jun-24
+format_date_only() {
+  date -d "@$1" "+%Y-%b-%d" | awk '{split($1,d,"-"); printf "%s-%s", d[2], substr(d[1],3,2)}'
+}
+
+# Создать index.html для папки
+create_index() {
+  local dir="$1"
+  local path="${dir#./}"
+
+  (
+    echo "<!DOCTYPE html>"
+    echo "<html lang=\"ru\">"
+    echo "<head>"
+    echo "  <meta charset=\"UTF-8\" />"
+    echo "  <title>Index of /$path/</title>"
+    echo "  <style>$CSS_STYLE</style>"
+    echo "</head>"
+    echo "<body>"
+    echo "  <h1>Index of /$path/</h1>"
+    echo "  <table>"
+    echo "    <thead>"
+    echo "      <tr>"
+    echo "        <th>File Name ↓</th>"
+    echo "        <th>File Size ↓</th>"
+    echo "        <th>Date ↓</th>"
+    echo "      </tr>"
+    echo "    </thead>"
+    echo "    <tbody>"
+
+    ls -la "$dir" | tail -n +4 | sort -k9 | while read perms links owner group size month day time_or_year name; do
+      [[ "$name" == "index.html" ]] && continue
+      [[ "$name" == "ls-lR.gz" ]] && continue
+
+      full_path="$dir/$name"
+      git_timestamp=$(get_git_date "$full_path")
+
+      if [ -d "$full_path" ]; then
+        link_name="$name/"
+        disp_size="-"
+        disp_date=$(format_date_only "$git_timestamp")
+      else
+        link_name="$name"
+        # Форматируем размер
+        if [ "$size" -lt 1024 ]; then
+          disp_size="${size} B"
+        elif [ "$size" -lt 1048576 ]; then
+          disp_size="$(($size / 1024)) KiB"
+        else
+          disp_size="$(printf "%.1f" $(echo "$size / 1048576" | bc -l)) MiB"
+        fi
+        disp_date=$(format_datetime "$git_timestamp")
+      fi
+
+      echo "      <tr>"
+      echo "        <td><a href=\"$link_name\">$link_name</a></td>"
+      echo "        <td>$disp_size</td>"
+      echo "        <td>$disp_date</td>"
+      echo "      </tr>"
+    done
+
+    echo "    </tbody>"
+    echo "  </table>"
+    echo "  <div class=\"footer\">This is Astrasics main package repository.</div>"
+    echo "</body>"
+    echo "</html>"
+  ) > "$dir/index.html"
+}
+
+# Генерируем для dists/ и pool/
 for d in dists pool; do
   [ ! -d "$d" ] && continue
   find "$d" -type d | while read dir; do
@@ -108,4 +137,4 @@ for d in dists pool; do
   done
 done
 
-echo "✅ Готово! Светлая тема с зелёными и фиолетовыми акцентами — без маркеров списка."
+echo "✅ Готово! Все index.html теперь в точном стиле http.kali.org"
