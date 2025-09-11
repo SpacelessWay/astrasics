@@ -34,7 +34,7 @@ jobs:
             package_name=$(dpkg-deb -f "$deb" Package)
             version=$(dpkg-deb -f "$deb" Version)
             echo "Добавляем: $package_name ($version)"
-            reprepro includedeb stable "$deb"
+            reprepro includedeb v1.1 "$deb"
           done
 
           - name: Export and unpack Release metadata
