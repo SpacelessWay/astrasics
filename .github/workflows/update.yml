@@ -30,7 +30,7 @@ jobs:
       - name: Add new .deb files to reprepro
         run: |
           # Находим все .deb-файлы в pool/, которых ещё нет в reprepro
-          find pool -name "*.deb" | while read deb; do
+          find pool/main -name "*.deb" | while read deb; do
             package_name=$(dpkg-deb -f "$deb" Package)
             version=$(dpkg-deb -f "$deb" Version)
             echo "Добавляем: $package_name ($version)"
