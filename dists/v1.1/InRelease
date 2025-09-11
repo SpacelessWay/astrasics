@@ -1,3 +1,6 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
 Origin: Astrasics
 Label: APT Repository
 Codename: v1.1
@@ -17,3 +20,19 @@ SHA256:
  9d2c2bcbcc13d0ea004fb722da58ceb37c0b53d59df905744224060511809a8b 21286 main/binary-amd64/Packages
  35da66786ed084ae08f6361203110d40c96867c8423ed08784906e8f9d968839 8323 main/binary-amd64/Packages.gz
  1a393526ed37d06723bb45061430ebff3e21871a03bc1e9163c7614cdac98477 118 main/binary-amd64/Release
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEENsyEC6AwTpFl2VQytJKRb1tjbIsFAmjC0+YACgkQtJKRb1tj
+bIvlxQ/+J3X7400Zp59Ffo/eaw2WsycsddmwxyWAe7PbI6ppUFKE6wMWogLgp62Q
+jUVV7zxMWDqx5JuyPDXMjql7MppJqesr3VArCOP73T1sCpvpzSlnlbiGhXIfqtjI
+MbhYM42kIMs/YcS3OobD1DlDKYDdSXx1fjpYIHWGSeRYEY82uDBryt6rKA+avXIC
+PoAgdUoEoI2An4dApeDCLGfuJQ+IjnyPv3Flkli9RHusy0OExRHBabmbaPQd/ZG+
+v2q+ZebxaYZAt/MnMxa8j6TSdeBkMLdupM6lkrh4xKpPp9QMcwgTpMqBMonkux7k
+tR7xbJpu1fOSRMOfe9joowTGob6pBr2Inx/cimyOZPyf3v+pf20k9vVrqIlx2P5Z
+6mb/mGLe0TsUkzkJ4AzShMAkOWp+tCjxFwHERLNi054Ca9sPuvMcWVG62fjBQX+L
+9fBXKYrLsXXBKD+BRS4rRhSdFvWeBWYUMjKGh/+Grc/scCZPhEAdde9wKurcp5Ds
+kRU3AyknBCdwefXlNCNgpjivdb6rbCrFEGL9HZc+Fs30Ib/JQvCVIBPamEtvVeH0
+b1ZZd2pcNa05A1SZ6e7zqF4xeR8BmWRNpPqqp30/9jDqjkAVDzGJyflw5QIYxDeV
+O6lBt70CvpJp2iJmDpXGAwYOoATTMa47rJB6txivzK1OEbtl3VQ=
+=fNnk
+-----END PGP SIGNATURE-----
