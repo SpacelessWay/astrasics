@@ -1,0 +1,7 @@
+Origin: Astrasics
+Label: APT Repository
+Codename: v1.1
+Architectures: amd64
+Components: main
+Description: APT repository for Astrasics
+
