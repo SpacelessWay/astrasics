@@ -1,0 +1,53 @@
+name: Update APT Repository
+
+on:
+  push:
+    branches: [ main ]
+    paths-ignore:
+      - 'README.md'
+      - '.gitignore'
+
+jobs:
+  update-repo:
+    runs-on: astrasics-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Git user
+        run: |
+          git config user.name "Automated"
+          git config user.email "actions@github.com"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y reprepro bc
+
+      - name: Add new .deb files to reprepro
+        run: |
+          # Находим все .deb-файлы в pool/, которых ещё нет в reprepro
+          find pool -name "*.deb" | while read deb; do
+            package_name=$(dpkg-deb -f "$deb" Package)
+            version=$(dpkg-deb -f "$deb" Version)
+            echo "Добавляем: $package_name ($version)"
+            reprepro includedeb stable "$deb"
+          done
+
+      - name: Generate index.html for all directories (Kali style)
+        run: |
+          chmod +x generate-indexes.sh
+          ./generate-indexes.sh
+
+      - name: Commit and push changes
+        run: |
+          git add .
+          if git diff --cached --quiet; then
+            echo "Нет изменений для коммита."
+          else
+            git commit -m "Автоматическое обновление: index.html [AUTOMATED]"
+            git push origin main
+          fi
