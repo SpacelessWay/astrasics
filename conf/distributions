@@ -1,0 +1,7 @@
+Origin: Astrasics
+Label: APT Repository
+Codename: v1.1
+Architectures: amd64
+Components: main
+Description: APT repository for Astrasics
+SignWith: 36CC 840B A030 4E91 65D9  5432 B492 916F 5B63 6C8B

@@ -37,6 +37,14 @@ jobs:
             reprepro includedeb stable "$deb"
           done
 
+          - name: Export and unpack Release metadata
+        run: |
+          reprepro export
+          # Распаковываем Packages.gz → Packages
+          find dists -name "Packages.gz" | while read gz; do
+            gunzip -c "$gz" > "${gz%.gz}"
+          done
+
       - name: Generate index.html for all directories (Kali style)
         run: |
           chmod +x generate-indexes.sh
