@@ -278,6 +278,88 @@ Description: efficient, principled regular expression library
  On large inputs, RE2 is often much faster than backtracking engines; its use
  of automata theory lets it apply optimizations that the others cannot.
 
+Package: libwireshark16
+Source: wireshark
+Version: 4.0.17-0+deb12u1
+Architecture: amd64
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Installed-Size: 110907
+Depends: libbcg729-0 (>= 1.0.0), libbrotli1 (>= 0.6.0), libc-ares2 (>= 1.11.0~rc1), libc6 (>= 2.34), libgcrypt20 (>= 1.10.0), libglib2.0-0 (>= 2.67.3), libgnutls30 (>= 3.7.3), libgpg-error0 (>= 1.14), libk5crypto3 (>= 1.7+dfsg), libkrb5-3 (>= 1.7dfsg), liblua5.2-0 (>= 5.2.4), liblz4-1 (>= 1.8.0), libnghttp2-14 (>= 1.11.0), libpcre2-8-0 (>= 10.22), libsbc1 (>= 2.0), libsmi2ldbl (>= 0.4.5+dfsg0), libsnappy1v5 (>= 1.1.9), libspandsp2 (>= 0.0.6~pre18), libwiretap13 (>= 3.5.0), libwsutil14 (>= 4.0.17-0+deb12u1), libxml2 (>= 2.7.4), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4), libwireshark-data (>= 4.0.17-0+deb12u1)
+Suggests: wireshark-doc (>= 4.0.17-0+deb12u1)
+Filename: pool/main/w/wireshark/libwireshark16_4.0.17-0+deb12u1_amd64.deb
+Size: 17850792
+MD5sum: 5357783847659aadc6eb6f48781671d0
+SHA1: 406dc48957651cf60ee73f697314e6b590a7a373
+SHA256: 9a58d7fded7cbf397303fb20ede6c97b2cb7cda20464cdaa2666045ee36fdd61
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.wireshark.org/
+Description: network packet dissection library -- shared library
+ The libwireshark library provides the network packet dissection services
+ developed by the Wireshark project.
+
+Package: libwiretap13
+Source: wireshark
+Version: 4.0.17-0+deb12u1
+Architecture: amd64
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Installed-Size: 696
+Depends: libc6 (>= 2.33), libglib2.0-0 (>= 2.67.3), liblz4-1 (>= 1.8.0), libwsutil14 (>= 3.7.0), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.2.4)
+Filename: pool/main/w/wireshark/libwiretap13_4.0.17-0+deb12u1_amd64.deb
+Size: 245632
+MD5sum: 5e4f70ec65f0f7bae0308aceeb9c6b0c
+SHA1: ff6085aa311cd57d2c28989701acfa73b9c55ab6
+SHA256: 5974f1a86ae0f1d491a555e2b03ba9ddb07c04bc321a75fa0ee00a80f32bf82f
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.wireshark.org/
+Description: network packet capture library -- shared library
+ Wiretap, part of the Wireshark project, is a library that allows one to
+ read and write several packet capture file formats.
+ .
+ Supported formats are:
+  * Libpcap
+  * Sniffer
+  * LANalyzer
+  * Network Monitor
+  * "snoop"
+  * "iptrace"
+  * Sniffer Basic (NetXRay)/Windows Sniffer Pro
+  * RADCOM WAN/LAN Analyzers
+  * Lucent/Ascend access products
+  * HP-UX nettl
+  * Toshiba ISDN Router
+  * ISDN4BSD "i4btrace" utility
+  * Cisco Secure Intrusion Detection System iplogging facility
+  * pppd logs (pppdump-format files)
+  * VMS TCPTRACE
+  * DBS Etherwatch (text format)
+  * Catapult DCT2000 (.out files)
+ .
+ Wiretap's shortcomings are: no filter capability and no support for packet
+ capture.
+
+Package: libwsutil14
+Source: wireshark
+Version: 4.0.17-0+deb12u1
+Architecture: amd64
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Installed-Size: 262
+Depends: libc6 (>= 2.33), libgcrypt20 (>= 1.10.0), libglib2.0-0 (>= 2.49.3), libgnutls30 (>= 3.7.0), libpcre2-8-0 (>= 10.22)
+Filename: pool/main/w/wireshark/libwsutil14_4.0.17-0+deb12u1_amd64.deb
+Size: 100384
+MD5sum: f2f80724969e47aa3e4d8edbd52a5ab3
+SHA1: eb8efb9e3217929f67c7903de943741689472464
+SHA256: 21e2068c616c642f957b7a6166ba5e00bd649842f22f5f95871ced610d213ea2
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.wireshark.org/
+Description: network packet dissection utilities library -- shared library
+ The libwsutil library provides utility functions for libwireshark15.
+
 Package: linux-image-6.1.0-39-amd64
 Source: linux-signed-amd64 (6.1.148+1)
 Version: 6.1.148-1
@@ -491,6 +573,32 @@ Section: libs
 Priority: optional
 Description: Disk encryption with strong security based on TrueCrypt.
  Disk encryption with strong security based on TrueCrypt.
+
+Package: wireshark-common
+Source: wireshark
+Version: 4.0.17-0+deb12u1
+Architecture: amd64
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Installed-Size: 1386
+Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10), libgcrypt20 (>= 1.10.0), libglib2.0-0 (>= 2.67.3), libmaxminddb0 (>= 1.0.2), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.21), libpcap0.8 (>= 1.5.1), libpcre2-8-0 (>= 10.22), libspeexdsp1 (>= 1.2.1), libssh-gcrypt-4 (>= 0.8.0), libsystemd0 (>= 246), libwireshark16 (>= 4.0.17-0+deb12u1), libwiretap13 (>= 4.0.17-0+deb12u1), libwsutil14 (>= 3.7.0), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0, debconf, libcap2-bin
+Recommends: wireshark (>= 4.0.17-0+deb12u1) | tshark (>= 4.0.17-0+deb12u1)
+Breaks: wireshark (<< 2.0.0~), wireshark-gtk (<< 3.0.0), wireshark-qt (<< 2.0.0~rc3+g841d5e1)
+Replaces: wireshark (<< 2.0.0~), wireshark-qt (<< 2.0.0~rc3+g841d5e1)
+Filename: pool/main/w/wireshark/wireshark-common_4.0.17-0+deb12u1_amd64.deb
+Size: 483652
+MD5sum: d88d79169eaf0dade917d9be60304d2a
+SHA1: 2b0b869be4c0ae2c66efc64b33fe2725ca160212
+SHA256: b5a96859b954c1d4d96641226cc2c8ac64ddb9b994bb62f2a19407d6257f2da4
+Section: net
+Priority: optional
+Homepage: https://www.wireshark.org/
+Description: network traffic analyzer - common files
+ Wireshark is a network "sniffer" - a tool that captures and analyzes
+ packets off the wire. Wireshark can decode too many protocols to list
+ here.
+ .
+ This package provides files common to both wireshark and tshark
+ (the console version).
 
 Package: xmount
 Version: 0.7.6-3
