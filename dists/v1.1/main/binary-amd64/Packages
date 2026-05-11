@@ -438,27 +438,19 @@ Description: steganography hiding tool
  Steghide is useful in digital forensics investigations.
 
 Package: stegseek
-Version: 0.6+git20210910.ff677b9-1
+Version: 0.6-Debian12-Bookworm
 Architecture: amd64
-Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
-Installed-Size: 366
-Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libjpeg62-turbo (>= 1.3.1), libmcrypt4 (>= 2.5.8), libmhash2 (>= 0.9.9.9), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)
-Filename: pool/main/s/stegseek/stegseek_0.6+git20210910.ff677b9-1_amd64.deb
-Size: 128112
-MD5sum: e659ac99574bcd3752c8d14c40a502fd
-SHA1: 777ec301d015b11d5ae986e490c242a6998d9d39
-SHA256: 0b407583c1d9fe34ec7b496f8f25c512cce05844c08aedce5ff6fb3cb33d5ee2
-Section: misc
+Maintainer: Astrasics Team <astrasics@local>
+Depends: libc6, libstdc++6, libjpeg62-turbo, libmcrypt4, libmhash2
+Filename: pool/main/s/stegseek/stegseek_0.6-Debian12-Bookworm_amd64.deb
+Size: 114548
+MD5sum: 572a2c1019ada28d09fc596f414092be
+SHA1: abe882ecf3327c1a7c0842b29e95039b3a066705
+SHA256: cbbd8495dd85a0bda1c7f265442a0e97c0e1d364778008f0be61c3e4e45db090
+Section: utils
 Priority: optional
-Homepage: https://github.com/RickdeJager/stegseek
 Description: Worlds fastest steghide cracker
- Stegseek is a lightning fast steghide cracker that can be used to extract
- hidden data from files. It is built as a fork of the original steghide
- project and, as a result, it is thousands of times faster than other
- crackers and can run through millions of passwords per second.
- .
- Stegseek can also be used to extract steghide metadata without a password,
- which can be used to test whether a file contains steghide data.
+ Stegseek is a lightning fast steghide cracker.
 
 Package: tshark
 Source: wireshark
