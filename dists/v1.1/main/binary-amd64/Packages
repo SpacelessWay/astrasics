@@ -1,75 +1,75 @@
 Package: astrasics-core
 Version: 1.0
 Architecture: all
-Depends: coreutils, util-linux, auditd, rkhunter
 Maintainer: AD
-Priority: optional
-Section: base
+Depends: coreutils, util-linux, auditd, rkhunter
 Filename: pool/main/a/astrasics-core/astrasics-core_1.0_all.deb
 Size: 848
-SHA256: 05f2591f82dae3a6ef0b0c549f4f87df78a312817fd0805230b45187ffe6981b
-SHA1: f3a6fbf02adb9a4f2e92c5d246e5b6b634a301d7
 MD5sum: b19626078376f75fd8b1a32c35366ddc
+SHA1: f3a6fbf02adb9a4f2e92c5d246e5b6b634a301d7
+SHA256: 05f2591f82dae3a6ef0b0c549f4f87df78a312817fd0805230b45187ffe6981b
+Section: base
+Priority: optional
 Description: Базовые инструменты безопасности и целостности
  Включает утилиты для создания образов, проверки хэшей, аудита и защиты.
 
 Package: astrasics-doc
 Version: 1.0
 Architecture: all
-Depends: pandoc, libreoffice-writer, markdown, dvipng
 Maintainer: AD
-Priority: optional
-Section: utils
+Depends: pandoc, libreoffice-writer, markdown, dvipng
 Filename: pool/main/a/astrasics-doc/astrasics-doc_1.0_all.deb
 Size: 824
-SHA256: fed8e599ae92d25d2df825e9c02cc61785a76f82f143323962587a309307e4c7
-SHA1: ad303dc56417620c2532778c8c717bd01db3a849
 MD5sum: 0be35695521fc67cdbb8ddabe7a1858e
+SHA1: ad303dc56417620c2532778c8c717bd01db3a849
+SHA256: fed8e599ae92d25d2df825e9c02cc61785a76f82f143323962587a309307e4c7
+Section: utils
+Priority: optional
 Description: Инструменты для создания профессиональных отчётов
  Pandoc, Typst, конвертация в PDF/DOCX.
 
 Package: astrasics-forensic
 Version: 1.0
 Architecture: all
-Depends: coreutils, ewf-tools, testdisk, extundelete, sleuthkit, binutils, wireshark, tcpdump, yara, p7zip-full, unzip, unrar, libimage-exiftool-perl, cryptsetup, afflib-tools
 Maintainer: AD
-Priority: optional
-Section: forensic
+Depends: coreutils, ewf-tools, testdisk, extundelete, sleuthkit, binutils, wireshark, tcpdump, yara, p7zip-full, unzip, unrar, libimage-exiftool-perl, cryptsetup, afflib-tools
 Filename: pool/main/a/astrasics-forensic/astrasics-forensic_1.0_all.deb
 Size: 916
-SHA256: 32958ef0e00a9f2d08fb5dde7592bd68c72b72f19bf60fa6e7a8bf09e2481a1a
-SHA1: 48f36acfeb9f7e0abc8da288fce4b0f632ed02cc
 MD5sum: 29f0015c98859081d88a5e45778fd2af
+SHA1: 48f36acfeb9f7e0abc8da288fce4b0f632ed02cc
+SHA256: 32958ef0e00a9f2d08fb5dde7592bd68c72b72f19bf60fa6e7a8bf09e2481a1a
+Section: forensic
+Priority: optional
 Description: Полный набор инструментов цифровой криминалистики
  Поддержка анализа дисков, памяти, документов, сети, браузеров.
 
 Package: astrasics-mem
 Version: 1.0
 Architecture: all
-Depends: python3-psutil
 Maintainer: AD
-Priority: optional
-Section: forensic
+Depends: python3-psutil
 Filename: pool/main/a/astrasics-mem/astrasics-mem_1.0_all.deb
 Size: 784
-SHA256: 43ef0500d6b8d4259f3a958fd61fd165e36f626eb089d6d16471b44a2db3d5b1
-SHA1: 0f6302f7d36249a39fdbac31c9cf09e407cf04b9
 MD5sum: b161376f5a0a415a739bbeaace2bf12d
+SHA1: 0f6302f7d36249a39fdbac31c9cf09e407cf04b9
+SHA256: 43ef0500d6b8d4259f3a958fd61fd165e36f626eb089d6d16471b44a2db3d5b1
+Section: forensic
+Priority: optional
 Description: Инструменты для анализа оперативной памяти
  Включает LiME (сбор дампа).
 
 Package: astrasics-reverse
 Version: 1.0
 Architecture: all
-Depends: yara, strace, ltrace, gdb
 Maintainer: AD
-Priority: optional
-Section: reverse
+Depends: yara, strace, ltrace, gdb
 Filename: pool/main/a/astrasics-reverse/astrasics-reverse_1.0_all.deb
 Size: 800
-SHA256: 9bdba9ca37d1582616891bee825bac9218a3d4555abbcaa37b8af2ff498f14fe
-SHA1: b9d9a2fc2aa2b0034c966d39d0d35d6515da0c7a
 MD5sum: 7e861e7da08714dc4084ece2724a75e8
+SHA1: b9d9a2fc2aa2b0034c966d39d0d35d6515da0c7a
+SHA256: 9bdba9ca37d1582616891bee825bac9218a3d4555abbcaa37b8af2ff498f14fe
+Section: reverse
+Priority: optional
 Description: Инструменты для реверс-инжиниринга и анализа вредоносного ПО
  Ghidra, YARA, отладчики.
 
@@ -80,14 +80,14 @@ Architecture: amd64
 Maintainer: Kali Developers <devel@kali.org>
 Installed-Size: 16170
 Depends: libc6 (>= 2.38), libewf2 (>= 20121209), libexpat1 (>= 2.0.1), libgcc-s1 (>= 3.0), libgcrypt20 (>= 1.11.0), libre2-11-absl20240722, libstdc++6 (>= 14), zlib1g (>= 1:1.1.4)
-Homepage: https://github.com/simsong/bulk_extractor
-Priority: optional
-Section: non-free/net
 Filename: pool/main/b/bulk-extractor/bulk-extractor_2.1.1-0kali2+b1_amd64.deb
 Size: 11350628
-SHA256: a78b1e66b4ce73e4189f8194c06d1162bc647eb21f16f9c4434acf2f4e6eb3cf
-SHA1: 09ae3f44dd76094668163093160ad335ca02af3e
 MD5sum: 288bc1fa67036e7b8e931c381eecbc91
+SHA1: 09ae3f44dd76094668163093160ad335ca02af3e
+SHA256: a78b1e66b4ce73e4189f8194c06d1162bc647eb21f16f9c4434acf2f4e6eb3cf
+Section: non-free/net
+Priority: optional
+Homepage: https://github.com/simsong/bulk_extractor
 Description: Extracts information without parsing filesystem
  bulk_extractor is a C++ program that scans a disk image, a file,
  or a directory of files and extracts useful information without
@@ -104,14 +104,14 @@ Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
 Installed-Size: 94
 Depends: libc6 (>= 2.34), libdislocker0.7 (>= 0.7.3), libfuse2 (>= 2.6), libruby3.1 (>= 3.1.0~preview1)
 Recommends: ruby
-Homepage: https://github.com/Aorimn/dislocker
-Priority: optional
-Section: utils
 Filename: pool/main/d/dislocker/dislocker_0.7.3-3_amd64.deb
 Size: 23152
-SHA256: 45fc1c63c8dc0b2312c0ca264d86b91f4bdd202361f84027c2c624435f5ee043
-SHA1: 82a7b465c37a4825a44531e1c19e9a15465b4274
 MD5sum: 3d5c664af2fff061688be63b1e987c21
+SHA1: 82a7b465c37a4825a44531e1c19e9a15465b4274
+SHA256: 45fc1c63c8dc0b2312c0ca264d86b91f4bdd202361f84027c2c624435f5ee043
+Section: utils
+Priority: optional
+Homepage: https://github.com/Aorimn/dislocker
 Description: read/write encrypted BitLocker volumes
  Dislocker has been designed to read BitLocker encrypted partitions under
  a Linux system. The driver used to read volumes encrypted in Windows system
@@ -135,14 +135,14 @@ Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
 Installed-Size: 1608
 Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
 Provides: md5deep
-Homepage: https://md5deep.sourceforge.net
-Priority: optional
-Section: utils
 Filename: pool/main/h/hashdeep/hashdeep_4.4+git20170824+ds-1_amd64.deb
 Size: 142844
-SHA256: 236c84a1dcdd9b8d4cb2ab7baf79a6d35371d9a0e091bd1db5dee721a8720431
-SHA1: cfc6b0cd9385908c94f8d37ab18edc2422187e49
 MD5sum: 9a7f116bad5a9ac9f02f7cbcfd3add99
+SHA1: cfc6b0cd9385908c94f8d37ab18edc2422187e49
+SHA256: 236c84a1dcdd9b8d4cb2ab7baf79a6d35371d9a0e091bd1db5dee721a8720431
+Section: utils
+Priority: optional
+Homepage: https://md5deep.sourceforge.net
 Description: recursively compute hashsums or piecewise hashings
  hashdeep is a set of tools to compute MD5, SHA1, SHA256, tiger
  and whirlpool hashsums of arbitrary number of files recursively.
@@ -165,15 +165,15 @@ Architecture: amd64
 Maintainer: Benjamin Barenblat <bbaren@debian.org>
 Installed-Size: 2561
 Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.4), libstdc++6 (>= 13.1)
-Multi-Arch: same
-Homepage: https://abseil.io/
-Priority: optional
-Section: libs
 Filename: pool/main/a/abseil/libabsl20240722_20240722.0-4_amd64.deb
 Size: 491548
-SHA256: 78c6d7692890990a27cb1d5bbd95b7bfe47a4183ffafec5b30f689f9b58ec6f7
-SHA1: ae1afaad597e84f87f29641315d8f646b14663f3
 MD5sum: 5407414647aace5e70314f16ff0aeb99
+SHA1: ae1afaad597e84f87f29641315d8f646b14663f3
+SHA256: 78c6d7692890990a27cb1d5bbd95b7bfe47a4183ffafec5b30f689f9b58ec6f7
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://abseil.io/
 Description: extensions to the C++ standard library
  Abseil is an open-source collection of C++ library code designed to augment the
  C++ standard library. The Abseil library code is collected from Google's C++
@@ -192,14 +192,14 @@ Installed-Size: 139
 Depends: libc6 (>= 2.15), libmbedcrypto7 (>= 2.28.0), libruby3.1 (>= 3.1.2)
 Breaks: libdislocker0.6 (<< 0.7~)
 Replaces: libdislocker0.6 (<< 0.7~)
-Homepage: https://github.com/Aorimn/dislocker
-Priority: optional
-Section: libs
 Filename: pool/main/d/dislocker/libdislocker0.7_0.7.3-3_amd64.deb
 Size: 45216
-SHA256: 8ba818c144cf004ca25f39d7ff7bc2fc1ca58bfda678cc7052f146727d7baca6
-SHA1: 1b225704f0f87e3af4036befda854d9ec3cd4a03
 MD5sum: 3b64fc59f0f51b32cf94ca6d673d4935
+SHA1: 1b225704f0f87e3af4036befda854d9ec3cd4a03
+SHA256: 8ba818c144cf004ca25f39d7ff7bc2fc1ca58bfda678cc7052f146727d7baca6
+Section: libs
+Priority: optional
+Homepage: https://github.com/Aorimn/dislocker
 Description: read/write encrypted BitLocker volumes (shared library)
  Dislocker has been designed to read BitLocker encrypted partitions under
  a Linux system. The driver used to read volumes encrypted in Windows system
@@ -215,6 +215,36 @@ Description: read/write encrypted BitLocker volumes (shared library)
  .
  This package provides the runtime library.
 
+Package: libmcrypt4
+Source: libmcrypt
+Version: 2.5.8-7
+Architecture: amd64
+Maintainer: Barak A. Pearlmutter <bap@debian.org>
+Installed-Size: 208
+Depends: libc6 (>= 2.14)
+Suggests: libmcrypt-dev, mcrypt
+Filename: pool/main/l/libmcrypt4_2.5.8-7_amd64.deb
+Size: 72612
+MD5sum: 32f3966d8843c8c71a2598aced8579db
+SHA1: ad2ef37a89ade5a1ff3748a2ae30d0da66819ec7
+SHA256: 94478b860bfbe4d9e438a779c1dab1ce12858545262ac2fa1621ea408117a557
+Section: libs
+Priority: optional
+Homepage: http://mcrypt.sourceforge.net/
+Description: De-/Encryption Library
+ libmcrypt is the library which implements all the algorithms and
+ modes found in mcrypt.
+ .
+ libmcrypt supports the algorithms: BLOWFISH, TWOFISH, DES, TripleDES,
+ 3-WAY, SAFER-sk64, SAFER-sk128, SAFER+, LOKI97, GOST, RC2, RC6, MARS,
+ IDEA, RIJNDAEL-128, RIJNDAEL-192, SERPENT, RIJNDAEL-256, CAST-128
+ (known as CAST5), CAST-256, ARCFOUR, ENIGMA, PANAMA, XTEA and WAKE.
+ Block algorithms can be used in: CBC, ECB, CFB and OFB (8 bit and n
+ bit, where n is the size of the algorithm's block length).
+ .
+ More information can be found at the libmcrypt homepage
+ http://mcrypt.sourceforge.net/ .
+
 Package: libre2-11
 Source: re2
 Version: 20250805-1
@@ -224,15 +254,15 @@ Installed-Size: 461
 Depends: libabsl20240722 (>= 20240722.0-1), libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 14)
 Provides: libre2-11-absl20240722
 Built-Using: unicode-data (= 15.1.0-1)
-Multi-Arch: same
-Homepage: https://github.com/google/re2
-Priority: optional
-Section: libs
 Filename: pool/main/r/re2/libre2-11_20250805-1_amd64.deb
 Size: 168832
-SHA256: 663390cc86fe3bc752a55cee5310d1e826b4c98753f90491fca7e30c7928459a
-SHA1: 9bc340bc6d289bf83350e8ff823fe35a8dd5fc03
 MD5sum: ddc42b4b42015190de3ca7c4ed2dcca6
+SHA1: 9bc340bc6d289bf83350e8ff823fe35a8dd5fc03
+SHA256: 663390cc86fe3bc752a55cee5310d1e826b4c98753f90491fca7e30c7928459a
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/google/re2
 Description: efficient, principled regular expression library
  RE2 is a fast, safe, thread-friendly alternative to backtracking regular
  expression engines like those used in PCRE, Perl, and Python. It is a C++
@@ -261,14 +291,14 @@ Conflicts: linux-image-6.1.0-39-amd64-unsigned
 Breaks: fwupdate (<< 12-7), initramfs-tools (<< 0.120+deb8u2), wireless-regdb (<< 2019.06.03-1~)
 Replaces: linux-image-6.1.0-39-amd64-unsigned
 Built-Using: linux (= 6.1.148-1)
-Homepage: https://www.kernel.org/
-Priority: optional
-Section: kernel
 Filename: pool/main/l/linux-signed-amd64/linux-image-6.1.0-39-amd64_6.1.148-1_amd64.deb
 Size: 68389040
-SHA256: 3b5145988ef27ecf38aded5a04cfdccf264a16f27b8a09e8d476c681c449855f
-SHA1: 8fc4f349294491961be755b84df8354fc031045d
 MD5sum: f0c2ce98fe16ab59eae03c4a82c69de6
+SHA1: 8fc4f349294491961be755b84df8354fc031045d
+SHA256: 3b5145988ef27ecf38aded5a04cfdccf264a16f27b8a09e8d476c681c449855f
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
 Description: Linux 6.1 for 64-bit PCs (signed)
  The Linux kernel 6.1 and modules for use on PCs with AMD64, Intel 64 or
  VIA Nano processors.
@@ -282,14 +312,14 @@ Maintainer: Kali Developers <devel@kali.org>
 Installed-Size: 88
 Depends: python3:any, zlib1g, python3-pyzipper
 Recommends: python3-yara
-Homepage: https://blog.didierstevens.com/programs/pdf-tools/
-Priority: optional
-Section: utils
 Filename: pool/main/p/pdf-parser/pdf-parser_0.7.12-0kali1_all.deb
 Size: 18144
-SHA256: ae6ade7bc3a38d4a4db84d2abdfd1cf0983de8f0f7d77d229aba266bda79d98d
-SHA1: c443adfb63815cb82ebd793363939283b0627dea
 MD5sum: 51cc2237ccf91c58ab9c4b7a7c76c156
+SHA1: c443adfb63815cb82ebd793363939283b0627dea
+SHA256: ae6ade7bc3a38d4a4db84d2abdfd1cf0983de8f0f7d77d229aba266bda79d98d
+Section: utils
+Priority: optional
+Homepage: https://blog.didierstevens.com/programs/pdf-tools/
 Description: Parses PDF files to identify fundamental elements
  This tool will parse a PDF document to identify the
  fundamental elements used in the analyzed file. It will not
@@ -303,14 +333,14 @@ Maintainer: Debian Python Team <team+python@tracker.debian.org>
 Installed-Size: 131
 Depends: python3-pycryptodome, python3:any
 Suggests: python-pyzipper-doc
-Homepage: https://github.com/danifus/pyzipper
-Priority: optional
-Section: python
 Filename: pool/main/p/python-pyzipper/python3-pyzipper_0.3.6-5_all.deb
 Size: 28132
-SHA256: ae5cfcd5b27d04f8e544ce14f0a451d5611bfcc6a03f42f5e4d539afc83249e8
-SHA1: f5811e8f6e03b5fde1586816caa972470e3ef2c8
 MD5sum: d7c1cedd6f652f1fc0f2c9776f921978
+SHA1: f5811e8f6e03b5fde1586816caa972470e3ef2c8
+SHA256: ae5cfcd5b27d04f8e544ce14f0a451d5611bfcc6a03f42f5e4d539afc83249e8
+Section: python
+Priority: optional
+Homepage: https://github.com/danifus/pyzipper
 Description: AES encryption for zipfile
  PyZipper is a Python library for working with ZIP files in an efficient
  and user-friendly way. It provides a high-level interface for creating,
@@ -334,14 +364,14 @@ Architecture: amd64
 Maintainer: Hilko Bengen <bengen@debian.org>
 Installed-Size: 70
 Depends: python3 (<< 3.14), python3 (>= 3.13~), libc6 (>= 2.14), libyara10 (>= 4.3.0~)
-Homepage: https://github.com/VirusTotal/yara-python
-Priority: optional
-Section: python
 Filename: pool/main/y/yara-python/python3-yara_4.5.1-1+b3_amd64.deb
 Size: 19136
-SHA256: 92cef932d95aaab6762a4e02917e5086b64c56dc150e9a47a0a20c4c4c42a5da
-SHA1: 589887843d4b2ace20a56dafc0b30bf58bc8d4a9
 MD5sum: ce97be524e39537119bd107062b9a38e
+SHA1: 589887843d4b2ace20a56dafc0b30bf58bc8d4a9
+SHA256: 92cef932d95aaab6762a4e02917e5086b64c56dc150e9a47a0a20c4c4c42a5da
+Section: python
+Priority: optional
+Homepage: https://github.com/VirusTotal/yara-python
 Description: Python 3 bindings for YARA
  YARA is a tool aimed at helping malware researchers to identify and
  classify malware samples. With YARA, it is possible to create
@@ -362,14 +392,14 @@ Architecture: amd64
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
 Installed-Size: 88
 Depends: libc6 (>= 2.34)
-Homepage: http://www.digitalforensicssolutions.com/Scalpel
-Priority: optional
-Section: utils
 Filename: pool/main/s/scalpel/scalpel_1.60-10_amd64.deb
 Size: 32616
-SHA256: bd302adc73b74b2469bfa43301189ab71b3612751a154c19ebed92f109ffe6fe
-SHA1: 5990d4a60760d4086906882fa624c82af537ab81
 MD5sum: e4f766ef59c6122207dfd0e7fde72e23
+SHA1: 5990d4a60760d4086906882fa624c82af537ab81
+SHA256: bd302adc73b74b2469bfa43301189ab71b3612751a154c19ebed92f109ffe6fe
+Section: utils
+Priority: optional
+Homepage: http://www.digitalforensicssolutions.com/Scalpel
 Description: fast filesystem-independent file recovery
  scalpel is a fast file carver that reads a database of header and footer
  definitions and extracts matching files from a set of image files or raw
@@ -387,14 +417,14 @@ Architecture: amd64
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
 Installed-Size: 477
 Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.0), libjpeg62-turbo (>= 1.3.1), libmcrypt4, libmhash2 (>= 0.9.9.9), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
-Homepage: http://steghide.sourceforge.net/
-Priority: optional
-Section: misc
 Filename: pool/main/s/steghide/steghide_0.5.1-15_amd64.deb
 Size: 143988
-SHA256: ae33e98a3a90e3ff968c4d0fe76627aeb8d5e9f0b6d48947c065fb1ebdb7db24
-SHA1: 30e157a6c450b65ffc8ce9fafc4727f05597a1ea
 MD5sum: b739686ce2828c6d8cfd0b8780c6d5e6
+SHA1: 30e157a6c450b65ffc8ce9fafc4727f05597a1ea
+SHA256: ae33e98a3a90e3ff968c4d0fe76627aeb8d5e9f0b6d48947c065fb1ebdb7db24
+Section: misc
+Priority: optional
+Homepage: http://steghide.sourceforge.net/
 Description: steganography hiding tool
  Steghide is steganography program which hides bits of a data file
  in some of the least significant bits of another file in such a way
@@ -413,14 +443,14 @@ Architecture: amd64
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
 Installed-Size: 366
 Depends: libc6 (>= 2.34), libgcc-s1 (>= 3.0), libjpeg62-turbo (>= 1.3.1), libmcrypt4 (>= 2.5.8), libmhash2 (>= 0.9.9.9), libstdc++6 (>= 13.1), zlib1g (>= 1:1.1.4)
-Homepage: https://github.com/RickdeJager/stegseek
-Priority: optional
-Section: misc
 Filename: pool/main/s/stegseek/stegseek_0.6+git20210910.ff677b9-1_amd64.deb
 Size: 128112
-SHA256: 0b407583c1d9fe34ec7b496f8f25c512cce05844c08aedce5ff6fb3cb33d5ee2
-SHA1: 777ec301d015b11d5ae986e490c242a6998d9d39
 MD5sum: e659ac99574bcd3752c8d14c40a502fd
+SHA1: 777ec301d015b11d5ae986e490c242a6998d9d39
+SHA256: 0b407583c1d9fe34ec7b496f8f25c512cce05844c08aedce5ff6fb3cb33d5ee2
+Section: misc
+Priority: optional
+Homepage: https://github.com/RickdeJager/stegseek
 Description: Worlds fastest steghide cracker
  Stegseek is a lightning fast steghide cracker that can be used to extract
  hidden data from files. It is built as a fork of the original steghide
@@ -437,14 +467,14 @@ Architecture: amd64
 Maintainer: Balint Reczey <balint@balintreczey.hu>
 Installed-Size: 396
 Depends: libc6 (>= 2.34), libglib2.0-0 (>= 2.35.8), libpcap0.8 (>= 1.5.1), libpcre2-8-0 (>= 10.22), libwireshark16 (>= 4.0.0), libwiretap13 (>= 3.5.0), libwsutil14 (>= 3.7.0), zlib1g (>= 1:1.1.4), wireshark-common (= 4.0.17-0+deb12u1)
-Homepage: https://www.wireshark.org/
-Priority: optional
-Section: net
 Filename: pool/main/w/wireshark/tshark_4.0.17-0+deb12u1_amd64.deb
 Size: 162960
-SHA256: 191fc0ba1b53eeb969bc521eda94d4ad7135d36b961b19218c7f9543542a5ce1
-SHA1: b482b37e5831a560200056740ead8f6c53e836b1
 MD5sum: 9af929dbb3c6e52e474b206cf6df9cc6
+SHA1: b482b37e5831a560200056740ead8f6c53e836b1
+SHA256: 191fc0ba1b53eeb969bc521eda94d4ad7135d36b961b19218c7f9543542a5ce1
+Section: net
+Priority: optional
+Homepage: https://www.wireshark.org/
 Description: network traffic analyzer - console version
  Wireshark is a network "sniffer" - a tool that captures and analyzes
  packets off the wire. Wireshark can decode too many protocols to list
@@ -454,21 +484,21 @@ Description: network traffic analyzer - console version
  "tshark".
 
 Package: veracrypt
+Version: 1.26.24-1~deb12-1
 Architecture: amd64
-Conflicts: veracrypt-console
+Maintainer: VeraCrypt Team <veracrypt@amcrypto.jp>
+Installed-Size: 33874
 Depends: libwxgtk3.2-1, libayatana-appindicator3-1, libfuse2, dmsetup, sudo
-Priority: optional
-Section: libs
+Conflicts: veracrypt-console
 Filename: pool/main/v/veracrypt/veracrypt_1.26.24-1~deb12-1_amd64.deb
 Size: 13651256
-SHA256: b00d44779accc803831dd42e0d4c3a63445bb0c26701f0a43d131f76e01f025c
-SHA1: 9ad5c275a00954920bcb9131d98410f5603fbc7a
 MD5sum: 69fce56783dd17d4676aa76b9767b12a
+SHA1: 9ad5c275a00954920bcb9131d98410f5603fbc7a
+SHA256: b00d44779accc803831dd42e0d4c3a63445bb0c26701f0a43d131f76e01f025c
+Section: libs
+Priority: optional
 Description: Disk encryption with strong security based on TrueCrypt.
  Disk encryption with strong security based on TrueCrypt.
-Maintainer: VeraCrypt Team <veracrypt@amcrypto.jp>
-Version: 1.26.24-1~deb12-1
-Installed-Size: 33874
 
 Package: xmount
 Version: 0.7.6-3
@@ -476,14 +506,14 @@ Architecture: amd64
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
 Installed-Size: 271
 Depends: libafflib0v5 (>= 3.7.6), libc6 (>= 2.14), libewf2 (>= 20121209), libfuse2 (>= 2.7.1-2~bpo40+1), zlib1g (>= 1:1.1.4)
-Homepage: https://www.pinguin.lu/
-Priority: optional
-Section: admin
 Filename: pool/main/x/xmount/xmount_0.7.6-3_amd64.deb
 Size: 74512
-SHA256: d01e40186a47f32356e15a084cb87046c4dc8356a3b495fb509b7e22887e6743
-SHA1: f4c0687bb846c14c7f822b7bcff0083e78b7acb8
 MD5sum: 85eec6614b5c1bb2cb80efcdcd3766ca
+SHA1: f4c0687bb846c14c7f822b7bcff0083e78b7acb8
+SHA256: d01e40186a47f32356e15a084cb87046c4dc8356a3b495fb509b7e22887e6743
+Section: admin
+Priority: optional
+Homepage: https://www.pinguin.lu/
 Description: tool for crossmounting between disk image formats
  xmount can be used to boot forensic disk images with QEMU, KVM,
  VirtualBox, VMware, or the like, since it supports virtual write
