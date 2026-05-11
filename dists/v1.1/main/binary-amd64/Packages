@@ -183,6 +183,36 @@ Description: extensions to the C++ standard library
  .
  This package contains Abseil's shared libraries.
 
+Package: libafflib0v5
+Source: afflib
+Version: 3.7.20-1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 565
+Depends: libc6 (>= 2.34), libcurl4 (>= 7.16.2), libexpat1 (>= 2.0.1), libgcc-s1 (>= 3.0), libssl3 (>= 3.0.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Conflicts: libafflib0
+Replaces: libafflib0
+Filename: pool/main/l/lib/libafflib0v5_3.7.20-1_amd64.deb
+Size: 236036
+MD5sum: ac17422a24403c87739179c0b495271d
+SHA1: ede51681998b63ac454ecf70d17897527ce4317d
+SHA256: 3df54ac0d5b8a096325cdd24098daf26bb3efac14f10c9e704cb5351e151e51d
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/sshock/AFFLIBv3
+Description: Advanced Forensics Format Library
+ The Advanced Forensic Format (AFF) is on-disk format for storing
+ computer forensic information. Critical features of AFF include:
+ .
+  - AFF allows you to store both computer forensic data and associated
+    metadata in one or more files.
+  - AFF allows files to be digital signed, to provide for
+    chain-of-custody and long-term file integrity.
+  - AFF allows for forensic disk images to stored encrypted and
+    decrypted on-the-fly for processing. This allows disk images
+    containing privacy sensitive material to be stored on the Internet.
+
 Package: libbcg729-0
 Source: bcg729
 Version: 1.1.1-4
@@ -271,6 +301,29 @@ Description: read/write encrypted BitLocker volumes (shared library)
  file will change the underlying BitLocker partition content.
  .
  This package provides the runtime library.
+
+Package: libewf2
+Source: libewf (20140813-1)
+Version: 20140813-1+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1780
+Depends: libc6 (>= 2.34), zlib1g (>= 1:1.1.4)
+Filename: pool/main/l/lib/libewf2_20140813-1+b1_amd64.deb
+Size: 563308
+MD5sum: 5bff3018dfb2238c039c26bbdd2df004
+SHA1: c5d725f7959f7a17703f29cfdf5726477c96bdbb
+SHA256: a1af1004bd01c7d084e7288739d1d3aa093f3c4aea8001994f9023750329adad
+Section: libs
+Priority: optional
+Homepage: https://github.com/libyal/libewf-legacy
+Description: library with support for Expert Witness Compression Format
+ Libewf is a library with support for reading and writing the Expert Witness
+ Compression Format (EWF).
+ This library allows you to read media information of EWF files in the SMART
+ (EWF-S01) format and the EnCase (EWF-E01) format. It supports files created
+ by EnCase 1 to 6, linen and FTK Imager. The libewf is useful for forensics
+ investigations.
 
 Package: liblua5.2-0
 Source: lua5.2
