@@ -1,19 +1,21 @@
-Origin: Astrasics
-Label: APT Repository
-Codename: v1.1
-Date: Thu, 11 Sep 2025 16:43:53 UTC
-Architectures: amd64
-Components: main
-Description: APT repository for Astrasics
+Date: Mon, 11 May 2026 14:03:35 +0000
 MD5Sum:
- cdec13a9cce607972d6e8b3bc095f15e 21286 main/binary-amd64/Packages
- 963889e52b2bb40c719090dbdd0f4ee9 8323 main/binary-amd64/Packages.gz
- 79b75d08666866e6275f0466a49e417b 118 main/binary-amd64/Release
+ 779db0e8967019a26774785e4e62fbac               38 Release
+ 8ae9b4b765eb9c567692ad1d496a5cf7            22417 main/binary-amd64/Packages
+ 9c258e691d906a1d8db9a017cfab3e2b             8800 main/binary-amd64/Packages.gz
+ 79b75d08666866e6275f0466a49e417b              118 main/binary-amd64/Release
 SHA1:
- efe3771453bf4228d4959a9b35251a7a3a47a933 21286 main/binary-amd64/Packages
- 21630b435bc36e57abf63c68af68e61fb99cdaa1 8323 main/binary-amd64/Packages.gz
- 876ebb222488ed2a586b8bb307604a75ef15ee8b 118 main/binary-amd64/Release
+ b63ac60073b70e4748b7918686b71c7bea2a5fd6               38 Release
+ f31dfc8f4859eb9a32f899fe9363e0bf1955e011            22417 main/binary-amd64/Packages
+ b0dea34f8251d7dbf336963d849de5f14d2a320d             8800 main/binary-amd64/Packages.gz
+ 876ebb222488ed2a586b8bb307604a75ef15ee8b              118 main/binary-amd64/Release
 SHA256:
- 9d2c2bcbcc13d0ea004fb722da58ceb37c0b53d59df905744224060511809a8b 21286 main/binary-amd64/Packages
- 35da66786ed084ae08f6361203110d40c96867c8423ed08784906e8f9d968839 8323 main/binary-amd64/Packages.gz
- 1a393526ed37d06723bb45061430ebff3e21871a03bc1e9163c7614cdac98477 118 main/binary-amd64/Release
+ eb8f6e79436a87296ba38e5a9ffea3c27e79148aa83f77ce0d6c7867230b4335               38 Release
+ 61f094e41de7f6e47092c3209f8c25871465ecf1bfc2b02a9201ea104368a087            22417 main/binary-amd64/Packages
+ b8eb66c39784a7a1347805b39c10b8abf6a00e60440a9f698f6d8ba62fa9539e             8800 main/binary-amd64/Packages.gz
+ 1a393526ed37d06723bb45061430ebff3e21871a03bc1e9163c7614cdac98477              118 main/binary-amd64/Release
+SHA512:
+ d23617431cbe2bae2195148295823c9e9d3fc29a2747a3ec727745c8daf662901ff39d736a779c449c6b13ab70023abf6a8699c8fd855116b474b17ae811a11e               38 Release
+ efd51d14cc1c5f2a0e1d27261e0b498e10d7116ad4028d9882514de18960bdb32aba67151b35d748329c4f485a2004dd2fabbe0f312cdcc47d81ae5e61812259            22417 main/binary-amd64/Packages
+ 496f5f61370755f4bd8b482a12a4949ca4cfc141b0bbb4e3625323b42a00461bb3f166539ff674f8ee3b5a135ebf8910bbc90885028ea249812ad1f520e5238e             8800 main/binary-amd64/Packages.gz
+ 711ab95e2d01a3843230d5efed30d9d4fb0577528ab5cea8cb24d8f2ee0703b63561f4e0d9c4ee9b261dec0755072a913adc3ef2ff8f95e2a61ed587c34558f7              118 main/binary-amd64/Release
