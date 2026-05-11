@@ -1,38 +1,40 @@
 -----BEGIN PGP SIGNED MESSAGE-----
 Hash: SHA512
 
-Origin: Astrasics
-Label: APT Repository
-Codename: v1.1
-Date: Thu, 11 Sep 2025 16:43:53 UTC
-Architectures: amd64
-Components: main
-Description: APT repository for Astrasics
+Date: Mon, 11 May 2026 14:09:35 +0000
 MD5Sum:
- cdec13a9cce607972d6e8b3bc095f15e 21286 main/binary-amd64/Packages
- 963889e52b2bb40c719090dbdd0f4ee9 8323 main/binary-amd64/Packages.gz
- 79b75d08666866e6275f0466a49e417b 118 main/binary-amd64/Release
+ fdd0f1046e229e6e80b56f6f7bb5a438               38 Release
+ 8ae9b4b765eb9c567692ad1d496a5cf7            22417 main/binary-amd64/Packages
+ 9c258e691d906a1d8db9a017cfab3e2b             8800 main/binary-amd64/Packages.gz
+ 79b75d08666866e6275f0466a49e417b              118 main/binary-amd64/Release
 SHA1:
- efe3771453bf4228d4959a9b35251a7a3a47a933 21286 main/binary-amd64/Packages
- 21630b435bc36e57abf63c68af68e61fb99cdaa1 8323 main/binary-amd64/Packages.gz
- 876ebb222488ed2a586b8bb307604a75ef15ee8b 118 main/binary-amd64/Release
+ 3c48d215821b21562eb50d0c64f8c5e6d6ba6dd9               38 Release
+ f31dfc8f4859eb9a32f899fe9363e0bf1955e011            22417 main/binary-amd64/Packages
+ b0dea34f8251d7dbf336963d849de5f14d2a320d             8800 main/binary-amd64/Packages.gz
+ 876ebb222488ed2a586b8bb307604a75ef15ee8b              118 main/binary-amd64/Release
 SHA256:
- 9d2c2bcbcc13d0ea004fb722da58ceb37c0b53d59df905744224060511809a8b 21286 main/binary-amd64/Packages
- 35da66786ed084ae08f6361203110d40c96867c8423ed08784906e8f9d968839 8323 main/binary-amd64/Packages.gz
- 1a393526ed37d06723bb45061430ebff3e21871a03bc1e9163c7614cdac98477 118 main/binary-amd64/Release
+ b1bbad097de9c3f752debdc10547482017edbfeaffda24b56655f928c940a334               38 Release
+ 61f094e41de7f6e47092c3209f8c25871465ecf1bfc2b02a9201ea104368a087            22417 main/binary-amd64/Packages
+ b8eb66c39784a7a1347805b39c10b8abf6a00e60440a9f698f6d8ba62fa9539e             8800 main/binary-amd64/Packages.gz
+ 1a393526ed37d06723bb45061430ebff3e21871a03bc1e9163c7614cdac98477              118 main/binary-amd64/Release
+SHA512:
+ 8208dae41694e76c4fa0d3e027a0d41adda2d0d27a95712f1e10df68dddf7ccbf6797d4daf0ae127e32e5700be99c203dfe89c75eece6316d2fb8cf31f3a2479               38 Release
+ efd51d14cc1c5f2a0e1d27261e0b498e10d7116ad4028d9882514de18960bdb32aba67151b35d748329c4f485a2004dd2fabbe0f312cdcc47d81ae5e61812259            22417 main/binary-amd64/Packages
+ 496f5f61370755f4bd8b482a12a4949ca4cfc141b0bbb4e3625323b42a00461bb3f166539ff674f8ee3b5a135ebf8910bbc90885028ea249812ad1f520e5238e             8800 main/binary-amd64/Packages.gz
+ 711ab95e2d01a3843230d5efed30d9d4fb0577528ab5cea8cb24d8f2ee0703b63561f4e0d9c4ee9b261dec0755072a913adc3ef2ff8f95e2a61ed587c34558f7              118 main/binary-amd64/Release
 -----BEGIN PGP SIGNATURE-----
 
-iQIzBAEBCgAdFiEEdHexjiO+o9uWUk9RcEmvF1Uzsf8FAmjC/EkACgkQcEmvF1Uz
-sf/j4A//a7A2tHv9/jU++cDJD6Jxj43QA/WYPTnn45tar8ruu6nB3GfKcIa6QVSJ
-rwUH0PwytzXcpVEJUion+a9SIKXvZr9QtbndiKoYRhCdDODrnwhGGvU8JKHunZG2
-cAwdq4xtWaqCTG2X12n+JPsjokxFBVUGg8/7wmj0Lg6+4M0jAnbXhAAPM1RcXkry
-gAx3kFzbYp88PJtryZGMkS3HraSgqdICGl8OMkUGpjrGsuTAMAOfnQP9p35uQ5x/
-37sx9eqMZQg58NydhlmoPpUYlaVHrqtBL1QraLqaKHzk5JDicpoXcfGjyXbLLr9R
-5xmiazpvQzE8wzVPkMF3dTlGSE4g+dok7ZsMWCSFyDxyYc6eREVOu+PCGv4fuySN
-10q/C6vpYjcilfSeMa7/5vLTvq+YCkejrnNjyNnPa/RxOYgis6Svb0TnicFEmF40
-1MxBHB8oCwYJ2VE/byLNE2y63lUhEN8xwVZ4W7+es3gixlyL9zoIpe0bKSKLESh9
-RraWJqzZt6A2Pv/omeAAIWoaz2VOs+XN380XiOp+2oBB7FUIgoGnngFi07MC9+IJ
-JWxsxU0/fmVy60UBbhsXKoc37ZP6I5kMc76FfmHgMiPS+rw82e9+sKgAw6Qn8k5U
-VO1TKM25pR827iTpML59K0yayjj/0+FNSnYhJhJvcwziUdh8qsQ=
-=Gq1Y
+iQIzBAEBCgAdFiEEdHexjiO+o9uWUk9RcEmvF1Uzsf8FAmoB5LIACgkQcEmvF1Uz
+sf9e/Q//ToripVxeXkCQul09CT8+D6CZvCzlmCwzqWevqczM0Of39a+bBkFSg0wQ
+VscJkcAgFlecWhLuU4Kv8Jud7Q2qvrLBJ7UReSmYcjaysTflTtuV3C62/Lexkdud
+CyHbT4hBSPS2aydB+bVul7n/mfFJjgJ3AM3tW8DDGqP7eBI1j2sHTcPkJFW9V3eP
+32O/E3lUmAKSewew/ElEfi6VnR2uTwH7R5pLa9tYdrZeyr+j+RzpBQmXBXjOnl0e
+jr903a9SGBl2AVf4USqW4D8odBuFupfq4z+oaa2lakoEOay4bWBhg5ehYrAyUdCx
+HRM+TB+S5xvdtw31zBA9HURneM8jdFFYS+E8ljspD+ow9NlPmB7DCrPBMdXzykEa
+Hj9tnZ7gilEznkuQGYH8nOTaMpXtkAM9ul9JegDczI2KZfJuXDXhy1FfDfoMrvN4
+TZBpa4CLeQnz4eTKgNqk5QEO3J8pS+piiZiVNMqbpDdZV4zPLU/pIakTNEdHdtOF
+5fNIiGvP1crpMf6jZpRiunXEle2cNH9uBDk4CAtL4ax9tys79vzzPiwUo4owWq9W
++TO/jq5A3wIzhDio9d0Uchx+6Hnzf/tLeMKR5HdRPl96HoZc9x2hxthOZfLgyZgl
+4o8sQtl5ACOmLqVBAOtKG5bYe8cRM/KhDu53SaVCDNRSGC8Rw6M=
+=oSdi
 -----END PGP SIGNATURE-----
