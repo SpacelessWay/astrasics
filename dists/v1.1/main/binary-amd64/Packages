@@ -921,10 +921,10 @@ Architecture: all
 Maintainer: Astrasics Team <team@astrasics.com>
 Depends: python3 (>= 3.11), python3-olefile
 Filename: pool/main/o/oletools/astrasics-oletools_0.60.2-1astra1_all.deb
-Size: 760628
-MD5sum: e69e8ee0a096dc9732caaee2c2672217
-SHA1: 0552c6f57e9e392c3bd90eed5c7e34936bea2910
-SHA256: a49281e0a929b15494145a16a59793692e5ed1fd602b5a2486fe23297b354872
+Size: 760876
+MD5sum: b15d7f9c1e6051ba2ea20a8ebf87d353
+SHA1: a6f367513ae9648ced674d668b11106892e300ba
+SHA256: 3ed92efbbf3e842a8b5e512e8e31df9a3d62f083e83088bc4586d2dbd403ac5a
 Section: utils
 Priority: optional
 Homepage: https://github.com/decalage2/oletools
@@ -938,6 +938,9 @@ Description: OLE tools for analyzing Microsoft Office documents
   - oleobj: extract embedded objects
   - rtfobj: analyze RTF files
   - msodde: extract DDE links
+  - oledir: display directory entries
+  - olemap: detect malicious VBA stomping
+  - olemeta: extract metadata
 
 Package: pdf-parser
 Version: 0.7.12-0kali1
