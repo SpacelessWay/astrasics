@@ -921,10 +921,10 @@ Architecture: all
 Maintainer: Astrasics Team <team@astrasics.com>
 Depends: python3 (>= 3.11), python3-olefile
 Filename: pool/main/o/oletools/astrasics-oletools_0.60.2-1astra1_all.deb
-Size: 760876
-MD5sum: b15d7f9c1e6051ba2ea20a8ebf87d353
-SHA1: a6f367513ae9648ced674d668b11106892e300ba
-SHA256: 3ed92efbbf3e842a8b5e512e8e31df9a3d62f083e83088bc4586d2dbd403ac5a
+Size: 760432
+MD5sum: 472d73e7ce468a8697ea8317d0ba4c93
+SHA1: d1be792ee73158b515feba8e64221ff3ed99879a
+SHA256: 5035b8bd7142bc72b0fc413f13d4bcde6c5bed0078250898b5bd71c1b5430956
 Section: utils
 Priority: optional
 Homepage: https://github.com/decalage2/oletools
@@ -932,15 +932,6 @@ Description: OLE tools for analyzing Microsoft Office documents
  Oletools is a set of tools to analyze Microsoft OLE2 files
  (Structured Storage) like Microsoft Office documents (Word, Excel),
  primarily for malware analysis and digital forensics.
- It includes:
-  - olevba: extract and analyze VBA macros
-  - oleid: detect malicious characteristics
-  - oleobj: extract embedded objects
-  - rtfobj: analyze RTF files
-  - msodde: extract DDE links
-  - oledir: display directory entries
-  - olemap: detect malicious VBA stomping
-  - olemeta: extract metadata
 
 Package: pdf-parser
 Version: 0.7.12-0kali1
