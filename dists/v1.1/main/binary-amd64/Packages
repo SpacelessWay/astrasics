@@ -599,6 +599,56 @@ Description: Parses PDF files to identify fundamental elements
  fundamental elements used in the analyzed file. It will not
  render a PDF document.
 
+Package: python3-pycryptodome
+Source: pycryptodome
+Version: 3.11.0+dfsg1-4
+Architecture: amd64
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 3511
+Depends: python3 (>= 3~), python3:any, libc6 (>= 2.14)
+Filename: pool/main/p/python/python3-pycryptodome_3.11.0+dfsg1-4_amd64.deb
+Size: 1010616
+MD5sum: f1fd9d6770da9b91031e831f32a9e452
+SHA1: 64910f18047c247eb44dbec044155c563a80d9e4
+SHA256: b607c2e1f3e9b1e37e308a98ba37aed82045e3503b9e0a681b1ff7d1594b58c6
+Section: python
+Priority: optional
+Homepage: https://www.pycryptodome.org
+Description: cryptographic Python library (Python 3)
+ PyCryptodome is a self-contained Python package of low-level
+ cryptographic primitives.
+ .
+ PyCryptodome is a fork of PyCrypto. It brings several enhancements
+ with respect to the last official version of PyCrypto (2.6.1),
+ for instance:
+ .
+   * Authenticated encryption modes (GCM, CCM, EAX, SIV, OCB)
+   * Accelerated AES on Intel platforms via AES-NI
+   * Elliptic curves cryptography (NIST P-256, P-384 and P-521 curves only)
+   * Better and more compact API (`nonce` and `iv` attributes for ciphers,
+     automatic generation of random nonces and IVs, simplified CTR cipher mode,
+     and more)
+   * SHA-3 (including SHAKE and cSHAKE XOFs), truncated SHA-512 and BLAKE2
+     hash algorithms
+   * Salsa20 and ChaCha20/XChaCha20 stream ciphers
+   * Poly1305 MAC
+   * ChaCha20-Poly1305 and XChaCha20-Poly1305 authenticated ciphers
+   * scrypt, bcrypt and HKDF derivation functions
+   * Deterministic (EC)DSA
+   * Password-protected PKCS#8 key containers
+   * Shamir's Secret Sharing scheme
+   * Random numbers get sourced directly from the OS (and not from a CSPRNG
+     in userspace)
+   * Cleaner RSA and DSA key generation (largely based on FIPS 186-4)
+   * Major clean ups and simplification of the code base
+ .
+ PyCryptodome is not a wrapper to a separate C library like *OpenSSL*.
+ To the largest possible extent, algorithms are implemented in pure Python.
+ Only the pieces that are extremely critical to performance (e.g. block ciphers)
+ are implemented as C extensions.
+ .
+ This is the Python 3 version of the package.
+
 Package: python3-pyzipper
 Source: python-pyzipper
 Version: 0.3.6-5
@@ -607,7 +657,7 @@ Maintainer: Debian Python Team <team+python@tracker.debian.org>
 Installed-Size: 131
 Depends: python3-pycryptodome, python3:any
 Suggests: python-pyzipper-doc
-Filename: pool/main/p/python-pyzipper/python3-pyzipper_0.3.6-5_all.deb
+Filename: pool/main/p/python/python3-pyzipper_0.3.6-5_all.deb
 Size: 28132
 MD5sum: d7c1cedd6f652f1fc0f2c9776f921978
 SHA1: f5811e8f6e03b5fde1586816caa972470e3ef2c8
