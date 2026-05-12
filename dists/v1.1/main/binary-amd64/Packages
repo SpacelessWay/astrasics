@@ -155,6 +155,25 @@ Description: collection of tools for reading and writing EWF files
  .
  This package contains tools to acquire, verify and export EWF files.
 
+Package: extundelete
+Version: 0.2.4-3
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 147
+Depends: libc6 (>= 2.14), libcom-err2 (>= 1.43.9), libext2fs2 (>= 1.42), libgcc-s1 (>= 3.0), libstdc++6 (>= 9)
+Filename: pool/main/e/extundelete/extundelete_0.2.4-3_amd64.deb
+Size: 53320
+MD5sum: 3984ec227195b611b687f55827f229b8
+SHA1: 9bbef1bc003d60d56a6b0d79197b43d140356dfd
+SHA256: 14fb7e009b0f739d4f804cc4b8549a4ec21f29565e72d4165977515815d2bf0d
+Section: utils
+Priority: optional
+Homepage: http://extundelete.sourceforge.net/
+Description: utility to recover deleted files from ext3/ext4 partition
+ extundelete uses the information stored in the partition's journal to attempt
+ to recover a file that has been deleted. There is no guarantee that any
+ particular file will be able to be undeleted.
+
 Package: hashdeep
 Version: 4.4+git20170824+ds-1
 Architecture: amd64
