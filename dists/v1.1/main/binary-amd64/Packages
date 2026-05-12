@@ -915,6 +915,30 @@ Description: Linux 6.1 for 64-bit PCs (signed)
  .
  The kernel image and modules are signed for use with Secure Boot.
 
+Package: oletools
+Version: 0.60.2-1astra1
+Architecture: all
+Maintainer: Astrasics Team <team@astrasics.com>
+Depends: python3 (>= 3.11)
+Filename: pool/main/o/oletools/astrasics-oletools_0.60.2-1astra1_all.deb
+Size: 1200
+MD5sum: a7258f1494667ae7278d1cf8ee7191b4
+SHA1: 4970d9ee970f114540d8289c1fcdb2e344e6ab40
+SHA256: aad316c57b050ed5b7d5ef34787d5dbb334e255562397a9f64aff7a832f5ca73
+Section: utils
+Priority: optional
+Homepage: https://github.com/decalage2/oletools
+Description: OLE tools for analyzing Microsoft Office documents
+ Oletools is a set of tools to analyze Microsoft OLE2 files
+ (Structured Storage) like Microsoft Office documents (Word, Excel),
+ primarily for malware analysis and digital forensics.
+ It includes:
+  - olevba: extract and analyze VBA macros
+  - oleid: detect malicious characteristics
+  - oleobj: extract embedded objects
+  - rtfobj: analyze RTF files
+  - msodde: extract DDE links
+
 Package: pdf-parser
 Version: 0.7.12-0kali1
 Architecture: all
