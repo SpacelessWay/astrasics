@@ -552,6 +552,64 @@ Homepage: https://www.wireshark.org/
 Description: network packet dissection utilities library -- shared library
  The libwsutil library provides utility functions for libwireshark15.
 
+Package: libyara-dev
+Source: yara
+Version: 4.5.2-1~bpo12+1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1301
+Depends: libyara10 (= 4.5.2-1~bpo12+1), libjansson-dev, libmagic-dev, libssl-dev
+Filename: pool/main/y/yara/libyara-dev_4.5.2-1~bpo12+1_amd64.deb
+Size: 245908
+MD5sum: 75c796cb484a89caf7628c74aecd864c
+SHA1: 7070506318ff9fb805e62ff215ed2bea2fc6bac7
+SHA256: cf76a5d4fe56ad18bc19eba95ece21e118ba8e19814afd00b3b7cfbd89d5026a
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://virustotal.github.io/yara/
+Description: YARA development libraries and headers
+ YARA is a tool aimed at helping malware researchers to identify and
+ classify malware samples. With YARA, it is possible to create
+ descriptions of malware families based on textual or binary patterns
+ contained in samples of those families. Each description consists of
+ a set of strings and a Boolean expression which determines its logic.
+ .
+ Complex and powerful rules can be created by using binary strings with
+ wild-cards, case-insensitive text strings, special operators, regular
+ expressions and many other features.
+ .
+ This package provides development libraries and headers.
+
+Package: libyara10
+Source: yara
+Version: 4.5.2-1~bpo12+1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 584
+Depends: libc6 (>= 2.34), libjansson4 (>= 2.14), libmagic1 (>= 5.12), libssl3 (>= 3.0.0)
+Filename: pool/main/y/yara/libyara10_4.5.2-1~bpo12+1_amd64.deb
+Size: 189524
+MD5sum: 34131a31c6e187adb4dbfaf4fc3d707f
+SHA1: 409f6117ae8a86d6710616d4dcbda5a58deb65d2
+SHA256: 7aae14126a2028e2b172a8e1a9e287bad36d148b2c230e7369a0de0beda7c36c
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://virustotal.github.io/yara/
+Description: YARA shared library
+ YARA is a tool aimed at helping malware researchers to identify and
+ classify malware samples. With YARA, it is possible to create
+ descriptions of malware families based on textual or binary patterns
+ contained in samples of those families. Each description consists of
+ a set of strings and a Boolean expression which determines its logic.
+ .
+ Complex and powerful rules can be created by using binary strings with
+ wild-cards, case-insensitive text strings, special operators, regular
+ expressions and many other features.
+ .
+ This package provides a shared library.
+
 Package: linux-image-6.1.0-39-amd64
 Source: linux-signed-amd64 (6.1.148+1)
 Version: 6.1.148-1
@@ -682,17 +740,17 @@ Description: AES encryption for zipfile
     which offers high compression rates.
 
 Package: python3-yara
-Source: yara-python (4.5.1-1)
-Version: 4.5.1-1+b3
+Source: yara-python
+Version: 4.5.1-1~bpo12+1
 Architecture: amd64
 Maintainer: Hilko Bengen <bengen@debian.org>
-Installed-Size: 70
-Depends: python3 (<< 3.14), python3 (>= 3.13~), libc6 (>= 2.14), libyara10 (>= 4.3.0~)
-Filename: pool/main/y/yara-python/python3-yara_4.5.1-1+b3_amd64.deb
-Size: 19136
-MD5sum: ce97be524e39537119bd107062b9a38e
-SHA1: 589887843d4b2ace20a56dafc0b30bf58bc8d4a9
-SHA256: 92cef932d95aaab6762a4e02917e5086b64c56dc150e9a47a0a20c4c4c42a5da
+Installed-Size: 69
+Depends: python3 (<< 3.12), python3 (>= 3.11~), libc6 (>= 2.14), libyara10 (>= 4.3.0~)
+Filename: pool/main/y/yara-python/python3-yara_4.5.1-1~bpo12+1_amd64.deb
+Size: 18484
+MD5sum: 66828403ae56e1edf504e2c2bc007e8b
+SHA1: 1e1e3958fddbd6f089532d5a871d38d36e809661
+SHA256: 20133edd4a04299d401bebcb93e06a0509fea16ab7bf848887729ddd62550302
 Section: python
 Priority: optional
 Homepage: https://github.com/VirusTotal/yara-python
@@ -867,4 +925,60 @@ Description: tool for crossmounting between disk image formats
  can be in raw DD, DMG, VirtualBox VDI format, Microsoft VHD format, or
  VMware VMDK format; input images can be raw DD, EWF (Expert Witness
  Compression Format), or AFF (Advanced Forensic Format) files.
+
+Package: yara
+Version: 4.5.2-1~bpo12+1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 86
+Depends: libc6 (>= 2.34), libyara10 (>= 4.3.0~)
+Filename: pool/main/y/yara/yara_4.5.2-1~bpo12+1_amd64.deb
+Size: 24532
+MD5sum: 5ec2eb159bc37bd8c7488c7e38f746f7
+SHA1: 0d6fcba6dfd45ecc3718f89889e1592450356bee
+SHA256: 15a9e9cdf7f448be215569bdfb52c521818c5dccf5f5932545f178405cdd8a9b
+Section: utils
+Priority: optional
+Multi-Arch: allowed
+Homepage: https://virustotal.github.io/yara/
+Description: Pattern matching swiss knife for malware researchers
+ YARA is a tool aimed at helping malware researchers to identify and
+ classify malware samples. With YARA, it is possible to create
+ descriptions of malware families based on textual or binary patterns
+ contained in samples of those families. Each description consists of
+ a set of strings and a Boolean expression which determines its logic.
+ .
+ Complex and powerful rules can be created by using binary strings with
+ wild-cards, case-insensitive text strings, special operators, regular
+ expressions and many other features.
+
+Package: yara-doc
+Source: yara
+Version: 4.5.2-1~bpo12+1
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1310
+Depends: libjs-sphinxdoc (>= 5.2)
+Built-Using: sphinx (= 5.3.0-4)
+Filename: pool/main/y/yara/yara-doc_4.5.2-1~bpo12+1_all.deb
+Size: 141564
+MD5sum: 519ea7deecd71ef46622c3b9cc4178a3
+SHA1: a3fd24e4ab04f3fde8d78f0b76ecbadbe6ccf23f
+SHA256: 80a3650ffab210ba56420e0afe05a247163730fe14425bdf46a9585707c9d628
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://virustotal.github.io/yara/
+Description: HTML documentation for YARA
+ YARA is a tool aimed at helping malware researchers to identify and
+ classify malware samples. With YARA, it is possible to create
+ descriptions of malware families based on textual or binary patterns
+ contained in samples of those families. Each description consists of
+ a set of strings and a Boolean expression which determines its logic.
+ .
+ Complex and powerful rules can be created by using binary strings with
+ wild-cards, case-insensitive text strings, special operators, regular
+ expressions and many other features.
+ .
+ This package contains the documentation in HTML format.
 
