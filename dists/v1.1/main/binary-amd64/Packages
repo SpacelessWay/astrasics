@@ -337,6 +337,27 @@ Description: asynchronous name resolver
  .
  This package provides the shared libraries.
 
+Package: libcaes1
+Source: libcaes (0~20240413-1)
+Version: 0~20240413-1+b2
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 46
+Depends: libc6 (>= 2.14)
+Filename: pool/main/l/lib/libcaes1_0~20240413-1+b2_amd64.deb
+Size: 13612
+MD5sum: 61114acdc00ffe806fe4fffd85789c3b
+SHA1: a03c769b5df415961c170196842688a9c2d8d503
+SHA256: 3526ae3d5c54f63569cac6ddd78cfdd0408cd5dcb90110bec3678863f5f1ccf9
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libcaes
+Description: cross-platform AES encryption library
+ libcaes is a library to support cross-platform AES encryption.
+ .
+ This package contains the shared library.
+
 Package: libdate-manip-perl
 Version: 6.91-1
 Architecture: all
@@ -473,6 +494,27 @@ Description: De-/Encryption Library
  .
  More information can be found at the libmcrypt homepage
  http://mcrypt.sourceforge.net/ .
+
+Package: libmodi1
+Source: libmodi (0~20240507-2)
+Version: 0~20240507-2+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 3949
+Depends: libc6 (>= 2.34), zlib1g (>= 1:1.1.4)
+Filename: pool/main/l/lib/libmodi1_0~20240507-2+b1_amd64.deb
+Size: 526696
+MD5sum: e7a7c4ad63b3d098be66599962566e2e
+SHA1: 156fd8d06233511a1d176397aa31f1827f9d23e1
+SHA256: d3e9ff5a5c9d3b15c15c56e446c65b40cb2fc85ec3a78bed7b9ba91300e47a90
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libmodi
+Description: Mac OS disk image format access library
+ libmodi is a library to access the Mac OS disk image format.
+ .
+ This package contains the shared library.
 
 Package: libre2-11
 Source: re2
@@ -623,6 +665,48 @@ Multi-Arch: same
 Homepage: https://github.com/libyal/libvmdk
 Description: VMWare Virtual Disk format access library
  libvmdk is a library to access the VMware Virtual Disk (VMDK) format.
+ .
+ This package contains the shared library.
+
+Package: libvsapm1
+Source: libvsapm (0~20240503-2)
+Version: 0~20240503-2+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1067
+Depends: libc6 (>= 2.34)
+Filename: pool/main/l/lib/libvsapm1_0~20240503-2+b1_amd64.deb
+Size: 364176
+MD5sum: 337acec21b1bd55c6166d895c2b3472d
+SHA1: acfd28bc0a20a29ec14927829944d34412701c76
+SHA256: 4db7834adafa5f67e47ed1cbe2a4b8adb60321cce40bc43d7c6145b77f7752a9
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libvsapm
+Description: Apple Partition Map (APM) volume system format access library
+ libvsapm is a library to access the Apple Partition Map (APM) volume system format.
+ .
+ This package contains the shared library.
+
+Package: libvsgpt1
+Source: libvsgpt (0~20240504-2)
+Version: 0~20240504-2+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1099
+Depends: libc6 (>= 2.34)
+Filename: pool/main/l/lib/libvsgpt1_0~20240504-2+b1_amd64.deb
+Size: 375224
+MD5sum: ed5b3e63f78573df233d95b3afdb8202
+SHA1: cc33c35fba6166693543c8c7529efb8607775ecf
+SHA256: 33cceff63197001bf3a77312485ab945e318e692942990bae18f4580ccc9bda8
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libvsgpt
+Description: GUID Partition Table (GPT) volume system access library
+ libvsgpt is a library to access the GUID Partition Table (GPT) volume system.
  .
  This package contains the shared library.
 
@@ -834,6 +918,185 @@ Description: Parses PDF files to identify fundamental elements
  This tool will parse a PDF document to identify the
  fundamental elements used in the analyzed file. It will not
  render a PDF document.
+
+Package: plaso
+Version: 20241006-3
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 39
+Depends: python3-plaso (>= 20241006-3)
+Filename: pool/main/p/plaso/plaso_20241006-3_all.deb
+Size: 12668
+MD5sum: 6c2db23d4c02c05146ba894cb34410b5
+SHA1: 995ced21df20b1f29b5a63176a4f6eb5bff5b7e7
+SHA256: 52f12ef37d9906cdbe94c64839fd00d5e45f83361848df270d93ad7751b4819d
+Section: admin
+Priority: optional
+Homepage: https://github.com/log2timeline/plaso
+Description: super timeline all the things -- metapackage
+ This is a metapackage that depends on the Python 3
+ package of the Plaso libraries and scripts.
+
+Package: python3-acstore
+Source: acstore
+Version: 0~20240407-3
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 103
+Depends: python3-yaml, python3:any
+Suggests: python-acstore-doc
+Filename: pool/main/p/python/python3-acstore_0~20240407-3_all.deb
+Size: 15020
+MD5sum: ff451b0f69d9dd6da2a720c0ee269e9f
+SHA1: f62c04444aaf29641a498dba18fb3bace54c804b
+SHA256: 36a4fd9693ad9f2f8deb2fe5e8ad2d1bf12c94c5bad53389439a8a4de1d175d6
+Section: python
+Priority: optional
+Homepage: https://github.com/log2timeline/acstore
+Description: Attribute Container store access library (Python 3)
+ ACStore, or Attribute Container Storage, provides a stand-alone
+ implementation to read and write Attribute Container stores, such as
+ Plaso storage files.
+ .
+ This package installs the library for Python 3.
+
+Package: python3-caes
+Source: libcaes (0~20240413-1)
+Version: 0~20240413-1+b2
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 50
+Depends: libcaes1 (= 0~20240413-1+b2), libc6 (>= 2.14), python3 (<< 3.14), python3 (>= 3.13~)
+Filename: pool/main/p/python/python3-caes_0~20240413-1+b2_amd64.deb
+Size: 11664
+MD5sum: 4f4fcb0b08d6b6949b1d45aee03a4561
+SHA1: 5be0d904b48e394a10164e79d543e41fde439e38
+SHA256: 62333b2ff510e1e5f99abc2c8dc30e05dc0e0ada9023ab1be42fe6e94bcd636f
+Section: python
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libcaes
+Description: cross-platform AES encryption library -- Python 3 bindings
+ libcaes is a library to support cross-platform AES encryption.
+ .
+ This package includes Python 3 bindings.
+
+Package: python3-dfvfs
+Source: dfvfs
+Version: 20240505-2
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1186
+Depends: python3-dfdatetime (>= 20181025), python3-dtfabric (>= 20170524), python3-tsk (>= 20200117-3), python3-xattr, python3-yaml, python3:any, python3-caes (>= 0~20240114), python3-cffi-backend (>= 1.9.1), python3-cryptography (>= 2.0.2), python3-fcrypto (>= 0~20240114), python3-fsapfs (>= 20220709), python3-fsfat (>= 0~20220925), python3-idna (>= 2.5), python3-libbde (>= 20220121), python3-libewf (>= 20131210), python3-libfsext (>= 20200819), python3-libfshfs (>= 20201103), python3-libfsntfs (>= 20151130), python3-libfsxfs (>= 20201114), python3-libfvde (>= 20160719), python3-libfwnt (>= 20160418), python3-libluksde (>= 20200101), python3-libqcow (>= 20201213), python3-libsigscan (>= 20150627), python3-libsmdev (>= 20140529), python3-libsmraw (>= 20140612), python3-libvhdi (>= 20131210), python3-libvmdk (>= 20140421), python3-libvshadow (>= 20160109), python3-libvslvm (>= 20160109), python3-modi (>= 0~20210405), python3-phdi (>= 0~20220228), python3-protobuf, python3-vsapm (>= 0~20230506), python3-vsgpt (>= 0~20211115)
+Filename: pool/main/p/python/python3-dfvfs_20240505-2_all.deb
+Size: 112008
+MD5sum: cf224bc39b47a7c3f5a45fad7018651f
+SHA1: 36db46b726d18d6aea186abbb70bdb70d27d0f78
+SHA256: 8cb89eea3721577c10110be3ba6b5e6f70cfe924556d567f3ea4cf6835eb1bf5
+Section: python
+Priority: optional
+Homepage: https://github.com/log2timeline/dfvfs
+Description: Digital Forensics Virtual File System
+ The Digital Forensics Virtual File System, provides read-only access
+ to file-system objects from various storage media types and file
+ formats. The goal of dfVFS is to provide a generic interface for
+ accessing file-system objects, for which it uses several back-ends
+ that provide the actual implementation of the various storage media
+ types, volume systems and file systems.
+
+Package: python3-fcrypto
+Source: libfcrypto (0~20240414-1)
+Version: 0~20240414-1+b2
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 55
+Depends: libfcrypto1 (= 0~20240414-1+b2), libc6 (>= 2.14), python3 (<< 3.14), python3 (>= 3.13~)
+Filename: pool/main/p/python/python3-fcrypto_0~20240414-1+b2_amd64.deb
+Size: 12804
+MD5sum: dcb46e95e4c00cda5f839b296ad7db45
+SHA1: 91f330a18e4b786861405b43c57485464e67667d
+SHA256: d91e9f8971fae63ccaeadde83ba2fb299e125c60d4d79cbc9aa56ce5fbf3dc1b
+Section: python
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libfcrypto
+Description: encryption format library. -- Python 3 binding library
+ libfcrypto is a library for encryption formats.
+ .
+ This package includes Python 3 bindings.
+
+Package: python3-fsfat
+Source: libfsfat
+Version: 0~20260208-1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 980
+Depends: libfsfat1 (= 0~20260208-1), libc6 (>= 2.33), python3 (<< 3.14), python3 (>= 3.13~)
+Filename: pool/main/p/python/python3-fsfat_0~20260208-1_amd64.deb
+Size: 339624
+MD5sum: b31284e31c507f6338d7755b39d6b597
+SHA1: b743d1dd2c5ef98f91bb47d6ebfd9df5f67ad7d3
+SHA256: 1a57d70b5d44787d74941fc211d75852cab1c3cec03267968edde7c9f2c00ddc
+Section: python
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libfsfat
+Description: FAT file system format access library -- Python 3 bindings
+ libfsfat is a library to access the File Allocation Table (FAT) file
+ system format.
+ .
+ This package includes Python 3 bindings.
+
+Package: python3-modi
+Source: libmodi (0~20240507-2)
+Version: 0~20240507-2+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 951
+Depends: libmodi1 (= 0~20240507-2+b1), libc6 (>= 2.33), python3 (<< 3.14), python3 (>= 3.13~)
+Filename: pool/main/p/python/python3-modi_0~20240507-2+b1_amd64.deb
+Size: 333744
+MD5sum: 0f51ae0db68cf642f7f9b0e61a65c10f
+SHA1: e0e37a0e8fee7318589a0c024536f16ec29a510f
+SHA256: 5c253bdb7f6d64272667fed26f4e0b3da4a5f59925cc370f8d426b48630f05a4
+Section: python
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libmodi
+Description: Mac OS disk image format access library -- Python 3 bindings
+ libmodi is a library to access the Mac OS disk image format.
+ .
+ This package includes Python 3 bindings.
+
+Package: python3-plaso
+Source: plaso
+Version: 20241006-3
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 13129
+Depends: python3-acstore, python3-artifacts (>= 20211012), python3-certifi (>= 2016.9.26), python3-cffi, python3-dateutil (>= 1.5), python3-defusedxml (>= 0.5.0), python3-dfdatetime (>= 20210509), python3-dfvfs (>= 20211017), python3-dfwinreg (>= 20201002), python3-dtfabric (>= 20200621), python3-flor, python3-lz4 (>= 0.10.0), python3-pefile (>= 2021.5.24), python3-psutil (>= 5.4.3), python3-pyparsing (>= 3.0.0), python3-redis (>= 3.4), python3-requests (>= 2.18.0), python3-tsk (>= 20160721), python3-tz, python3-xattr, python3-xlsxwriter (>= 0.9.3), python3-yaml (>= 3.10), python3-yara (>= 3.4.0), python3-zmq (>= 2.1.11), python3-zstd, python3:any, python3-cffi-backend (>= 1.9.1), python3-chardet (>= 2.0.1), python3-elasticsearch (>= 7.0), python3-idna (>= 2.5), python3-libbde (>= 20140531), python3-libcreg (>= 20200725), python3-libesedb (>= 20150409), python3-libevt (>= 20191104), python3-libevtx (>= 20210424), python3-libewf (>= 20131210), python3-fsapfs (>= 20201107), python3-libfsext (>= 20200819), python3-libfshfs (>= 20201103), python3-libfsntfs (>= 20200805), python3-libfsxfs (>= 20201114), python3-libfvde (>= 20160719), python3-libfwnt (>= 20180117), python3-libfwsi (>= 20150606), python3-liblnk (>= 20150830), python3-libluksde (>= 20200101), python3-libmsiecf (>= 20150314), python3-libolecf (>= 20151223), python3-libqcow (>= 20131204), python3-libregf (>= 20201002), python3-libscca (>= 20190605), python3-libsigscan (>= 20190629), python3-libsmdev (>= 20140529), python3-libsmraw (>= 20140612), python3-libvhdi (>= 20131210), python3-libvmdk (>= 20140421), python3-libvshadow (>= 20160109), python3-libvslvm (>= 20160109), python3-cryptography (>= 2.0.2), python3-urllib3 (>= 1.21.1)
+Breaks: plaso (<< 20190131-2~)
+Replaces: plaso (<< 20190131-2~)
+Filename: pool/main/p/plaso/python3-plaso_20241006-3_all.deb
+Size: 1485240
+MD5sum: e408e4541f3c5a4c676953247c662511
+SHA1: 0998a9242990e97ab3d3e6573e6343c86d305a55
+SHA256: af288845d6e798f457d3df0ea047e7009623a6cec9fbd776a194511785d7b66f
+Section: python
+Priority: optional
+Homepage: https://github.com/log2timeline/plaso
+Description: super timeline all the things -- Python 3
+ Plaso (plaso langar að safna öllu) is the Python based back-end
+ engine used by tools such as log2timeline for automatic creation of a
+ super timelines. The goal of log2timeline (and thus plaso) is to
+ provide a single tool that can parse various log files and forensic
+ artifacts from computers and related systems, such as network
+ equipment to produce a single correlated timeline. This timeline can
+ then be easily analysed by forensic investigators/analysts, speeding
+ up investigations by correlating the vast amount of information found
+ on an average computer system.
+ .
+ This package contains a Plaso installation for Python 3.
 
 Package: python3-pycryptodome
 Source: pycryptodome
