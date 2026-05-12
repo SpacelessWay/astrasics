@@ -128,6 +128,33 @@ Description: read/write encrypted BitLocker volumes
  .
  This tool is useful in cryptography managing and forensics investigations.
 
+Package: ewf-tools
+Source: libewf (20140813-1)
+Version: 20140813-1+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 6721
+Depends: libc6 (>= 2.34), libewf2 (= 20140813-1+b1), libfuse2 (>= 2.6), libssl3 (>= 3.0.0)
+Conflicts: libewf1 (<< 20090606+debian-1)
+Replaces: libewf1 (<< 20090606+debian-1)
+Filename: pool/main/e/ewf-tools/ewf-tools_20140813-1+b1_amd64.deb
+Size: 754268
+MD5sum: c84c30cb5649f518cc2b111cadeeffbd
+SHA1: 94c83302d1ec5a8b903bf46cdb3d1d97591ab187
+SHA256: b8c105832dec2250b27ac8e2dcc454e71ec3c9a3471e49f7b6d82d3181bafccd
+Section: admin
+Priority: optional
+Homepage: https://github.com/libyal/libewf-legacy
+Description: collection of tools for reading and writing EWF files
+ Libewf is a library with support for reading and writing the Expert Witness
+ Compression Format (EWF).
+ This library allows you to read media information of EWF files in the SMART
+ (EWF-S01) format and the EnCase (EWF-E01) format. It supports files created
+ by EnCase 1 to 6, linen and FTK Imager. The libewf is useful for forensics
+ investigations.
+ .
+ This package contains tools to acquire, verify and export EWF files.
+
 Package: hashdeep
 Version: 4.4+git20170824+ds-1
 Architecture: amd64
