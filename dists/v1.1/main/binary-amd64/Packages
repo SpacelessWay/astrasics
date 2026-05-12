@@ -73,6 +73,27 @@ Priority: optional
 Description: Инструменты для реверс-инжиниринга и анализа вредоносного ПО
  Ghidra, YARA, отладчики.
 
+Package: autopsy
+Version: 2.24-5
+Architecture: all
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 1027
+Depends: binutils, perl, sleuthkit (>= 3.0.0)
+Filename: pool/main/a/autopsy/autopsy_2.24-5_all.deb
+Size: 336316
+MD5sum: e98e5a67cad8473b580434d3ecaf5fb1
+SHA1: 6ce92c1b9920d8221b7218068e70404a2582356c
+SHA256: 38d7ab78332c10a5452d9911b1ee047d6184187ea6a54e729d3c1f1e545254c4
+Section: admin
+Priority: optional
+Homepage: https://www.sleuthkit.org/autopsy/
+Description: graphical interface to SleuthKit
+ The Autopsy Forensic Browser is a graphical interface to the command line
+ digital forensic analysis tools in The Sleuth Kit. Together, The Sleuth Kit
+ and Autopsy provide many of the same features as commercial digital forensics
+ tools for the analysis of Windows and UNIX file systems (NTFS, FAT, FFS,
+ EXT2FS, and EXT3FS).
+
 Package: bulk-extractor
 Source: bulk-extractor (2.1.1-0kali2)
 Version: 2.1.1-0kali2+b1
