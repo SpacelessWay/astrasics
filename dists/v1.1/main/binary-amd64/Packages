@@ -921,10 +921,10 @@ Architecture: all
 Maintainer: Astrasics Team <team@astrasics.com>
 Depends: python3 (>= 3.11), python3-olefile
 Filename: pool/main/o/oletools/astrasics-oletools_0.60.2-1astra1_all.deb
-Size: 760736
-MD5sum: 01381af4311c172fa325742613c3aee9
-SHA1: 0c8b2203420ffd98e04e2b5ff70e74f2bf8a0b98
-SHA256: 009a6ebbac8863172afa5f24fdd8165ec068b67015e1960ec6339b2256d534bb
+Size: 760628
+MD5sum: e69e8ee0a096dc9732caaee2c2672217
+SHA1: 0552c6f57e9e392c3bd90eed5c7e34936bea2910
+SHA256: a49281e0a929b15494145a16a59793692e5ed1fd602b5a2486fe23297b354872
 Section: utils
 Priority: optional
 Homepage: https://github.com/decalage2/oletools
