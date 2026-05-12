@@ -861,6 +861,75 @@ Priority: optional
 Description: Worlds fastest steghide cracker
  Stegseek is a lightning fast steghide cracker.
 
+Package: testdisk
+Version: 7.1-5+nmu1
+Architecture: amd64
+Maintainer: Jean-Michel Kelbert <kelbert@debian.org>
+Installed-Size: 1413
+Depends: libc6 (>= 2.34), libext2fs2 (>= 1.41.0), libjpeg62-turbo (>= 1.3.1), libncursesw6 (>= 6), libntfs-3g89, libtinfo6 (>= 6), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4), ntfs-3g
+Filename: pool/main/t/testdisk/testdisk_7.1-5+nmu1_amd64.deb
+Size: 414868
+MD5sum: 934a8f5befd16924d97736b74bf73cab
+SHA1: d9555e5a958efe2a36b5eee4cffa78a1932ad1a3
+SHA256: 38ad1c0ce8087688e0d8e34d55e58de55ced2402ef6467af661427f4c9f6a949
+Section: admin
+Priority: optional
+Description: Partition scanner and disk recovery tool, and PhotoRec file recovery tool
+ TestDisk checks the partition and boot sectors of your disks.
+ It is very useful in forensics, recovering lost partitions.
+ It works with :
+  * DOS/Windows FAT12, FAT16 and FAT32
+  * NTFS ( Windows NT/2K/XP )
+  * Linux Ext2 and Ext3
+  * BeFS ( BeOS )
+  * BSD disklabel ( FreeBSD/OpenBSD/NetBSD )
+  * CramFS (Compressed File System)
+  * HFS and HFS+, Hierarchical File System
+  * JFS, IBM's Journaled File System
+  * Linux Raid
+  * Linux Swap (versions 1 and 2)
+  * LVM and LVM2, Linux Logical Volume Manager
+  * Netware NSS
+  * ReiserFS 3.5 and 3.6
+  * Sun Solaris i386 disklabel
+  * UFS and UFS2 (Sun/BSD/...)
+  * XFS, SGI's Journaled File System
+ .
+ PhotoRec is file data recovery software designed to recover
+ lost pictures from digital camera memory or even Hard Disks.
+ It has been extended to search also for non audio/video headers.
+ It searches for following files and is able to undelete them:
+  * Sun/NeXT audio data (.au)
+  * RIFF audio/video (.avi/.wav)
+  * BMP bitmap (.bmp)
+  * bzip2 compressed data (.bz2)
+  * Source code written in C (.c)
+  * Canon Raw picture (.crw)
+  * Canon catalog (.ctg)
+  * FAT subdirectory
+  * Microsoft Office Document (.doc)
+  * Nikon dsc (.dsc)
+  * HTML page (.html)
+  * JPEG picture (.jpg)
+  * MOV video (.mov)
+  * MP3 audio (MPEG ADTS, layer III, v1) (.mp3)
+  * Moving Picture Experts Group video (.mpg)
+  * Minolta Raw picture (.mrw)
+  * Olympus Raw Format picture (.orf)
+  * Portable Document Format (.pdf)
+  * Perl script (.pl)
+  * Portable Network Graphics (.png)
+  * Raw Fujifilm picture (.raf)
+  * Contax picture (.raw)
+  * Rollei picture (.rdc)
+  * Rich Text Format (.rtf)
+  * Shell script (.sh)
+  * Tar archive (.tar )
+  * Tag Image File Format (.tiff)
+  * Microsoft ASF (.wma)
+  * Sigma/Foveon X3 raw picture (.x3f)
+  * zip archive (.zip)
+
 Package: tshark
 Source: wireshark
 Version: 4.0.17-0+deb12u1
