@@ -1015,6 +1015,33 @@ Description: cross-platform AES encryption library -- Python 3 bindings
  .
  This package includes Python 3 bindings.
 
+Package: python3-colorclass
+Source: colorclass
+Version: 2.2.2-2
+Architecture: all
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Installed-Size: 545
+Depends: python3:any
+Filename: pool/main/p/python/python3-colorclass_2.2.2-2_all.deb
+Size: 467904
+MD5sum: 4dcbbffc61ca8c4de16597d953beca0c
+SHA1: 7814642c8fd9ef237b1fe0879fcf55f4053325c9
+SHA256: a1397cb4c69439617c90e1fb7039df3296fe3dc35e4a82fa9cf3815687bd6c09
+Section: python
+Priority: optional
+Homepage: https://github.com/matthewdeanmartin/colorclass
+Description: ANSI color text library for Python
+ Yet another ANSI color text library for Python. Provides "auto colors" for
+ dark/light terminals. Works on Linux, OS X, and Windows.
+ .
+ In Python 2 this library subclasses unicode, while on Python 3 it subclasses
+ str. Different colors are chosen using curly-bracket tags, such as
+ {red}{/red}. For a list of available colors, call colorclass.list_tags().
+ Auto colors are toggled by calling set_light_background() and
+ set_dark_background().
+ .
+ This package provides the Python 3 module.
+
 Package: python3-dfvfs
 Source: dfvfs
 Version: 20240505-2
