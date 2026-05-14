@@ -919,12 +919,12 @@ Package: oletools
 Version: 0.60.2-1astra1
 Architecture: all
 Maintainer: Astrasics Team <team@astrasics.com>
-Depends: python3 (>= 3.11), python3-olefile, python3-colorclass
+Depends: python3 (>= 3.11), python3-olefile, python3-colorclass, python3-pyparsing
 Filename: pool/main/o/oletools/astrasics-oletools_0.60.2-1astra1_all.deb
-Size: 760468
-MD5sum: fb288a2f7551132f3cd2edf936f92ee6
-SHA1: be71d3af87d17c91a4b595ba600d9c51456797d1
-SHA256: a5fcfa15954ec7c92826d424aa91f7efeb3ae66d4d753144b137f6d8861a70ca
+Size: 760492
+MD5sum: 41683c94b609d2ff54319dde606a1c2d
+SHA1: b0b5b93632d7c51f06d949a6d91ec6e92fc78f92
+SHA256: d2ea39b1e787f565bc67bf63f98191047e4692229d9501e32ecbb19a208d196e
 Section: utils
 Priority: optional
 Homepage: https://github.com/decalage2/oletools
@@ -1208,6 +1208,40 @@ Description: cryptographic Python library (Python 3)
  are implemented as C extensions.
  .
  This is the Python 3 version of the package.
+
+Package: python3-pyparsing
+Source: pyparsing
+Version: 3.1.2-1
+Architecture: all
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 472
+Depends: python3:any
+Suggests: python-pyparsing-doc
+Breaks: python3-translate (<< 3.6.0~), translate-toolkit (<< 3.6.0~)
+Filename: pool/main/p/python/python3-pyparsing_3.1.2-1_all.deb
+Size: 145952
+MD5sum: 6947956b6b086c76f790375f91b1d729
+SHA1: b09d3133e0d35839761eeddfd1ac0886911ef816
+SHA256: f784864f3835bc7e62391350418f28958cc004f1d46690a5c03300ec0a9bcc54
+Section: python
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/pyparsing/pyparsing/
+Description: alternative to creating and executing simple grammars - Python 3.x
+ The parsing module is an alternative approach to creating and
+ executing simple grammars, vs. the traditional lex/yacc approach, or
+ the use of regular expressions.  The parsing module provides a
+ library of classes that client code uses to construct the grammar
+ directly in Python code.
+ .
+ Here's an example:
+ .
+  from pyparsing import Word, alphas
+  greet = Word(alphas) + "," + Word(alphas) + "!"
+  hello = "Hello, World!"
+  print hello, "->", greet.parseString(hello)
+ .
+ This package contains the Python 3.x version of python-pyparsing.
 
 Package: python3-pyzipper
 Source: python-pyzipper
