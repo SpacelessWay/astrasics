@@ -919,12 +919,12 @@ Package: oletools
 Version: 0.60.2-1astra1
 Architecture: all
 Maintainer: Astrasics Team <team@astrasics.com>
-Depends: python3 (>= 3.11), python3-olefile
+Depends: python3 (>= 3.11), python3-olefile, python3-colorclass
 Filename: pool/main/o/oletools/astrasics-oletools_0.60.2-1astra1_all.deb
-Size: 760432
-MD5sum: 472d73e7ce468a8697ea8317d0ba4c93
-SHA1: d1be792ee73158b515feba8e64221ff3ed99879a
-SHA256: 5035b8bd7142bc72b0fc413f13d4bcde6c5bed0078250898b5bd71c1b5430956
+Size: 760468
+MD5sum: fb288a2f7551132f3cd2edf936f92ee6
+SHA1: be71d3af87d17c91a4b595ba600d9c51456797d1
+SHA256: a5fcfa15954ec7c92826d424aa91f7efeb3ae66d4d753144b137f6d8861a70ca
 Section: utils
 Priority: optional
 Homepage: https://github.com/decalage2/oletools
