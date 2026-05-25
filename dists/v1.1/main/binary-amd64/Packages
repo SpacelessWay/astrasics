@@ -331,26 +331,21 @@ Package: hindsight
 Version: 2025.03
 Architecture: all
 Maintainer: Astrasics Expert <expert@astrasics.local>
-Depends: python3, python3-pip, python3-tk, python3-pil, python3-pil.imagetk
-Filename: pool/main/h/hindsight/hindsight_astrasics_2025.03_all.deb
-Size: 40616512
-MD5sum: 954d45b31631ebfaf4b123ca04f889ab
-SHA1: 5f41fff965ecbea40c093ba5c5d465ed91a17ddc
-SHA256: a59adb9b0a101055e41d0f76357b4e2da86e4ce2a2433d2e3c055331a9237b44
+Depends: python3 (>= 3.9)
+Filename: pool/main/h/hindsight/hindsight_astrasics_fat_2025.03_all.deb
+Size: 69052472
+MD5sum: 06a984946ecd75ae9f9105473332bf43
+SHA1: 73013ea137fddb9a2f55a911e312da9fc5e69805
+SHA256: 43ae7efe569050ef90ca7aef2d62bd68de3d60ae6aa7fd9bb7f9f23c2af1b8fc
 Section: forensics
 Priority: optional
 Homepage: https://github.com/obsidianforensics/hindsight
-Description: Browser history forensics tool
- Hindsight extracts and analyzes browser artifacts from
- Chrome, Chromium, Edge, and Firefox.
+Description: Browser history forensics tool (full offline)
+ Hindsight extracts and analyzes browser artifacts from Chrome,
+ Chromium, Edge, and Firefox.
  .
- Generates forensic reports in XLSX, SQLite, and JSON formats.
- .
- Features:
-   - Timeline reconstruction
-   - Download history
-   - Bookmarks analysis
-   - Cookie extraction
+ Все Python-зависимости (pandas, openpyxl, xlsxwriter) включены в пакет.
+ Интернет и pip3 не требуются.
 
 Package: john
 Version: 1.9.0-2
