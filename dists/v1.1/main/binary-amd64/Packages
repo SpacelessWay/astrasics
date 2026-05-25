@@ -273,17 +273,18 @@ Description: World's fastest and most advanced password recovery utility
 
 Package: hashcat-data
 Source: hashcat
-Version: 6.2.6+ds2-1
+Version: 6.2.6+ds1-1
 Architecture: all
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
-Installed-Size: 28935
-Depends: python3:any
+Installed-Size: 28936
+Depends: python3
 Suggests: hashcat
-Filename: pool/main/h/hashcat/hashcat-data_6.2.6+ds2-1_all.deb
-Size: 2311472
-MD5sum: aadec11fdc083474718e7d1b1f532f90
-SHA1: 5573764f490ee20f8c7e4f6a455aa253261901bb
-SHA256: 971eeaa556f786fc32a210d584e512b478274b9d35f8dc06f3c1be1ad2f9d821
+Replaces: hashcat (<= 2.00-0kali3)
+Filename: pool/main/h/hashcat/hashcat-data_6.2.6+ds1-1_all.deb
+Size: 2312664
+MD5sum: 9da22fd0907b35488050bc6d10e49f74
+SHA1: ab9ed99e8100c9ac53135482f891f69d8207cb90
+SHA256: 6009500e4ce81e5ebe10f019e1b21c562cb50f7dcc268e9eba5f4ae60616409d
 Section: net
 Priority: optional
 Multi-Arch: foreign
