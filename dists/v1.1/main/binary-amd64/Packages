@@ -332,17 +332,16 @@ Version: 2025.03
 Architecture: all
 Maintainer: Astrasics Expert <expert@astrasics.local>
 Depends: python3
-Filename: pool/main/h/hindsight/hindsight_clean_2025.03_all.deb
-Size: 69416308
-MD5sum: 2ac263060b365ca40b302b970578652b
-SHA1: 1a43ddc448223d6806aa3d259b5d608f263cde6b
-SHA256: fd4101fc4401154658c04ce3f67e3389a57c206c951719ce432ba9a663c0e7e1
+Filename: pool/main/h/hindsight/hindsight_final_2025.03_all.deb
+Size: 68871228
+MD5sum: 6c2b634aab4d46d4baee4fad5c8032a8
+SHA1: 3aca204ab00643c901e522bf2885f3516114a87a
+SHA256: e48c05528994352c7bbbdfbea7299b62703da6314ee2b6b18958fd5010a37aeb
 Section: forensics
 Priority: optional
 Homepage: https://github.com/obsidianforensics/hindsight
-Description: Browser history forensics tool (self-contained)
- Все Python-зависимости (pandas, openpyxl, xlsxwriter, puremagic и др.)
- включены в пакет. При установке не требует интернета.
+Description: Browser history forensics (full offline)
+ Все зависимости внутри пакета.
 
 Package: john
 Version: 1.9.0-2
