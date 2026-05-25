@@ -333,18 +333,16 @@ Architecture: all
 Maintainer: Astrasics Expert <expert@astrasics.local>
 Depends: python3
 Filename: pool/main/h/hindsight/hindsight_clean_2025.03_all.deb
-Size: 69052308
-MD5sum: adf0aa4a757a314d3b67b890bda4cb5b
-SHA1: 9509376f48fa3e8ed19a35853634b0c2db6f2c0b
-SHA256: 298627eb01e45aa8cff21b7b09835717563af06d73f72b1bae4fc19eb55ce9a2
+Size: 69416308
+MD5sum: 2ac263060b365ca40b302b970578652b
+SHA1: 1a43ddc448223d6806aa3d259b5d608f263cde6b
+SHA256: fd4101fc4401154658c04ce3f67e3389a57c206c951719ce432ba9a663c0e7e1
 Section: forensics
 Priority: optional
 Homepage: https://github.com/obsidianforensics/hindsight
 Description: Browser history forensics tool (self-contained)
- Hindsight extracts browser artifacts from Chrome/Chromium/Edge.
- .
- Все Python-зависимости (pandas, openpyxl, xlsxwriter) включены в пакет.
- При установке не требует интернета и не вызывает apt/pip.
+ Все Python-зависимости (pandas, openpyxl, xlsxwriter, puremagic и др.)
+ включены в пакет. При установке не требует интернета.
 
 Package: john
 Version: 1.9.0-2
