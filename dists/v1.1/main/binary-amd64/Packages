@@ -1150,21 +1150,16 @@ Package: python3-browser-history
 Version: 0.6.0
 Architecture: all
 Maintainer: Astrasics Expert <expert@astrasics.local>
-Depends: python3 (>= 3.7)
-Filename: pool/main/p/python3-browser-history/python3-browser-history_0.6.0_all.deb
-Size: 12972
-MD5sum: c5980d8080426ee55f7d003f034f09cd
-SHA1: 575b196312a8b3c8ca2388de02cfe47306320b84
-SHA256: cbb49b86e9aa3beaf07fed83ecc3950fbb3609f359489c26c13db2b29fc702d1
+Depends: python3
+Filename: pool/main/p/python3-browser-history/python3-browser-history_fixed.deb
+Size: 12800
+MD5sum: 636f08a4c678ebd9d5711d6b71519c2f
+SHA1: 963f46ef7495f89cb1199f84c67bfa96697d9dd2
+SHA256: 21e390d7d0bf48c9e85ce4de1146fc1267009ec33cd740d151a3c0e25cff26d4
 Section: python
 Priority: optional
 Homepage: https://github.com/browser-history/browser-history
-Description: Browser history extraction library (Full Offline)
- A simple, zero-dependencies Python package to retrieve browser history.
- Supports Chrome, Firefox, Edge, and others.
- .
- This is a standalone .deb package that contains the full library.
- Internet connection is NOT required for installation.
+Description: Browser history extraction library (offline)
 
 Package: python3-caes
 Source: libcaes (0~20240413-1)
