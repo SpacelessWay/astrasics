@@ -333,15 +333,15 @@ Architecture: all
 Maintainer: Astrasics Expert <expert@astrasics.local>
 Depends: python3
 Filename: pool/main/h/hindsight/hindsight_final_2025.03_all.deb
-Size: 69935992
-MD5sum: fb253ae161824467869f347a18ded65c
-SHA1: 823f1c8d0c42c0d590f568124e9de49f6594ad16
-SHA256: d1cfeae28e3685a7557b53c6934dc1c535c28862848449b650f4f3662e3b5b35
+Size: 72486932
+MD5sum: 0258a8a49be408099a5907a0c3581a84
+SHA1: 4a7038302e27dd33906db0de1049885fa6e0ce14
+SHA256: e67144ad9c1006d226579934e0dae41e9c1edaba6a5820ead5112ddb09206788
 Section: forensics
 Priority: optional
 Homepage: https://github.com/obsidianforensics/hindsight
 Description: Browser history forensics (full offline)
- Все зависимости (включая ccl_chromium_reader) внутри пакета.
+ Все зависимости внутри пакета.
 
 Package: john
 Version: 1.9.0-2
