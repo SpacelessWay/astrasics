@@ -1147,20 +1147,19 @@ Description: Attribute Container store access library (Python 3)
  This package installs the library for Python 3.
 
 Package: python3-browser-history
-Version: 0.6.0
+Version: 0.7.0
 Architecture: all
 Maintainer: Astrasics Expert <expert@astrasics.local>
 Depends: python3
-Filename: pool/main/p/python3-browser-history/python3-browser-history_0.6.0_all.deb
-Size: 19108
-MD5sum: 4361df1f6a6fe2a18dad52700d07810e
-SHA1: 484bc27242e4d857eea1ecaa5ebe2acc926c054d
-SHA256: 3ed75bbf41f273c6027bc09747c45da56a040aa87667a6b210e3bef0c359ca3b
+Filename: pool/main/p/python3-browser-history/python3-browser-history.deb
+Size: 35856
+MD5sum: 29915e13c0d472c0667ccf217d9e69f5
+SHA1: 82d5b2479b28d7725e21e8b2de9cb166d9a99113
+SHA256: cdd74394c6a898ec0ee387161f581f6a90a66c563233fe3d5d8d21036bf6471f
 Section: python
 Priority: optional
 Homepage: https://github.com/browser-history/browser-history
-Description: Browser history extraction library (Full Offline)
- Extracts history from Chrome, Firefox, Edge and other browsers.
+Description: Browser history extraction library
 
 Package: python3-caes
 Source: libcaes (0~20240413-1)
