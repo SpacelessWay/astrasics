@@ -212,19 +212,17 @@ Description: utility to recover deleted files from ext3/ext4 partition
  particular file will be able to be undeleted.
 
 Package: hashcat
-Version: 7.1.2+ds1-4
+Version: 6.2.6+ds2-1
 Architecture: amd64
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
-Installed-Size: 122396
-Depends: hashcat-data (>= 7.1.2+ds1-4), pocl-opencl-icd | opencl-icd, libc6 (>= 2.38), libminizip1t64, libxxhash0 (>= 0.6.5), zlib1g (>= 1:1.2.11.dfsg)
-Suggests: beignet-opencl-icd, mesa-opencl-icd, nvidia-opencl-icd, python3
-Breaks: hashcat-data (<< 7.1.2+ds1-1~)
-Replaces: hashcat-data (<< 7.1.2+ds1-1~)
-Filename: pool/main/h/hashcat/hashcat_7.1.2+ds1-4_amd64.deb
-Size: 11617220
-MD5sum: 0898609af094b31034164da9d501f2c6
-SHA1: 5df1c6f6e1bcfa8fd5b8c3eb3003809f2376ce54
-SHA256: 3fed69ec2a0501d6d3878387d797d25a0eb8cc86df5111ce667cb15d7be39ea0
+Installed-Size: 83083
+Depends: hashcat-data (>= 6.2.6+ds2-1), pocl-opencl-icd | opencl-icd, libc6 (>= 2.34), libminizip1t64, libxxhash0 (>= 0.6.5), zlib1g (>= 1:1.2.11.dfsg)
+Suggests: beignet-opencl-icd, nvidia-opencl-icd, mesa-opencl-icd
+Filename: pool/main/h/hashcat/hashcat_6.2.6+ds2-1_amd64.deb
+Size: 9654832
+MD5sum: bcaa00c6b08587a5d1ad807535cec4e2
+SHA1: 6fffce16207e0f269734c7157ab9c8036e17dace
+SHA256: 1a5a6a691cd6e42bbe2cb582589c05f3eba2f5dfd0a68f80d21e2431acaf14dc
 Section: net
 Priority: optional
 Homepage: https://hashcat.net/hashcat/
@@ -240,7 +238,7 @@ Description: World's fastest and most advanced password recovery utility
  FreeBSD MD5, Cisco-IOS, MD4, NTLM, Domain Cached Credentials (DCC),
  MS Cache, SHA256, HMAC-SHA256, md5apr1, MD5(APR), Apache MD5, SHA512,
  HMAC-SHA512, Cisco-PIX, Cisco-ASA, WPA/WPA2, Double MD5, bcrypt,
- Blowfish(OpenBSD), MD5(Sun), Double SHA1, SHA-3(Keccak), Half MD5,
+ Blowfish(OpenBSD), MD5(Sun), Double SHA1, SHA-3(Keccak),Half MD5,
  Password Safe SHA-256, IKE-PSK MD5, IKE-PSK SHA1,
  NetNTLMv1-VANILLA/NetNTLMv1-ESS, NetNTLMv2, Cisco-IOS SHA256,
  Android PIN, AIX {smd5}, AIX {ssha256}, AIX {ssha512}, AIX {ssha1},
@@ -275,17 +273,17 @@ Description: World's fastest and most advanced password recovery utility
 
 Package: hashcat-data
 Source: hashcat
-Version: 7.1.2+ds1-4
+Version: 6.2.6+ds2-1
 Architecture: all
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
-Installed-Size: 32298
+Installed-Size: 28935
 Depends: python3:any
 Suggests: hashcat
-Filename: pool/main/h/hashcat/hashcat-data_7.1.2+ds1-4_all.deb
-Size: 3307212
-MD5sum: f924c09b675bf6255532fda4e5bf49dc
-SHA1: 1f144bbd98edaea8e3c22e6c3e9fce0ae05a9dab
-SHA256: 843a36e7ac812a9ab78233ef6f6224971701dae2595927ce8d356109ea8af150
+Filename: pool/main/h/hashcat/hashcat-data_6.2.6+ds2-1_all.deb
+Size: 2311472
+MD5sum: aadec11fdc083474718e7d1b1f532f90
+SHA1: 5573764f490ee20f8c7e4f6a455aa253261901bb
+SHA256: 971eeaa556f786fc32a210d584e512b478274b9d35f8dc06f3c1be1ad2f9d821
 Section: net
 Priority: optional
 Multi-Arch: foreign
