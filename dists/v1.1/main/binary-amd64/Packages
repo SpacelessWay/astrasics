@@ -212,17 +212,18 @@ Description: utility to recover deleted files from ext3/ext4 partition
  particular file will be able to be undeleted.
 
 Package: hashcat
-Version: 6.2.6+ds2-1
+Source: hashcat (6.2.6+ds1-1)
+Version: 6.2.6+ds1-1+b1
 Architecture: amd64
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
-Installed-Size: 83083
-Depends: hashcat-data (>= 6.2.6+ds2-1), pocl-opencl-icd | opencl-icd, libc6 (>= 2.34), libminizip1t64, libxxhash0 (>= 0.6.5), zlib1g (>= 1:1.2.11.dfsg)
+Installed-Size: 82420
+Depends: hashcat-data (>= 6.2.6+ds1-1), pocl-opencl-icd | opencl-icd, libc6 (>= 2.34), libgcc-s1 (>= 3.0), libminizip1 (>= 1.1), libstdc++6 (>= 5), libxxhash0 (>= 0.6.5), zlib1g (>= 1:1.2.11.dfsg)
 Suggests: beignet-opencl-icd, nvidia-opencl-icd, mesa-opencl-icd
-Filename: pool/main/h/hashcat/hashcat_6.2.6+ds2-1_amd64.deb
-Size: 9654832
-MD5sum: bcaa00c6b08587a5d1ad807535cec4e2
-SHA1: 6fffce16207e0f269734c7157ab9c8036e17dace
-SHA256: 1a5a6a691cd6e42bbe2cb582589c05f3eba2f5dfd0a68f80d21e2431acaf14dc
+Filename: pool/main/h/hashcat/hashcat_6.2.6+ds1-1+b1_amd64.deb
+Size: 9734760
+MD5sum: 7b95a4f6a2813008e58e16584d0e95bf
+SHA1: d57b3ba4f3e51ef7b4fc694a66e20135a07dbd16
+SHA256: 54e80fe377992e17747467839285128cee6fa490b6637f5e232361ed4dd28db5
 Section: net
 Priority: optional
 Homepage: https://hashcat.net/hashcat/
