@@ -211,6 +211,92 @@ Description: utility to recover deleted files from ext3/ext4 partition
  to recover a file that has been deleted. There is no guarantee that any
  particular file will be able to be undeleted.
 
+Package: hashcat
+Version: 7.1.2+ds1-4
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 122396
+Depends: hashcat-data (>= 7.1.2+ds1-4), pocl-opencl-icd | opencl-icd, libc6 (>= 2.38), libminizip1t64, libxxhash0 (>= 0.6.5), zlib1g (>= 1:1.2.11.dfsg)
+Suggests: beignet-opencl-icd, mesa-opencl-icd, nvidia-opencl-icd, python3
+Breaks: hashcat-data (<< 7.1.2+ds1-1~)
+Replaces: hashcat-data (<< 7.1.2+ds1-1~)
+Filename: pool/main/h/hashcat/hashcat_7.1.2+ds1-4_amd64.deb
+Size: 11617220
+MD5sum: 0898609af094b31034164da9d501f2c6
+SHA1: 5df1c6f6e1bcfa8fd5b8c3eb3003809f2376ce54
+SHA256: 3fed69ec2a0501d6d3878387d797d25a0eb8cc86df5111ce667cb15d7be39ea0
+Section: net
+Priority: optional
+Homepage: https://hashcat.net/hashcat/
+Description: World's fastest and most advanced password recovery utility
+ Hashcat supports five unique modes of attack for over 300 highly-optimized
+ hashing algorithms. hashcat currently supports CPUs, GPUs, and other
+ hardware accelerators on Linux, and has facilities to help enable
+ distributed password cracking.
+ .
+ Examples of hashcat supported hashing algorithms are:
+ MD5, HMAC-MD5, SHA1, HMAC-SHA1, MySQL323, MySQL4.1/MySQL5, phpass,
+ MD5(Wordpress), MD5(phpBB3), MD5(Joomla), md5crypt, MD5(Unix),
+ FreeBSD MD5, Cisco-IOS, MD4, NTLM, Domain Cached Credentials (DCC),
+ MS Cache, SHA256, HMAC-SHA256, md5apr1, MD5(APR), Apache MD5, SHA512,
+ HMAC-SHA512, Cisco-PIX, Cisco-ASA, WPA/WPA2, Double MD5, bcrypt,
+ Blowfish(OpenBSD), MD5(Sun), Double SHA1, SHA-3(Keccak), Half MD5,
+ Password Safe SHA-256, IKE-PSK MD5, IKE-PSK SHA1,
+ NetNTLMv1-VANILLA/NetNTLMv1-ESS, NetNTLMv2, Cisco-IOS SHA256,
+ Android PIN, AIX {smd5}, AIX {ssha256}, AIX {ssha512}, AIX {ssha1},
+ GOST, GOST R 34, Fortigate (FortiOS), OS X v10.8+, GRUB 2, IPMI2, RAKP,
+ HMAC-SHA1, sha256crypt, SHA256(Unix), Drupal7, WBB3, scrypt, Cisco $8$,
+ Cisco $9$, Radmin2, Django (PBKDF2-SHA256), Cram MD5, SAP, iSSHA-1,
+ PrestaShop, PostgreSQL, Challenge-Response Authentication (MD5),
+ MySQL Challenge-Response, Authentication (SHA1),
+ SIP digest authentication (MD5), Plaintext, Joomla < 2.5.18, PostgreSQL,
+ osCommerce, xt:Commerce, Skype, nsldap, Netscape, LDAP, nsldaps,
+ SSHA-1(Base64), Oracle S: Type (Oracle 11+), SMF > v1.1, OS X v10.4,
+ v10.5, v10.6, EPi, Django (SHA-1), MSSQL(2000), MSSQL(2005),
+ PeopleSoft, EPiServer 6.x < v4, hMailServer, SSHA-512(Base64),
+ LDAP {SSHA512}, OS X v10.7, MSSQL(2012 & 2014), vBulletin < v3.8.5,
+ PHPS, vBulletin > v3.8.5, IPB2+, MyBB1.2+, Mediawiki B type,
+ WebEdition CMS, Redmine.
+ .
+ Hashcat offers multiple attack modes for obtaining effective and
+ complex coverage over a hash's keyspace. These modes are:
+ .
+  * Brute-Force attack
+  * Combinator attack
+  * Dictionary attack
+  * Fingerprint attack
+  * Hybrid attack
+  * Mask attack
+  * Permutation attack
+  * Rule-based attack
+  * Table-Lookup attack
+  * Toggle-Case attack
+  * PRINCE attack
+
+Package: hashcat-data
+Source: hashcat
+Version: 7.1.2+ds1-4
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 32298
+Depends: python3:any
+Suggests: hashcat
+Filename: pool/main/h/hashcat/hashcat-data_7.1.2+ds1-4_all.deb
+Size: 3307212
+MD5sum: f924c09b675bf6255532fda4e5bf49dc
+SHA1: 1f144bbd98edaea8e3c22e6c3e9fce0ae05a9dab
+SHA256: 843a36e7ac812a9ab78233ef6f6224971701dae2595927ce8d356109ea8af150
+Section: net
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://hashcat.net/hashcat/
+Description: Data files for hashcat advanced password recovery utility
+ Hashcat is an advanced CPU/GPU-based password recovery utility supporting
+ seven unique modes of attack for over 100 optimized hashing algorithms.
+ .
+ This package contains the data files for hashcat, including charsets,
+ rules, salts, tables and Python tools.
+
 Package: hashdeep
 Version: 4.4+git20170824+ds-1
 Architecture: amd64
@@ -240,6 +326,56 @@ Description: recursively compute hashsums or piecewise hashings
      sized blocks).
  .
  This package is useful in forensics investigations.
+
+Package: john
+Version: 1.9.0-3
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 469
+Depends: john-data (= 1.9.0-3), libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libgomp1 (>= 4.9)
+Suggests: wordlist
+Filename: pool/main/j/john/john_1.9.0-3_amd64.deb
+Size: 215664
+MD5sum: 99e6553921199ebbf183dbadfb688f1a
+SHA1: 99dbac43bb9c2126ad87b208da3203b07ae56265
+SHA256: 1ee802a778f86767214b321ac73feea408ea9f4fd44ff03858376b4b22094b0c
+Section: admin
+Priority: optional
+Homepage: http://www.openwall.com/john/
+Description: active password cracking tool
+ John the Ripper is a tool designed to help systems administrators to
+ find weak (easy to guess or crack through brute force) passwords, and
+ even automatically mail users warning them about it, if it is desired.
+ .
+ Besides several crypt(3) password hash types most commonly found on
+ various Unix flavors, supported out of the box are Kerberos AFS and
+ Windows NT/2000/XP/2003 LM hashes, plus several more with contributed
+ patches.
+
+Package: john-data
+Source: john
+Version: 1.9.0-3
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 19714
+Enhances: john
+Breaks: john (<= 1.7.2-1)
+Filename: pool/main/j/john/john-data_1.9.0-3_all.deb
+Size: 8731372
+MD5sum: 38249219dea8da8f3db0a08143a7d095
+SHA1: c34b5f9782f71218b7ec66ae720e65b6d20f2cb1
+SHA256: 3c32b3e1dbc9c6c5d774ab97503d16b83f668d0327f5360b40747b26411d142e
+Section: admin
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.openwall.com/john/
+Description: active password cracking tool - character sets
+ John the Ripper is a tool designed to help systems administrators to
+ find weak (easy to guess or crack through brute force) passwords, and
+ even automatically mail users warning them about it, if it is desired.
+ .
+ This package contains architecture-independent character sets usable by
+ john.
 
 Package: libabsl20240722
 Source: abseil
