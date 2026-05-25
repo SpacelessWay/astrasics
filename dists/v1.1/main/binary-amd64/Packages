@@ -328,17 +328,17 @@ Description: recursively compute hashsums or piecewise hashings
  This package is useful in forensics investigations.
 
 Package: john
-Version: 1.9.0-3
+Version: 1.9.0-2
 Architecture: amd64
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
-Installed-Size: 469
-Depends: john-data (= 1.9.0-3), libc6 (>= 2.38), libcrypt1 (>= 1:4.1.0), libgomp1 (>= 4.9)
+Installed-Size: 471
+Depends: john-data (= 1.9.0-2), libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libgomp1 (>= 4.9)
 Suggests: wordlist
-Filename: pool/main/j/john/john_1.9.0-3_amd64.deb
-Size: 215664
-MD5sum: 99e6553921199ebbf183dbadfb688f1a
-SHA1: 99dbac43bb9c2126ad87b208da3203b07ae56265
-SHA256: 1ee802a778f86767214b321ac73feea408ea9f4fd44ff03858376b4b22094b0c
+Filename: pool/main/j/john/john_1.9.0-2_amd64.deb
+Size: 221384
+MD5sum: d37af9ff12a0a0548da235006a78d789
+SHA1: 92c6eb4d4f0fd6198f870b19b7059b11cfb2eb51
+SHA256: dfc88bab0716087bc4a5c3263b3d0e8c470b9f9da8957ff872c3cbd8151412b8
 Section: admin
 Priority: optional
 Homepage: http://www.openwall.com/john/
@@ -354,17 +354,17 @@ Description: active password cracking tool
 
 Package: john-data
 Source: john
-Version: 1.9.0-3
+Version: 1.9.0-2
 Architecture: all
 Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
-Installed-Size: 19714
+Installed-Size: 19724
 Enhances: john
 Breaks: john (<= 1.7.2-1)
-Filename: pool/main/j/john/john-data_1.9.0-3_all.deb
-Size: 8731372
-MD5sum: 38249219dea8da8f3db0a08143a7d095
-SHA1: c34b5f9782f71218b7ec66ae720e65b6d20f2cb1
-SHA256: 3c32b3e1dbc9c6c5d774ab97503d16b83f668d0327f5360b40747b26411d142e
+Filename: pool/main/j/john/john-data_1.9.0-2_all.deb
+Size: 8743024
+MD5sum: 944f73224c27ee31dea81b306950199b
+SHA1: e20f7de08e9747caf3287e422340e283fca864c8
+SHA256: aaab60b10cd3ea0887974edcc2761b4dff8bef13633ec1d7320a116e6d7fc0a8
 Section: admin
 Priority: optional
 Multi-Arch: foreign
