@@ -1687,6 +1687,25 @@ Priority: optional
 Description: Disk encryption with strong security based on TrueCrypt.
  Disk encryption with strong security based on TrueCrypt.
 
+Package: volatility3
+Version: 2.5.2
+Architecture: all
+Maintainer: Astrasics Expert <expert@astrasics.local>
+Depends: python3
+Filename: pool/main/v/volatility3/volatility3_offline.deb
+Size: 493116
+MD5sum: 26e55cff3e06732c1f5e7094f4da43a3
+SHA1: a3deca02d7a889b9356a65683df8e788d00930ae
+SHA256: f09d24ff235e96e0390f956151f0eff106b2be7fe2ec7ecba9b0ba2cd9be30c7
+Section: python
+Priority: optional
+Homepage: https://github.com/volatilityfoundation/volatility3
+Description: Advanced memory forensics framework
+ Volatility is an advanced memory forensics framework for incident response
+ and malware analysis.
+ .
+ This package includes the full Volatility 3 framework.
+
 Package: wireshark-common
 Source: wireshark
 Version: 4.0.17-0+deb12u1
