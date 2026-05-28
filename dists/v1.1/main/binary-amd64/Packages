@@ -211,23 +211,6 @@ Description: utility to recover deleted files from ext3/ext4 partition
  to recover a file that has been deleted. There is no guarantee that any
  particular file will be able to be undeleted.
 
-Package: ghidra
-Version: 11.3.1
-Architecture: all
-Maintainer: Astrasics Expert <expert@astrasics.local>
-Depends: openjdk-17-jre | openjdk-17-jdk, wget
-Filename: pool/main/g/ghidra/ghidra__all.deb
-Size: 387379964
-MD5sum: 4112869aa92c9851b3a2127869ba1ced
-SHA1: c54edbebe6238ea6ea13cd6e7d6e296310eed5a2
-SHA256: 14dc4f256d4bb805dd1dd8fadb68bd75eb1f473ee53ff870247eab15327ada62
-Section: devel
-Priority: optional
-Homepage: https://ghidra-sre.org/
-Description: Software Reverse Engineering Framework
- Ghidra is a software reverse engineering (SRE) framework
- developed by NSA's Research Directorate.
-
 Package: hashcat
 Source: hashcat (6.2.6+ds1-1)
 Version: 6.2.6+ds1-1+b1
