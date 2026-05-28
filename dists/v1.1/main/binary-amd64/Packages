@@ -1151,11 +1151,11 @@ Version: 0.7.0
 Architecture: all
 Maintainer: Astrasics Expert <expert@astrasics.local>
 Depends: python3
-Filename: pool/main/p/python3-browser-history/python3-browser-history_0.7.0_all.deb
-Size: 35916
-MD5sum: 2b1312c7a2f4c63f00c62d532ff6ef6b
-SHA1: 50f1c6a061143dc7cd9b8a17e4bcdadecf91eba8
-SHA256: 523a9116bf6e13732ebb7e9905fc6ef783bf3f6dbaa94abb9b9ac31f0a70f6f5
+Filename: pool/main/p/python3-browser-history/python3-browser-history_fixed.deb
+Size: 35920
+MD5sum: 73cc621f6c96243604d60c0f92f64891
+SHA1: 65e9ceae30debc7725288050332b1a561c2a5259
+SHA256: ff93701114063c4b126d4c52949883980c187e33cfdcc8781d0e3b969568a27b
 Section: python
 Priority: optional
 Homepage: https://github.com/browser-history/browser-history
