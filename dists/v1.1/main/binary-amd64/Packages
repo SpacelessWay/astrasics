@@ -1692,19 +1692,16 @@ Version: 2.5.2
 Architecture: all
 Maintainer: Astrasics Expert <expert@astrasics.local>
 Depends: python3
-Filename: pool/main/v/volatility3/volatility3_offline.deb
-Size: 493116
-MD5sum: 26e55cff3e06732c1f5e7094f4da43a3
-SHA1: a3deca02d7a889b9356a65683df8e788d00930ae
-SHA256: f09d24ff235e96e0390f956151f0eff106b2be7fe2ec7ecba9b0ba2cd9be30c7
+Filename: pool/main/v/volatility3/volatility3_fixed.deb
+Size: 492880
+MD5sum: 30daefdfac7ee4bb94d346fba4457800
+SHA1: c69d63fa61a8ab8af689adfbcead04bdffca8c7f
+SHA256: abf48aceaa6a0217bb3a937229a3d060487b30f2c7fe21f382204539d5298d2d
 Section: python
 Priority: optional
 Homepage: https://github.com/volatilityfoundation/volatility3
 Description: Advanced memory forensics framework
- Volatility is an advanced memory forensics framework for incident response
- and malware analysis.
- .
- This package includes the full Volatility 3 framework.
+ Volatility is an advanced memory forensics framework.
 
 Package: wireshark-common
 Source: wireshark
