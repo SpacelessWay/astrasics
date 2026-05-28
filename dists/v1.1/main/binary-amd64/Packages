@@ -1,0 +1,1850 @@
+Package: astrasics-core
+Version: 1.0
+Architecture: all
+Maintainer: AD
+Depends: coreutils, util-linux, auditd, rkhunter
+Filename: pool/main/a/astrasics-core/astrasics-core_1.0_all.deb
+Size: 848
+MD5sum: b19626078376f75fd8b1a32c35366ddc
+SHA1: f3a6fbf02adb9a4f2e92c5d246e5b6b634a301d7
+SHA256: 05f2591f82dae3a6ef0b0c549f4f87df78a312817fd0805230b45187ffe6981b
+Section: base
+Priority: optional
+Description: Базовые инструменты безопасности и целостности
+ Включает утилиты для создания образов, проверки хэшей, аудита и защиты.
+
+Package: astrasics-doc
+Version: 1.0
+Architecture: all
+Maintainer: AD
+Depends: pandoc, libreoffice-writer, markdown, dvipng
+Filename: pool/main/a/astrasics-doc/astrasics-doc_1.0_all.deb
+Size: 824
+MD5sum: 0be35695521fc67cdbb8ddabe7a1858e
+SHA1: ad303dc56417620c2532778c8c717bd01db3a849
+SHA256: fed8e599ae92d25d2df825e9c02cc61785a76f82f143323962587a309307e4c7
+Section: utils
+Priority: optional
+Description: Инструменты для создания профессиональных отчётов
+ Pandoc, Typst, конвертация в PDF/DOCX.
+
+Package: astrasics-forensic
+Version: 1.0
+Architecture: all
+Maintainer: AD
+Depends: coreutils, ewf-tools, testdisk, extundelete, sleuthkit, binutils, wireshark, tcpdump, yara, p7zip-full, unzip, unrar, libimage-exiftool-perl, cryptsetup, afflib-tools
+Filename: pool/main/a/astrasics-forensic/astrasics-forensic_1.0_all.deb
+Size: 916
+MD5sum: 29f0015c98859081d88a5e45778fd2af
+SHA1: 48f36acfeb9f7e0abc8da288fce4b0f632ed02cc
+SHA256: 32958ef0e00a9f2d08fb5dde7592bd68c72b72f19bf60fa6e7a8bf09e2481a1a
+Section: forensic
+Priority: optional
+Description: Полный набор инструментов цифровой криминалистики
+ Поддержка анализа дисков, памяти, документов, сети, браузеров.
+
+Package: astrasics-mem
+Version: 1.0
+Architecture: all
+Maintainer: AD
+Depends: python3-psutil
+Filename: pool/main/a/astrasics-mem/astrasics-mem_1.0_all.deb
+Size: 784
+MD5sum: b161376f5a0a415a739bbeaace2bf12d
+SHA1: 0f6302f7d36249a39fdbac31c9cf09e407cf04b9
+SHA256: 43ef0500d6b8d4259f3a958fd61fd165e36f626eb089d6d16471b44a2db3d5b1
+Section: forensic
+Priority: optional
+Description: Инструменты для анализа оперативной памяти
+ Включает LiME (сбор дампа).
+
+Package: astrasics-reverse
+Version: 1.0
+Architecture: all
+Maintainer: AD
+Depends: yara, strace, ltrace, gdb
+Filename: pool/main/a/astrasics-reverse/astrasics-reverse_1.0_all.deb
+Size: 800
+MD5sum: 7e861e7da08714dc4084ece2724a75e8
+SHA1: b9d9a2fc2aa2b0034c966d39d0d35d6515da0c7a
+SHA256: 9bdba9ca37d1582616891bee825bac9218a3d4555abbcaa37b8af2ff498f14fe
+Section: reverse
+Priority: optional
+Description: Инструменты для реверс-инжиниринга и анализа вредоносного ПО
+ Ghidra, YARA, отладчики.
+
+Package: autopsy
+Version: 2.24-5
+Architecture: all
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Installed-Size: 1027
+Depends: binutils, perl, sleuthkit (>= 3.0.0)
+Filename: pool/main/a/autopsy/autopsy_2.24-5_all.deb
+Size: 336316
+MD5sum: e98e5a67cad8473b580434d3ecaf5fb1
+SHA1: 6ce92c1b9920d8221b7218068e70404a2582356c
+SHA256: 38d7ab78332c10a5452d9911b1ee047d6184187ea6a54e729d3c1f1e545254c4
+Section: admin
+Priority: optional
+Homepage: https://www.sleuthkit.org/autopsy/
+Description: graphical interface to SleuthKit
+ The Autopsy Forensic Browser is a graphical interface to the command line
+ digital forensic analysis tools in The Sleuth Kit. Together, The Sleuth Kit
+ and Autopsy provide many of the same features as commercial digital forensics
+ tools for the analysis of Windows and UNIX file systems (NTFS, FAT, FFS,
+ EXT2FS, and EXT3FS).
+
+Package: bulk-extractor
+Source: bulk-extractor (2.1.1-0kali2)
+Version: 2.1.1-0kali2+b1
+Architecture: amd64
+Maintainer: Kali Developers <devel@kali.org>
+Installed-Size: 16170
+Depends: libc6 (>= 2.38), libewf2 (>= 20121209), libexpat1 (>= 2.0.1), libgcc-s1 (>= 3.0), libgcrypt20 (>= 1.11.0), libre2-11-absl20240722, libstdc++6 (>= 14), zlib1g (>= 1:1.1.4)
+Filename: pool/main/b/bulk-extractor/bulk-extractor_2.1.1-0kali2+b1_amd64.deb
+Size: 11350628
+MD5sum: 288bc1fa67036e7b8e931c381eecbc91
+SHA1: 09ae3f44dd76094668163093160ad335ca02af3e
+SHA256: a78b1e66b4ce73e4189f8194c06d1162bc647eb21f16f9c4434acf2f4e6eb3cf
+Section: non-free/net
+Priority: optional
+Homepage: https://github.com/simsong/bulk_extractor
+Description: Extracts information without parsing filesystem
+ bulk_extractor is a C++ program that scans a disk image, a file,
+ or a directory of files and extracts useful information without
+ parsing the file system or file system structures. The results are
+ stored in feature files that can be easily inspected, parsed, or
+ processed with automated tools. bulk_extractor also creates
+ histograms of features that it finds, as features that are more
+ common tend to be more important.
+
+Package: capa
+Version: 7.4.0-1astra1
+Architecture: amd64
+Maintainer: Astrasics Team <team@astrasics.com>
+Filename: pool/main/c/capa/capa_7.4.0-1astra1_amd64.deb
+Size: 43978464
+MD5sum: 011bf0b8989264ffce6b5adb4844cdb8
+SHA1: 306df931a7fd8c11893038e8badd2c1023aa5903
+SHA256: ad0fcbac9e13abd114f10af00429a2de3afd2d13dbce1cbe520edf869011e890
+Section: utils
+Priority: optional
+Description: Capability identifier for executable files
+ The FLARE team's open-source tool to identify capabilities in executable files.
+ It automatically identifies the program's abilities, such as being a backdoor,
+ installing services, or relying on HTTP to communicate.
+
+Package: dislocker
+Version: 0.7.3-3
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 94
+Depends: libc6 (>= 2.34), libdislocker0.7 (>= 0.7.3), libfuse2 (>= 2.6), libruby3.1 (>= 3.1.0~preview1)
+Recommends: ruby
+Filename: pool/main/d/dislocker/dislocker_0.7.3-3_amd64.deb
+Size: 23152
+MD5sum: 3d5c664af2fff061688be63b1e987c21
+SHA1: 82a7b465c37a4825a44531e1c19e9a15465b4274
+SHA256: 45fc1c63c8dc0b2312c0ca264d86b91f4bdd202361f84027c2c624435f5ee043
+Section: utils
+Priority: optional
+Homepage: https://github.com/Aorimn/dislocker
+Description: read/write encrypted BitLocker volumes
+ Dislocker has been designed to read BitLocker encrypted partitions under
+ a Linux system. The driver used to read volumes encrypted in Windows system
+ versions of the Vista to 10 and BitLocker-To-Go encrypted partitions, that's
+ USB/FAT32 partitions.
+ .
+ The software works with driver composed of a library, with multiple binaries
+ using this library. Decrypting the partition, you have to give it a mount
+ point where, once keys are decrypted, a file named dislocker-file appears.
+ This file is a virtual NTFS partition, so you can mount it as any NTFS
+ partition and then read from or write to it. Writing to the NTFS virtual
+ file will change the underlying BitLocker partition content. To use
+ dislocker-find Ruby is required.
+ .
+ This tool is useful in cryptography managing and forensics investigations.
+
+Package: ewf-tools
+Source: libewf (20140813-1)
+Version: 20140813-1+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 6721
+Depends: libc6 (>= 2.34), libewf2 (= 20140813-1+b1), libfuse2 (>= 2.6), libssl3 (>= 3.0.0)
+Conflicts: libewf1 (<< 20090606+debian-1)
+Replaces: libewf1 (<< 20090606+debian-1)
+Filename: pool/main/e/ewf-tools/ewf-tools_20140813-1+b1_amd64.deb
+Size: 754268
+MD5sum: c84c30cb5649f518cc2b111cadeeffbd
+SHA1: 94c83302d1ec5a8b903bf46cdb3d1d97591ab187
+SHA256: b8c105832dec2250b27ac8e2dcc454e71ec3c9a3471e49f7b6d82d3181bafccd
+Section: admin
+Priority: optional
+Homepage: https://github.com/libyal/libewf-legacy
+Description: collection of tools for reading and writing EWF files
+ Libewf is a library with support for reading and writing the Expert Witness
+ Compression Format (EWF).
+ This library allows you to read media information of EWF files in the SMART
+ (EWF-S01) format and the EnCase (EWF-E01) format. It supports files created
+ by EnCase 1 to 6, linen and FTK Imager. The libewf is useful for forensics
+ investigations.
+ .
+ This package contains tools to acquire, verify and export EWF files.
+
+Package: extundelete
+Version: 0.2.4-3
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 147
+Depends: libc6 (>= 2.14), libcom-err2 (>= 1.43.9), libext2fs2 (>= 1.42), libgcc-s1 (>= 3.0), libstdc++6 (>= 9)
+Filename: pool/main/e/extundelete/extundelete_0.2.4-3_amd64.deb
+Size: 53320
+MD5sum: 3984ec227195b611b687f55827f229b8
+SHA1: 9bbef1bc003d60d56a6b0d79197b43d140356dfd
+SHA256: 14fb7e009b0f739d4f804cc4b8549a4ec21f29565e72d4165977515815d2bf0d
+Section: utils
+Priority: optional
+Homepage: http://extundelete.sourceforge.net/
+Description: utility to recover deleted files from ext3/ext4 partition
+ extundelete uses the information stored in the partition's journal to attempt
+ to recover a file that has been deleted. There is no guarantee that any
+ particular file will be able to be undeleted.
+
+Package: hashcat
+Source: hashcat (6.2.6+ds1-1)
+Version: 6.2.6+ds1-1+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 82420
+Depends: hashcat-data (>= 6.2.6+ds1-1), pocl-opencl-icd | opencl-icd, libc6 (>= 2.34), libgcc-s1 (>= 3.0), libminizip1 (>= 1.1), libstdc++6 (>= 5), libxxhash0 (>= 0.6.5), zlib1g (>= 1:1.2.11.dfsg)
+Suggests: beignet-opencl-icd, nvidia-opencl-icd, mesa-opencl-icd
+Filename: pool/main/h/hashcat/hashcat_6.2.6+ds1-1+b1_amd64.deb
+Size: 9734760
+MD5sum: 7b95a4f6a2813008e58e16584d0e95bf
+SHA1: d57b3ba4f3e51ef7b4fc694a66e20135a07dbd16
+SHA256: 54e80fe377992e17747467839285128cee6fa490b6637f5e232361ed4dd28db5
+Section: net
+Priority: optional
+Homepage: https://hashcat.net/hashcat/
+Description: World's fastest and most advanced password recovery utility
+ Hashcat supports five unique modes of attack for over 300 highly-optimized
+ hashing algorithms. hashcat currently supports CPUs, GPUs, and other
+ hardware accelerators on Linux, and has facilities to help enable
+ distributed password cracking.
+ .
+ Examples of hashcat supported hashing algorithms are:
+ MD5, HMAC-MD5, SHA1, HMAC-SHA1, MySQL323, MySQL4.1/MySQL5, phpass,
+ MD5(Wordpress), MD5(phpBB3), MD5(Joomla), md5crypt, MD5(Unix),
+ FreeBSD MD5, Cisco-IOS, MD4, NTLM, Domain Cached Credentials (DCC),
+ MS Cache, SHA256, HMAC-SHA256, md5apr1, MD5(APR), Apache MD5, SHA512,
+ HMAC-SHA512, Cisco-PIX, Cisco-ASA, WPA/WPA2, Double MD5, bcrypt,
+ Blowfish(OpenBSD), MD5(Sun), Double SHA1, SHA-3(Keccak),Half MD5,
+ Password Safe SHA-256, IKE-PSK MD5, IKE-PSK SHA1,
+ NetNTLMv1-VANILLA/NetNTLMv1-ESS, NetNTLMv2, Cisco-IOS SHA256,
+ Android PIN, AIX {smd5}, AIX {ssha256}, AIX {ssha512}, AIX {ssha1},
+ GOST, GOST R 34, Fortigate (FortiOS), OS X v10.8+, GRUB 2, IPMI2, RAKP,
+ HMAC-SHA1, sha256crypt, SHA256(Unix), Drupal7, WBB3, scrypt, Cisco $8$,
+ Cisco $9$, Radmin2, Django (PBKDF2-SHA256), Cram MD5, SAP, iSSHA-1,
+ PrestaShop, PostgreSQL, Challenge-Response Authentication (MD5),
+ MySQL Challenge-Response, Authentication (SHA1),
+ SIP digest authentication (MD5), Plaintext, Joomla < 2.5.18, PostgreSQL,
+ osCommerce, xt:Commerce, Skype, nsldap, Netscape, LDAP, nsldaps,
+ SSHA-1(Base64), Oracle S: Type (Oracle 11+), SMF > v1.1, OS X v10.4,
+ v10.5, v10.6, EPi, Django (SHA-1), MSSQL(2000), MSSQL(2005),
+ PeopleSoft, EPiServer 6.x < v4, hMailServer, SSHA-512(Base64),
+ LDAP {SSHA512}, OS X v10.7, MSSQL(2012 & 2014), vBulletin < v3.8.5,
+ PHPS, vBulletin > v3.8.5, IPB2+, MyBB1.2+, Mediawiki B type,
+ WebEdition CMS, Redmine.
+ .
+ Hashcat offers multiple attack modes for obtaining effective and
+ complex coverage over a hash's keyspace. These modes are:
+ .
+  * Brute-Force attack
+  * Combinator attack
+  * Dictionary attack
+  * Fingerprint attack
+  * Hybrid attack
+  * Mask attack
+  * Permutation attack
+  * Rule-based attack
+  * Table-Lookup attack
+  * Toggle-Case attack
+  * PRINCE attack
+
+Package: hashcat-data
+Source: hashcat
+Version: 6.2.6+ds1-1
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 28936
+Depends: python3
+Suggests: hashcat
+Replaces: hashcat (<= 2.00-0kali3)
+Filename: pool/main/h/hashcat/hashcat-data_6.2.6+ds1-1_all.deb
+Size: 2312664
+MD5sum: 9da22fd0907b35488050bc6d10e49f74
+SHA1: ab9ed99e8100c9ac53135482f891f69d8207cb90
+SHA256: 6009500e4ce81e5ebe10f019e1b21c562cb50f7dcc268e9eba5f4ae60616409d
+Section: net
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://hashcat.net/hashcat/
+Description: Data files for hashcat advanced password recovery utility
+ Hashcat is an advanced CPU/GPU-based password recovery utility supporting
+ seven unique modes of attack for over 100 optimized hashing algorithms.
+ .
+ This package contains the data files for hashcat, including charsets,
+ rules, salts, tables and Python tools.
+
+Package: hashdeep
+Version: 4.4+git20170824+ds-1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1608
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 13.1)
+Provides: md5deep
+Filename: pool/main/h/hashdeep/hashdeep_4.4+git20170824+ds-1_amd64.deb
+Size: 142844
+MD5sum: 9a7f116bad5a9ac9f02f7cbcfd3add99
+SHA1: cfc6b0cd9385908c94f8d37ab18edc2422187e49
+SHA256: 236c84a1dcdd9b8d4cb2ab7baf79a6d35371d9a0e091bd1db5dee721a8720431
+Section: utils
+Priority: optional
+Homepage: https://md5deep.sourceforge.net
+Description: recursively compute hashsums or piecewise hashings
+ hashdeep is a set of tools to compute MD5, SHA1, SHA256, tiger
+ and whirlpool hashsums of arbitrary number of files recursively.
+ .
+ The main hashdeep features are:
+ .
+   * It can compare those hashsums with a list of known hashes;
+   * The tools can display those that match the list or those that
+     does not match;
+   * It can  display a time estimation when processing large files.
+   * It can do piecewise hashing (hash input files in arbitrary
+     sized blocks).
+ .
+ This package is useful in forensics investigations.
+
+Package: hindsight
+Version: 2025.03
+Architecture: all
+Maintainer: Astrasics Expert <expert@astrasics.local>
+Depends: python3
+Filename: pool/main/h/hindsight/hindsight_final_2025.03_all.deb
+Size: 72486932
+MD5sum: 0258a8a49be408099a5907a0c3581a84
+SHA1: 4a7038302e27dd33906db0de1049885fa6e0ce14
+SHA256: e67144ad9c1006d226579934e0dae41e9c1edaba6a5820ead5112ddb09206788
+Section: forensics
+Priority: optional
+Homepage: https://github.com/obsidianforensics/hindsight
+Description: Browser history forensics (full offline)
+ Все зависимости внутри пакета.
+
+Package: john
+Version: 1.9.0-2
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 471
+Depends: john-data (= 1.9.0-2), libc6 (>= 2.34), libcrypt1 (>= 1:4.1.0), libgomp1 (>= 4.9)
+Suggests: wordlist
+Filename: pool/main/j/john/john_1.9.0-2_amd64.deb
+Size: 221384
+MD5sum: d37af9ff12a0a0548da235006a78d789
+SHA1: 92c6eb4d4f0fd6198f870b19b7059b11cfb2eb51
+SHA256: dfc88bab0716087bc4a5c3263b3d0e8c470b9f9da8957ff872c3cbd8151412b8
+Section: admin
+Priority: optional
+Homepage: http://www.openwall.com/john/
+Description: active password cracking tool
+ John the Ripper is a tool designed to help systems administrators to
+ find weak (easy to guess or crack through brute force) passwords, and
+ even automatically mail users warning them about it, if it is desired.
+ .
+ Besides several crypt(3) password hash types most commonly found on
+ various Unix flavors, supported out of the box are Kerberos AFS and
+ Windows NT/2000/XP/2003 LM hashes, plus several more with contributed
+ patches.
+
+Package: john-data
+Source: john
+Version: 1.9.0-2
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 19724
+Enhances: john
+Breaks: john (<= 1.7.2-1)
+Filename: pool/main/j/john/john-data_1.9.0-2_all.deb
+Size: 8743024
+MD5sum: 944f73224c27ee31dea81b306950199b
+SHA1: e20f7de08e9747caf3287e422340e283fca864c8
+SHA256: aaab60b10cd3ea0887974edcc2761b4dff8bef13633ec1d7320a116e6d7fc0a8
+Section: admin
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://www.openwall.com/john/
+Description: active password cracking tool - character sets
+ John the Ripper is a tool designed to help systems administrators to
+ find weak (easy to guess or crack through brute force) passwords, and
+ even automatically mail users warning them about it, if it is desired.
+ .
+ This package contains architecture-independent character sets usable by
+ john.
+
+Package: libabsl20240722
+Source: abseil
+Version: 20240722.0-4
+Architecture: amd64
+Maintainer: Benjamin Barenblat <bbaren@debian.org>
+Installed-Size: 2561
+Depends: libc6 (>= 2.38), libgcc-s1 (>= 3.4), libstdc++6 (>= 13.1)
+Filename: pool/main/a/abseil/libabsl20240722_20240722.0-4_amd64.deb
+Size: 491548
+MD5sum: 5407414647aace5e70314f16ff0aeb99
+SHA1: ae1afaad597e84f87f29641315d8f646b14663f3
+SHA256: 78c6d7692890990a27cb1d5bbd95b7bfe47a4183ffafec5b30f689f9b58ec6f7
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://abseil.io/
+Description: extensions to the C++ standard library
+ Abseil is an open-source collection of C++ library code designed to augment the
+ C++ standard library. The Abseil library code is collected from Google's C++
+ codebase and has been extensively tested and used in production. In some cases,
+ Abseil provides pieces missing from the C++ standard; in others, Abseil
+ provides alternatives to the standard for special needs.
+ .
+ This package contains Abseil's shared libraries.
+
+Package: libafflib0v5
+Source: afflib
+Version: 3.7.20-1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 565
+Depends: libc6 (>= 2.34), libcurl4 (>= 7.16.2), libexpat1 (>= 2.0.1), libgcc-s1 (>= 3.0), libssl3 (>= 3.0.0), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Conflicts: libafflib0
+Replaces: libafflib0
+Filename: pool/main/l/lib/libafflib0v5_3.7.20-1_amd64.deb
+Size: 236036
+MD5sum: ac17422a24403c87739179c0b495271d
+SHA1: ede51681998b63ac454ecf70d17897527ce4317d
+SHA256: 3df54ac0d5b8a096325cdd24098daf26bb3efac14f10c9e704cb5351e151e51d
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/sshock/AFFLIBv3
+Description: Advanced Forensics Format Library
+ The Advanced Forensic Format (AFF) is on-disk format for storing
+ computer forensic information. Critical features of AFF include:
+ .
+  - AFF allows you to store both computer forensic data and associated
+    metadata in one or more files.
+  - AFF allows files to be digital signed, to provide for
+    chain-of-custody and long-term file integrity.
+  - AFF allows for forensic disk images to stored encrypted and
+    decrypted on-the-fly for processing. This allows disk images
+    containing privacy sensitive material to be stored on the Internet.
+
+Package: libbcg729-0
+Source: bcg729
+Version: 1.1.1-4
+Architecture: amd64
+Maintainer: Debian VoIP Team <pkg-voip-maintainers@lists.alioth.debian.org>
+Installed-Size: 96
+Depends: libc6 (>= 2.4)
+Filename: pool/main/l/lib/libbcg729-0_1.1.1-4_amd64.deb
+Size: 40804
+MD5sum: d10c90f535d59c523f57ccd5c5c6e08b
+SHA1: 201039ae1ea89c1f8c375e4f7e6053c4bbc2c381
+SHA256: 7e810b1f181feaeee6407c40fc4dbe78bb2194d9aa0e00731acad6af6b57e28f
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/BelledonneCommunications/bcg729
+Description: ITU G.729 Annex A compatible audio codec
+ Bcg729 is an open source implementation of the ITU G729 Annex A
+ speech codec. Written in C 99, the library is fully portable. It
+ runs on many platforms, including ARM and x86.
+ .
+ Bcg729 supports concurrent channels encoding/decoding for multi
+ call application such as conferencing.
+ .
+ The project was developed as part of mediastreamer2, Linphone's
+ media processing engine. It therefore also contains the glue for
+ integration into Linphone/mediastreamer2.
+
+Package: libc-ares2
+Source: c-ares
+Version: 1.18.1-3
+Architecture: amd64
+Maintainer: Gregor Jasny <gjasny@googlemail.com>
+Installed-Size: 169
+Depends: libc6 (>= 2.17)
+Conflicts: libcares2
+Replaces: libc-ares1
+Filename: pool/main/l/lib/libc-ares2_1.18.1-3_amd64.deb
+Size: 102484
+MD5sum: a56844c6332cb330f8920e62ea41fac9
+SHA1: 760c5c58a4d0ce6fa9b520170d682b041651dc7c
+SHA256: 087fd5c2ac883202e1786ab45617cdab7f77bc7f060d58cca177ddf6b6c3fa73
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://c-ares.org/
+Description: asynchronous name resolver
+ c-ares is a C library that performs DNS requests and name resolution
+ asynchronously.
+ .
+ It is a fork of the library named "ares", with additional features:
+  * IPv6 support;
+  * extended cross-platform portability;
+  * 64-bit clean sources.
+ .
+ This package provides the shared libraries.
+
+Package: libcaes1
+Source: libcaes (0~20240413-1)
+Version: 0~20240413-1+b2
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 46
+Depends: libc6 (>= 2.14)
+Filename: pool/main/l/lib/libcaes1_0~20240413-1+b2_amd64.deb
+Size: 13612
+MD5sum: 61114acdc00ffe806fe4fffd85789c3b
+SHA1: a03c769b5df415961c170196842688a9c2d8d503
+SHA256: 3526ae3d5c54f63569cac6ddd78cfdd0408cd5dcb90110bec3678863f5f1ccf9
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libcaes
+Description: cross-platform AES encryption library
+ libcaes is a library to support cross-platform AES encryption.
+ .
+ This package contains the shared library.
+
+Package: libdate-manip-perl
+Version: 6.91-1
+Architecture: all
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Installed-Size: 11400
+Depends: perl:any
+Filename: pool/main/l/lib/libdate-manip-perl_6.91-1_all.deb
+Size: 912000
+MD5sum: b3ff047e948ac2d32faac74aa09bfa56
+SHA1: 2e2132c8999a540140a0880e9d982fef70e1d1bb
+SHA256: b2735741ac02db1a0fbc157c946835b0324c5e4662d14b7a1a18e5a5f7bd01d4
+Section: perl
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://metacpan.org/release/Date-Manip
+Description: module for manipulating dates
+ Date::Manip is a Perl module that contains a set of routines designed to make
+ any common date/time manipulation easy to do. It aims to make operations like
+ comparing two times, calculating a time a given amount of time from another,
+ or parsing international times simpler.
+ .
+ The focus of Date::Manip has been to be able to do ANY desired date or time
+ operation easily, though not necessarily quickly. There are other modules
+ that can do a small subset of these operations quicker, so if speed is a
+ primary issue, you should look elsewhere.
+
+Package: libdislocker0.7
+Source: dislocker
+Version: 0.7.3-3
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 139
+Depends: libc6 (>= 2.15), libmbedcrypto7 (>= 2.28.0), libruby3.1 (>= 3.1.2)
+Breaks: libdislocker0.6 (<< 0.7~)
+Replaces: libdislocker0.6 (<< 0.7~)
+Filename: pool/main/d/dislocker/libdislocker0.7_0.7.3-3_amd64.deb
+Size: 45216
+MD5sum: 3b64fc59f0f51b32cf94ca6d673d4935
+SHA1: 1b225704f0f87e3af4036befda854d9ec3cd4a03
+SHA256: 8ba818c144cf004ca25f39d7ff7bc2fc1ca58bfda678cc7052f146727d7baca6
+Section: libs
+Priority: optional
+Homepage: https://github.com/Aorimn/dislocker
+Description: read/write encrypted BitLocker volumes (shared library)
+ Dislocker has been designed to read BitLocker encrypted partitions under
+ a Linux system. The driver used to read volumes encrypted in Windows system
+ versions of the Vista to 10 and BitLocker-To-Go encrypted partitions, that's
+ USB/FAT32 partitions.
+ .
+ The software works with driver composed of a library, with multiple binaries
+ using this library. Decrypting the partition, you have to give it a mount
+ point where, once keys are decrypted, a file named dislocker-file appears.
+ This file is a virtual NTFS partition, so you can mount it as any NTFS
+ partition and then read from or write to it. Writing to the NTFS virtual
+ file will change the underlying BitLocker partition content.
+ .
+ This package provides the runtime library.
+
+Package: libewf2
+Source: libewf (20140813-1)
+Version: 20140813-1+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1780
+Depends: libc6 (>= 2.34), zlib1g (>= 1:1.1.4)
+Filename: pool/main/l/lib/libewf2_20140813-1+b1_amd64.deb
+Size: 563308
+MD5sum: 5bff3018dfb2238c039c26bbdd2df004
+SHA1: c5d725f7959f7a17703f29cfdf5726477c96bdbb
+SHA256: a1af1004bd01c7d084e7288739d1d3aa093f3c4aea8001994f9023750329adad
+Section: libs
+Priority: optional
+Homepage: https://github.com/libyal/libewf-legacy
+Description: library with support for Expert Witness Compression Format
+ Libewf is a library with support for reading and writing the Expert Witness
+ Compression Format (EWF).
+ This library allows you to read media information of EWF files in the SMART
+ (EWF-S01) format and the EnCase (EWF-E01) format. It supports files created
+ by EnCase 1 to 6, linen and FTK Imager. The libewf is useful for forensics
+ investigations.
+
+Package: liblua5.2-0
+Source: lua5.2
+Version: 5.2.4-3
+Architecture: amd64
+Maintainer: Debian Lua Team <pkg-lua-devel@lists.alioth.debian.org>
+Installed-Size: 439
+Depends: libc6 (>= 2.34), libstdc++6 (>= 4.1.1)
+Filename: pool/main/l/lib/liblua5.2-0_5.2.4-3_amd64.deb
+Size: 111120
+MD5sum: 21bd8c67b7a4747785ac68eab2680484
+SHA1: dd2f9c15ba018b48c406fb2a80a755e3f79b2dbe
+SHA256: c5e1e8410ab9dbbe9ddc30f306c3e50c5ed17acfe4bcfb681078d4b85070c9eb
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.lua.org
+Description: Shared library for the Lua interpreter version 5.2
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains runtime libraries.  You shouldn't need to install it
+ explicitly.
+
+Package: libmcrypt4
+Source: libmcrypt
+Version: 2.5.8-7
+Architecture: amd64
+Maintainer: Barak A. Pearlmutter <bap@debian.org>
+Installed-Size: 208
+Depends: libc6 (>= 2.14)
+Suggests: libmcrypt-dev, mcrypt
+Filename: pool/main/l/lib/libmcrypt4_2.5.8-7_amd64.deb
+Size: 72612
+MD5sum: 32f3966d8843c8c71a2598aced8579db
+SHA1: ad2ef37a89ade5a1ff3748a2ae30d0da66819ec7
+SHA256: 94478b860bfbe4d9e438a779c1dab1ce12858545262ac2fa1621ea408117a557
+Section: libs
+Priority: optional
+Homepage: http://mcrypt.sourceforge.net/
+Description: De-/Encryption Library
+ libmcrypt is the library which implements all the algorithms and
+ modes found in mcrypt.
+ .
+ libmcrypt supports the algorithms: BLOWFISH, TWOFISH, DES, TripleDES,
+ 3-WAY, SAFER-sk64, SAFER-sk128, SAFER+, LOKI97, GOST, RC2, RC6, MARS,
+ IDEA, RIJNDAEL-128, RIJNDAEL-192, SERPENT, RIJNDAEL-256, CAST-128
+ (known as CAST5), CAST-256, ARCFOUR, ENIGMA, PANAMA, XTEA and WAKE.
+ Block algorithms can be used in: CBC, ECB, CFB and OFB (8 bit and n
+ bit, where n is the size of the algorithm's block length).
+ .
+ More information can be found at the libmcrypt homepage
+ http://mcrypt.sourceforge.net/ .
+
+Package: libmodi1
+Source: libmodi (0~20240507-2)
+Version: 0~20240507-2+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 3949
+Depends: libc6 (>= 2.34), zlib1g (>= 1:1.1.4)
+Filename: pool/main/l/lib/libmodi1_0~20240507-2+b1_amd64.deb
+Size: 526696
+MD5sum: e7a7c4ad63b3d098be66599962566e2e
+SHA1: 156fd8d06233511a1d176397aa31f1827f9d23e1
+SHA256: d3e9ff5a5c9d3b15c15c56e446c65b40cb2fc85ec3a78bed7b9ba91300e47a90
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libmodi
+Description: Mac OS disk image format access library
+ libmodi is a library to access the Mac OS disk image format.
+ .
+ This package contains the shared library.
+
+Package: libre2-11
+Source: re2
+Version: 20250805-1
+Architecture: amd64
+Maintainer: Stefano Rivera <stefanor@debian.org>
+Installed-Size: 461
+Depends: libabsl20240722 (>= 20240722.0-1), libc6 (>= 2.38), libgcc-s1 (>= 3.0), libstdc++6 (>= 14)
+Provides: libre2-11-absl20240722
+Built-Using: unicode-data (= 15.1.0-1)
+Filename: pool/main/r/re2/libre2-11_20250805-1_amd64.deb
+Size: 168832
+MD5sum: ddc42b4b42015190de3ca7c4ed2dcca6
+SHA1: 9bc340bc6d289bf83350e8ff823fe35a8dd5fc03
+SHA256: 663390cc86fe3bc752a55cee5310d1e826b4c98753f90491fca7e30c7928459a
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/google/re2
+Description: efficient, principled regular expression library
+ RE2 is a fast, safe, thread-friendly alternative to backtracking regular
+ expression engines like those used in PCRE, Perl, and Python. It is a C++
+ library.
+ .
+ RE2 uses automata theory to guarantee that regular expression searches run in
+ time linear in the size of the input. RE2 implements memory limits, so that
+ searches can be constrained to a fixed amount of memory. RE2 is engineered to
+ use a small fixed C++ stack footprint no matter what inputs or regular
+ expressions it must process; thus RE2 is useful in multithreaded environments
+ where thread stacks cannot grow arbitrarily large.
+ .
+ On large inputs, RE2 is often much faster than backtracking engines; its use
+ of automata theory lets it apply optimizations that the others cannot.
+
+Package: libsmi2ldbl
+Source: libsmi
+Version: 0.4.8+dfsg2-16
+Architecture: amd64
+Maintainer: Vincent Bernat <bernat@debian.org>
+Installed-Size: 445
+Depends: libc6 (>= 2.14)
+Suggests: snmp-mibs-downloader
+Conflicts: libsmi0, libsmi1, libsmi2
+Replaces: libsmi0, libsmi1, libsmi2
+Filename: pool/main/l/lib/libsmi2ldbl_0.4.8+dfsg2-16_amd64.deb
+Size: 122784
+MD5sum: 70026326a68e179fadec55a79818bb59
+SHA1: 3f1b3946de0485ad0478a856282e26e695238f71
+SHA256: e3939603fa06f370f051289eab0e1cbd3f6c192f0e741e8fd8280f0760211359
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.ibr.cs.tu-bs.de/projects/libsmi/
+Description: library to access SMI MIB information
+ The purpose of libsmi is to
+   * give network management applications a concise programmer-friendly
+     interface to access MIB module information,
+   * separate the knowledge on SMI from the main parts of management
+     applications,
+   * allow one to add new kinds of MIB repositories without the need to
+     adapt applications that make use of libsmi.
+ .
+ In this context, MIB is "Management Information Base" and SMI stands for
+ "Structure and identification of Management Information". See RFC1902 and
+ others for details.
+ .
+ This package contains the main libsmi library.
+
+Package: libtsk19
+Source: sleuthkit (4.11.1+dfsg-1)
+Version: 4.11.1+dfsg-1+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1118
+Depends: libafflib0v5 (>= 3.7.6), libc6 (>= 2.34), libewf2 (>= 20130416), libgcc-s1 (>= 4.2), libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 11), libvhdi1 (>= 20150110), libvmdk1 (>= 20150516), zlib1g (>= 1:1.1.4)
+Conflicts: libtsk10v5
+Replaces: libtsk10v5
+Filename: pool/main/l/lib/libtsk19_4.11.1+dfsg-1+b1_amd64.deb
+Size: 397828
+MD5sum: dd0bc8540f25952e4e2a5ebd97234b81
+SHA1: fa5b15f633f3e053ada7c4c16a6f21c7d1b4728b
+SHA256: 77b0ee34b3983c55fd5d9e7518f6d81bd45b8110998be115803fb492108868a7
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://www.sleuthkit.org/sleuthkit
+Description: library for forensics analysis on volume and filesystem data
+ The Sleuth Kit, also known as TSK, is a collection of UNIX-based command
+ line file and volume system forensic analysis tools. The filesystem tools
+ allow you to examine filesystems of a suspect computer in a non-intrusive
+ fashion. Because the tools do not rely on the operating system to process the
+ filesystems, deleted and hidden content is shown.
+ .
+ The volume system (media management) tools allow you to examine the layout of
+ disks and other media. You can also recover deleted files, get information
+ stored in slack spaces, examine filesystems journal, see partitions layout on
+ disks or images etc. But is very important clarify that the TSK acts over the
+ current filesystem only.
+ .
+ The Sleuth Kit supports DOS partitions, BSD partitions (disk labels), Mac
+ partitions, Sun slices (Volume Table of Contents), and GPT disks. With these
+ tools, you can identify where partitions are located and extract them so that
+ they can be analyzed with filesystem analysis tools.
+ .
+ Currently, TSK supports several filesystems, as NTFS, FAT, exFAT, HFS+, Ext3,
+ Ext4, UFS and YAFFS2.
+ .
+ This package contains the library which can be used to implement all of the
+ functionality of the command line tools into an application that needs to
+ analyze data from a disk image.
+
+Package: libvhdi1
+Source: libvhdi (20210425-1)
+Version: 20210425-1+b2
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1182
+Depends: libc6 (>= 2.34)
+Filename: pool/main/l/lib/libvhdi1_20210425-1+b2_amd64.deb
+Size: 385636
+MD5sum: fdbb80e5609f6f27a68ccb762e462f64
+SHA1: 32adc4c1dc479a4c6d88492c5d0a9b5d1aceaa87
+SHA256: 93bdc1dd9caec4ac315e9f6123d7ae8cb95261161fdbaf03d9ee8056fb577833
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libvhdi
+Description: Virtual Hard Disk image format access library
+ libvhdi is a library to access the Virtual Hard Disk (VHD) image format.
+ .
+ This package contains the shared library.
+
+Package: libvmdk1
+Source: libvmdk (20200926-2)
+Version: 20200926-2+b2
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1278
+Depends: libbfio1 (>= 20120425), libc6 (>= 2.34), zlib1g (>= 1:1.1.4)
+Filename: pool/main/l/lib/libvmdk1_20200926-2+b2_amd64.deb
+Size: 410276
+MD5sum: 658c3a2f1ff73ab76dde2e30b1e6270f
+SHA1: 9274bef5765a32a2278f12f19691313480eb37e2
+SHA256: 6a11416b4338e68f4b897d2ead7edaf79470c3ce4911c157028fa3fd803c97c2
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libvmdk
+Description: VMWare Virtual Disk format access library
+ libvmdk is a library to access the VMware Virtual Disk (VMDK) format.
+ .
+ This package contains the shared library.
+
+Package: libvsapm1
+Source: libvsapm (0~20240503-2)
+Version: 0~20240503-2+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1067
+Depends: libc6 (>= 2.34)
+Filename: pool/main/l/lib/libvsapm1_0~20240503-2+b1_amd64.deb
+Size: 364176
+MD5sum: 337acec21b1bd55c6166d895c2b3472d
+SHA1: acfd28bc0a20a29ec14927829944d34412701c76
+SHA256: 4db7834adafa5f67e47ed1cbe2a4b8adb60321cce40bc43d7c6145b77f7752a9
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libvsapm
+Description: Apple Partition Map (APM) volume system format access library
+ libvsapm is a library to access the Apple Partition Map (APM) volume system format.
+ .
+ This package contains the shared library.
+
+Package: libvsgpt1
+Source: libvsgpt (0~20240504-2)
+Version: 0~20240504-2+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1099
+Depends: libc6 (>= 2.34)
+Filename: pool/main/l/lib/libvsgpt1_0~20240504-2+b1_amd64.deb
+Size: 375224
+MD5sum: ed5b3e63f78573df233d95b3afdb8202
+SHA1: cc33c35fba6166693543c8c7529efb8607775ecf
+SHA256: 33cceff63197001bf3a77312485ab945e318e692942990bae18f4580ccc9bda8
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libvsgpt
+Description: GUID Partition Table (GPT) volume system access library
+ libvsgpt is a library to access the GUID Partition Table (GPT) volume system.
+ .
+ This package contains the shared library.
+
+Package: libwireshark-data
+Source: wireshark
+Version: 4.0.17-0+deb12u1
+Architecture: all
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Installed-Size: 7701
+Suggests: geoipupdate, geoip-database, geoip-database-extra, libjs-leaflet, libjs-leaflet.markercluster, snmp-mibs-downloader
+Filename: pool/main/w/wireshark/libwireshark-data_4.0.17-0+deb12u1_all.deb
+Size: 1656396
+MD5sum: 8b29e93ff76a1c6487445be64bd50f8f
+SHA1: de334b35568aec666a3f17b437a73e7b7db8bb5f
+SHA256: 3d5c1398fe10c380533dac1ddaa3f30a839912ef0b5f885f64a378efb76a034e
+Section: libs
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://www.wireshark.org/
+Description: network packet dissection library -- data files
+ The libwireshark library provides the network packet dissection services
+ developed by the Wireshark project.
+ .
+ This package contains the platform independent files.
+
+Package: libwireshark16
+Source: wireshark
+Version: 4.0.17-0+deb12u1
+Architecture: amd64
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Installed-Size: 110907
+Depends: libbcg729-0 (>= 1.0.0), libbrotli1 (>= 0.6.0), libc-ares2 (>= 1.11.0~rc1), libc6 (>= 2.34), libgcrypt20 (>= 1.10.0), libglib2.0-0 (>= 2.67.3), libgnutls30 (>= 3.7.3), libgpg-error0 (>= 1.14), libk5crypto3 (>= 1.7+dfsg), libkrb5-3 (>= 1.7dfsg), liblua5.2-0 (>= 5.2.4), liblz4-1 (>= 1.8.0), libnghttp2-14 (>= 1.11.0), libpcre2-8-0 (>= 10.22), libsbc1 (>= 2.0), libsmi2ldbl (>= 0.4.5+dfsg0), libsnappy1v5 (>= 1.1.9), libspandsp2 (>= 0.0.6~pre18), libwiretap13 (>= 3.5.0), libwsutil14 (>= 4.0.17-0+deb12u1), libxml2 (>= 2.7.4), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.1.4), libwireshark-data (>= 4.0.17-0+deb12u1)
+Suggests: wireshark-doc (>= 4.0.17-0+deb12u1)
+Filename: pool/main/w/wireshark/libwireshark16_4.0.17-0+deb12u1_amd64.deb
+Size: 17850792
+MD5sum: 5357783847659aadc6eb6f48781671d0
+SHA1: 406dc48957651cf60ee73f697314e6b590a7a373
+SHA256: 9a58d7fded7cbf397303fb20ede6c97b2cb7cda20464cdaa2666045ee36fdd61
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.wireshark.org/
+Description: network packet dissection library -- shared library
+ The libwireshark library provides the network packet dissection services
+ developed by the Wireshark project.
+
+Package: libwiretap13
+Source: wireshark
+Version: 4.0.17-0+deb12u1
+Architecture: amd64
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Installed-Size: 696
+Depends: libc6 (>= 2.33), libglib2.0-0 (>= 2.67.3), liblz4-1 (>= 1.8.0), libwsutil14 (>= 3.7.0), libzstd1 (>= 1.5.2), zlib1g (>= 1:1.2.2.4)
+Filename: pool/main/w/wireshark/libwiretap13_4.0.17-0+deb12u1_amd64.deb
+Size: 245632
+MD5sum: 5e4f70ec65f0f7bae0308aceeb9c6b0c
+SHA1: ff6085aa311cd57d2c28989701acfa73b9c55ab6
+SHA256: 5974f1a86ae0f1d491a555e2b03ba9ddb07c04bc321a75fa0ee00a80f32bf82f
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.wireshark.org/
+Description: network packet capture library -- shared library
+ Wiretap, part of the Wireshark project, is a library that allows one to
+ read and write several packet capture file formats.
+ .
+ Supported formats are:
+  * Libpcap
+  * Sniffer
+  * LANalyzer
+  * Network Monitor
+  * "snoop"
+  * "iptrace"
+  * Sniffer Basic (NetXRay)/Windows Sniffer Pro
+  * RADCOM WAN/LAN Analyzers
+  * Lucent/Ascend access products
+  * HP-UX nettl
+  * Toshiba ISDN Router
+  * ISDN4BSD "i4btrace" utility
+  * Cisco Secure Intrusion Detection System iplogging facility
+  * pppd logs (pppdump-format files)
+  * VMS TCPTRACE
+  * DBS Etherwatch (text format)
+  * Catapult DCT2000 (.out files)
+ .
+ Wiretap's shortcomings are: no filter capability and no support for packet
+ capture.
+
+Package: libwsutil14
+Source: wireshark
+Version: 4.0.17-0+deb12u1
+Architecture: amd64
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Installed-Size: 262
+Depends: libc6 (>= 2.33), libgcrypt20 (>= 1.10.0), libglib2.0-0 (>= 2.49.3), libgnutls30 (>= 3.7.0), libpcre2-8-0 (>= 10.22)
+Filename: pool/main/w/wireshark/libwsutil14_4.0.17-0+deb12u1_amd64.deb
+Size: 100384
+MD5sum: f2f80724969e47aa3e4d8edbd52a5ab3
+SHA1: eb8efb9e3217929f67c7903de943741689472464
+SHA256: 21e2068c616c642f957b7a6166ba5e00bd649842f22f5f95871ced610d213ea2
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://www.wireshark.org/
+Description: network packet dissection utilities library -- shared library
+ The libwsutil library provides utility functions for libwireshark15.
+
+Package: libyara-dev
+Source: yara
+Version: 4.5.2-1~bpo12+1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1301
+Depends: libyara10 (= 4.5.2-1~bpo12+1), libjansson-dev, libmagic-dev, libssl-dev
+Filename: pool/main/y/yara/libyara-dev_4.5.2-1~bpo12+1_amd64.deb
+Size: 245908
+MD5sum: 75c796cb484a89caf7628c74aecd864c
+SHA1: 7070506318ff9fb805e62ff215ed2bea2fc6bac7
+SHA256: cf76a5d4fe56ad18bc19eba95ece21e118ba8e19814afd00b3b7cfbd89d5026a
+Section: libdevel
+Priority: optional
+Multi-Arch: same
+Homepage: https://virustotal.github.io/yara/
+Description: YARA development libraries and headers
+ YARA is a tool aimed at helping malware researchers to identify and
+ classify malware samples. With YARA, it is possible to create
+ descriptions of malware families based on textual or binary patterns
+ contained in samples of those families. Each description consists of
+ a set of strings and a Boolean expression which determines its logic.
+ .
+ Complex and powerful rules can be created by using binary strings with
+ wild-cards, case-insensitive text strings, special operators, regular
+ expressions and many other features.
+ .
+ This package provides development libraries and headers.
+
+Package: libyara10
+Source: yara
+Version: 4.5.2-1~bpo12+1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 584
+Depends: libc6 (>= 2.34), libjansson4 (>= 2.14), libmagic1 (>= 5.12), libssl3 (>= 3.0.0)
+Filename: pool/main/y/yara/libyara10_4.5.2-1~bpo12+1_amd64.deb
+Size: 189524
+MD5sum: 34131a31c6e187adb4dbfaf4fc3d707f
+SHA1: 409f6117ae8a86d6710616d4dcbda5a58deb65d2
+SHA256: 7aae14126a2028e2b172a8e1a9e287bad36d148b2c230e7369a0de0beda7c36c
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: https://virustotal.github.io/yara/
+Description: YARA shared library
+ YARA is a tool aimed at helping malware researchers to identify and
+ classify malware samples. With YARA, it is possible to create
+ descriptions of malware families based on textual or binary patterns
+ contained in samples of those families. Each description consists of
+ a set of strings and a Boolean expression which determines its logic.
+ .
+ Complex and powerful rules can be created by using binary strings with
+ wild-cards, case-insensitive text strings, special operators, regular
+ expressions and many other features.
+ .
+ This package provides a shared library.
+
+Package: lime-forensics-dkms
+Source: lime-forensics
+Version: 1.9.1-8
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 52
+Depends: dkms (>= 2.1.0.0)
+Recommends: linux-headers-amd64 | linux-headers-686-pae | linux-headers-686 | linux-headers-arm64 | linux-headers-armmp | linux-headers-loongson-3 | linux-headers-marvell | linux-headers-octeon | linux-headers-powerpc64le | linux-headers-s390x | linux-headers
+Provides: lime-forensics
+Filename: pool/main/l/lime/lime-forensics-dkms_1.9.1-8_all.deb
+Size: 13612
+MD5sum: 765b13e8e6cdd19d87ff5a3dc135c761
+SHA1: f488328c34f1e9114b32d24ee5daa9a1eb90421a
+SHA256: 9b91917a1e49f802d5164231ab3cd32e6be4017d7064986f1d8f8ddf47e52363
+Section: kernel
+Priority: optional
+Homepage: https://github.com/504ensicsLabs/LiME
+Description: kernel module to memory dump (DKMS)
+ LiME (Linux Memory Extractor, formerly DMD) is a Loadable Kernel
+ Module (LKM), which allows the acquisition of volatile memory (RAM)
+ from Linux and Linux-based devices, such as those powered by Android.
+ In others words, you can use it to get a memory image from a machine.
+ .
+ The tool supports acquiring memory either to the file system of the
+ device or over the network. LiME is unique in that it is the first
+ tool that allows full memory captures from Android devices. It also
+ minimizes its interaction between user and kernel space processes
+ during acquisition. It will produce memory captures that are more
+ forensically sound than those of other tools designed for Linux
+ memory acquisition. The dump format provided as "lime" is fully
+ compatible with volatility framework.
+ .
+ This package provides the source code for the lime-forensics kernel
+ modules to be build with dkms.
+ .
+ Kernel source or headers are required to compile these modules.
+
+Package: linux-image-6.1.0-39-amd64
+Source: linux-signed-amd64 (6.1.148+1)
+Version: 6.1.148-1
+Architecture: amd64
+Maintainer: Debian Kernel Team <debian-kernel@lists.debian.org>
+Installed-Size: 398145
+Depends: kmod, linux-base (>= 4.3~), initramfs-tools (>= 0.120+deb8u2) | linux-initramfs-tool
+Recommends: firmware-linux-free, apparmor
+Suggests: linux-doc-6.1, debian-kernel-handbook, grub-pc | grub-efi-amd64 | extlinux
+Conflicts: linux-image-6.1.0-39-amd64-unsigned
+Breaks: fwupdate (<< 12-7), initramfs-tools (<< 0.120+deb8u2), wireless-regdb (<< 2019.06.03-1~)
+Replaces: linux-image-6.1.0-39-amd64-unsigned
+Built-Using: linux (= 6.1.148-1)
+Filename: pool/main/l/linux-signed-amd64/linux-image-6.1.0-39-amd64_6.1.148-1_amd64.deb
+Size: 68389040
+MD5sum: f0c2ce98fe16ab59eae03c4a82c69de6
+SHA1: 8fc4f349294491961be755b84df8354fc031045d
+SHA256: 3b5145988ef27ecf38aded5a04cfdccf264a16f27b8a09e8d476c681c449855f
+Section: kernel
+Priority: optional
+Homepage: https://www.kernel.org/
+Description: Linux 6.1 for 64-bit PCs (signed)
+ The Linux kernel 6.1 and modules for use on PCs with AMD64, Intel 64 or
+ VIA Nano processors.
+ .
+ The kernel image and modules are signed for use with Secure Boot.
+
+Package: oletools
+Version: 0.60.2-1astra1
+Architecture: all
+Maintainer: Astrasics Team <team@astrasics.com>
+Depends: python3 (>= 3.11), python3-olefile, python3-colorclass, python3-pyparsing
+Filename: pool/main/o/oletools/astrasics-oletools_0.60.2-1astra1_all.deb
+Size: 760492
+MD5sum: 41683c94b609d2ff54319dde606a1c2d
+SHA1: b0b5b93632d7c51f06d949a6d91ec6e92fc78f92
+SHA256: d2ea39b1e787f565bc67bf63f98191047e4692229d9501e32ecbb19a208d196e
+Section: utils
+Priority: optional
+Homepage: https://github.com/decalage2/oletools
+Description: OLE tools for analyzing Microsoft Office documents
+ Oletools is a set of tools to analyze Microsoft OLE2 files
+ (Structured Storage) like Microsoft Office documents (Word, Excel),
+ primarily for malware analysis and digital forensics.
+
+Package: pdf-parser
+Version: 0.7.12-0kali1
+Architecture: all
+Maintainer: Kali Developers <devel@kali.org>
+Installed-Size: 88
+Depends: python3:any, zlib1g, python3-pyzipper
+Recommends: python3-yara
+Filename: pool/main/p/pdf-parser/pdf-parser_0.7.12-0kali1_all.deb
+Size: 18144
+MD5sum: 51cc2237ccf91c58ab9c4b7a7c76c156
+SHA1: c443adfb63815cb82ebd793363939283b0627dea
+SHA256: ae6ade7bc3a38d4a4db84d2abdfd1cf0983de8f0f7d77d229aba266bda79d98d
+Section: utils
+Priority: optional
+Homepage: https://blog.didierstevens.com/programs/pdf-tools/
+Description: Parses PDF files to identify fundamental elements
+ This tool will parse a PDF document to identify the
+ fundamental elements used in the analyzed file. It will not
+ render a PDF document.
+
+Package: plaso
+Version: 20241006-3
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 39
+Depends: python3-plaso (>= 20241006-3)
+Filename: pool/main/p/plaso/plaso_20241006-3_all.deb
+Size: 12668
+MD5sum: 6c2db23d4c02c05146ba894cb34410b5
+SHA1: 995ced21df20b1f29b5a63176a4f6eb5bff5b7e7
+SHA256: 52f12ef37d9906cdbe94c64839fd00d5e45f83361848df270d93ad7751b4819d
+Section: admin
+Priority: optional
+Homepage: https://github.com/log2timeline/plaso
+Description: super timeline all the things -- metapackage
+ This is a metapackage that depends on the Python 3
+ package of the Plaso libraries and scripts.
+
+Package: python3-acstore
+Source: acstore
+Version: 0~20240407-3
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 103
+Depends: python3-yaml, python3:any
+Suggests: python-acstore-doc
+Filename: pool/main/p/python/python3-acstore_0~20240407-3_all.deb
+Size: 15020
+MD5sum: ff451b0f69d9dd6da2a720c0ee269e9f
+SHA1: f62c04444aaf29641a498dba18fb3bace54c804b
+SHA256: 36a4fd9693ad9f2f8deb2fe5e8ad2d1bf12c94c5bad53389439a8a4de1d175d6
+Section: python
+Priority: optional
+Homepage: https://github.com/log2timeline/acstore
+Description: Attribute Container store access library (Python 3)
+ ACStore, or Attribute Container Storage, provides a stand-alone
+ implementation to read and write Attribute Container stores, such as
+ Plaso storage files.
+ .
+ This package installs the library for Python 3.
+
+Package: python3-browser-history
+Version: 0.7.0
+Architecture: all
+Maintainer: Astrasics Expert <expert@astrasics.local>
+Depends: python3
+Filename: pool/main/p/python3-browser-history/python3-browser-history_fixed.deb
+Size: 35920
+MD5sum: 73cc621f6c96243604d60c0f92f64891
+SHA1: 65e9ceae30debc7725288050332b1a561c2a5259
+SHA256: ff93701114063c4b126d4c52949883980c187e33cfdcc8781d0e3b969568a27b
+Section: python
+Priority: optional
+Homepage: https://github.com/browser-history/browser-history
+Description: Browser history extraction library
+ Extracts history from Chrome, Firefox, Edge and other browsers.
+
+Package: python3-caes
+Source: libcaes (0~20240413-1)
+Version: 0~20240413-1+b2
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 50
+Depends: libcaes1 (= 0~20240413-1+b2), libc6 (>= 2.14), python3 (<< 3.14), python3 (>= 3.13~)
+Filename: pool/main/p/python/python3-caes_0~20240413-1+b2_amd64.deb
+Size: 11664
+MD5sum: 4f4fcb0b08d6b6949b1d45aee03a4561
+SHA1: 5be0d904b48e394a10164e79d543e41fde439e38
+SHA256: 62333b2ff510e1e5f99abc2c8dc30e05dc0e0ada9023ab1be42fe6e94bcd636f
+Section: python
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libcaes
+Description: cross-platform AES encryption library -- Python 3 bindings
+ libcaes is a library to support cross-platform AES encryption.
+ .
+ This package includes Python 3 bindings.
+
+Package: python3-colorclass
+Source: colorclass
+Version: 2.2.2-2
+Architecture: all
+Maintainer: Daniel Baumann <daniel.baumann@progress-linux.org>
+Installed-Size: 545
+Depends: python3:any
+Filename: pool/main/p/python/python3-colorclass_2.2.2-2_all.deb
+Size: 467904
+MD5sum: 4dcbbffc61ca8c4de16597d953beca0c
+SHA1: 7814642c8fd9ef237b1fe0879fcf55f4053325c9
+SHA256: a1397cb4c69439617c90e1fb7039df3296fe3dc35e4a82fa9cf3815687bd6c09
+Section: python
+Priority: optional
+Homepage: https://github.com/matthewdeanmartin/colorclass
+Description: ANSI color text library for Python
+ Yet another ANSI color text library for Python. Provides "auto colors" for
+ dark/light terminals. Works on Linux, OS X, and Windows.
+ .
+ In Python 2 this library subclasses unicode, while on Python 3 it subclasses
+ str. Different colors are chosen using curly-bracket tags, such as
+ {red}{/red}. For a list of available colors, call colorclass.list_tags().
+ Auto colors are toggled by calling set_light_background() and
+ set_dark_background().
+ .
+ This package provides the Python 3 module.
+
+Package: python3-dfvfs
+Source: dfvfs
+Version: 20240505-2
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1186
+Depends: python3-dfdatetime (>= 20181025), python3-dtfabric (>= 20170524), python3-tsk (>= 20200117-3), python3-xattr, python3-yaml, python3:any, python3-caes (>= 0~20240114), python3-cffi-backend (>= 1.9.1), python3-cryptography (>= 2.0.2), python3-fcrypto (>= 0~20240114), python3-fsapfs (>= 20220709), python3-fsfat (>= 0~20220925), python3-idna (>= 2.5), python3-libbde (>= 20220121), python3-libewf (>= 20131210), python3-libfsext (>= 20200819), python3-libfshfs (>= 20201103), python3-libfsntfs (>= 20151130), python3-libfsxfs (>= 20201114), python3-libfvde (>= 20160719), python3-libfwnt (>= 20160418), python3-libluksde (>= 20200101), python3-libqcow (>= 20201213), python3-libsigscan (>= 20150627), python3-libsmdev (>= 20140529), python3-libsmraw (>= 20140612), python3-libvhdi (>= 20131210), python3-libvmdk (>= 20140421), python3-libvshadow (>= 20160109), python3-libvslvm (>= 20160109), python3-modi (>= 0~20210405), python3-phdi (>= 0~20220228), python3-protobuf, python3-vsapm (>= 0~20230506), python3-vsgpt (>= 0~20211115)
+Filename: pool/main/p/python/python3-dfvfs_20240505-2_all.deb
+Size: 112008
+MD5sum: cf224bc39b47a7c3f5a45fad7018651f
+SHA1: 36db46b726d18d6aea186abbb70bdb70d27d0f78
+SHA256: 8cb89eea3721577c10110be3ba6b5e6f70cfe924556d567f3ea4cf6835eb1bf5
+Section: python
+Priority: optional
+Homepage: https://github.com/log2timeline/dfvfs
+Description: Digital Forensics Virtual File System
+ The Digital Forensics Virtual File System, provides read-only access
+ to file-system objects from various storage media types and file
+ formats. The goal of dfVFS is to provide a generic interface for
+ accessing file-system objects, for which it uses several back-ends
+ that provide the actual implementation of the various storage media
+ types, volume systems and file systems.
+
+Package: python3-fcrypto
+Source: libfcrypto (0~20240414-1)
+Version: 0~20240414-1+b2
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 55
+Depends: libfcrypto1 (= 0~20240414-1+b2), libc6 (>= 2.14), python3 (<< 3.14), python3 (>= 3.13~)
+Filename: pool/main/p/python/python3-fcrypto_0~20240414-1+b2_amd64.deb
+Size: 12804
+MD5sum: dcb46e95e4c00cda5f839b296ad7db45
+SHA1: 91f330a18e4b786861405b43c57485464e67667d
+SHA256: d91e9f8971fae63ccaeadde83ba2fb299e125c60d4d79cbc9aa56ce5fbf3dc1b
+Section: python
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libfcrypto
+Description: encryption format library. -- Python 3 binding library
+ libfcrypto is a library for encryption formats.
+ .
+ This package includes Python 3 bindings.
+
+Package: python3-fsfat
+Source: libfsfat
+Version: 0~20260208-1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 980
+Depends: libfsfat1 (= 0~20260208-1), libc6 (>= 2.33), python3 (<< 3.14), python3 (>= 3.13~)
+Filename: pool/main/p/python/python3-fsfat_0~20260208-1_amd64.deb
+Size: 339624
+MD5sum: b31284e31c507f6338d7755b39d6b597
+SHA1: b743d1dd2c5ef98f91bb47d6ebfd9df5f67ad7d3
+SHA256: 1a57d70b5d44787d74941fc211d75852cab1c3cec03267968edde7c9f2c00ddc
+Section: python
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libfsfat
+Description: FAT file system format access library -- Python 3 bindings
+ libfsfat is a library to access the File Allocation Table (FAT) file
+ system format.
+ .
+ This package includes Python 3 bindings.
+
+Package: python3-modi
+Source: libmodi (0~20240507-2)
+Version: 0~20240507-2+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 951
+Depends: libmodi1 (= 0~20240507-2+b1), libc6 (>= 2.33), python3 (<< 3.14), python3 (>= 3.13~)
+Filename: pool/main/p/python/python3-modi_0~20240507-2+b1_amd64.deb
+Size: 333744
+MD5sum: 0f51ae0db68cf642f7f9b0e61a65c10f
+SHA1: e0e37a0e8fee7318589a0c024536f16ec29a510f
+SHA256: 5c253bdb7f6d64272667fed26f4e0b3da4a5f59925cc370f8d426b48630f05a4
+Section: python
+Priority: optional
+Multi-Arch: same
+Homepage: https://github.com/libyal/libmodi
+Description: Mac OS disk image format access library -- Python 3 bindings
+ libmodi is a library to access the Mac OS disk image format.
+ .
+ This package includes Python 3 bindings.
+
+Package: python3-plaso
+Source: plaso
+Version: 20241006-3
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 13129
+Depends: python3-acstore, python3-artifacts (>= 20211012), python3-certifi (>= 2016.9.26), python3-cffi, python3-dateutil (>= 1.5), python3-defusedxml (>= 0.5.0), python3-dfdatetime (>= 20210509), python3-dfvfs (>= 20211017), python3-dfwinreg (>= 20201002), python3-dtfabric (>= 20200621), python3-flor, python3-lz4 (>= 0.10.0), python3-pefile (>= 2021.5.24), python3-psutil (>= 5.4.3), python3-pyparsing (>= 3.0.0), python3-redis (>= 3.4), python3-requests (>= 2.18.0), python3-tsk (>= 20160721), python3-tz, python3-xattr, python3-xlsxwriter (>= 0.9.3), python3-yaml (>= 3.10), python3-yara (>= 3.4.0), python3-zmq (>= 2.1.11), python3-zstd, python3:any, python3-cffi-backend (>= 1.9.1), python3-chardet (>= 2.0.1), python3-elasticsearch (>= 7.0), python3-idna (>= 2.5), python3-libbde (>= 20140531), python3-libcreg (>= 20200725), python3-libesedb (>= 20150409), python3-libevt (>= 20191104), python3-libevtx (>= 20210424), python3-libewf (>= 20131210), python3-fsapfs (>= 20201107), python3-libfsext (>= 20200819), python3-libfshfs (>= 20201103), python3-libfsntfs (>= 20200805), python3-libfsxfs (>= 20201114), python3-libfvde (>= 20160719), python3-libfwnt (>= 20180117), python3-libfwsi (>= 20150606), python3-liblnk (>= 20150830), python3-libluksde (>= 20200101), python3-libmsiecf (>= 20150314), python3-libolecf (>= 20151223), python3-libqcow (>= 20131204), python3-libregf (>= 20201002), python3-libscca (>= 20190605), python3-libsigscan (>= 20190629), python3-libsmdev (>= 20140529), python3-libsmraw (>= 20140612), python3-libvhdi (>= 20131210), python3-libvmdk (>= 20140421), python3-libvshadow (>= 20160109), python3-libvslvm (>= 20160109), python3-cryptography (>= 2.0.2), python3-urllib3 (>= 1.21.1)
+Breaks: plaso (<< 20190131-2~)
+Replaces: plaso (<< 20190131-2~)
+Filename: pool/main/p/plaso/python3-plaso_20241006-3_all.deb
+Size: 1485240
+MD5sum: e408e4541f3c5a4c676953247c662511
+SHA1: 0998a9242990e97ab3d3e6573e6343c86d305a55
+SHA256: af288845d6e798f457d3df0ea047e7009623a6cec9fbd776a194511785d7b66f
+Section: python
+Priority: optional
+Homepage: https://github.com/log2timeline/plaso
+Description: super timeline all the things -- Python 3
+ Plaso (plaso langar að safna öllu) is the Python based back-end
+ engine used by tools such as log2timeline for automatic creation of a
+ super timelines. The goal of log2timeline (and thus plaso) is to
+ provide a single tool that can parse various log files and forensic
+ artifacts from computers and related systems, such as network
+ equipment to produce a single correlated timeline. This timeline can
+ then be easily analysed by forensic investigators/analysts, speeding
+ up investigations by correlating the vast amount of information found
+ on an average computer system.
+ .
+ This package contains a Plaso installation for Python 3.
+
+Package: python3-pycryptodome
+Source: pycryptodome
+Version: 3.11.0+dfsg1-4
+Architecture: amd64
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 3511
+Depends: python3 (>= 3~), python3:any, libc6 (>= 2.14)
+Filename: pool/main/p/python/python3-pycryptodome_3.11.0+dfsg1-4_amd64.deb
+Size: 1010616
+MD5sum: f1fd9d6770da9b91031e831f32a9e452
+SHA1: 64910f18047c247eb44dbec044155c563a80d9e4
+SHA256: b607c2e1f3e9b1e37e308a98ba37aed82045e3503b9e0a681b1ff7d1594b58c6
+Section: python
+Priority: optional
+Homepage: https://www.pycryptodome.org
+Description: cryptographic Python library (Python 3)
+ PyCryptodome is a self-contained Python package of low-level
+ cryptographic primitives.
+ .
+ PyCryptodome is a fork of PyCrypto. It brings several enhancements
+ with respect to the last official version of PyCrypto (2.6.1),
+ for instance:
+ .
+   * Authenticated encryption modes (GCM, CCM, EAX, SIV, OCB)
+   * Accelerated AES on Intel platforms via AES-NI
+   * Elliptic curves cryptography (NIST P-256, P-384 and P-521 curves only)
+   * Better and more compact API (`nonce` and `iv` attributes for ciphers,
+     automatic generation of random nonces and IVs, simplified CTR cipher mode,
+     and more)
+   * SHA-3 (including SHAKE and cSHAKE XOFs), truncated SHA-512 and BLAKE2
+     hash algorithms
+   * Salsa20 and ChaCha20/XChaCha20 stream ciphers
+   * Poly1305 MAC
+   * ChaCha20-Poly1305 and XChaCha20-Poly1305 authenticated ciphers
+   * scrypt, bcrypt and HKDF derivation functions
+   * Deterministic (EC)DSA
+   * Password-protected PKCS#8 key containers
+   * Shamir's Secret Sharing scheme
+   * Random numbers get sourced directly from the OS (and not from a CSPRNG
+     in userspace)
+   * Cleaner RSA and DSA key generation (largely based on FIPS 186-4)
+   * Major clean ups and simplification of the code base
+ .
+ PyCryptodome is not a wrapper to a separate C library like *OpenSSL*.
+ To the largest possible extent, algorithms are implemented in pure Python.
+ Only the pieces that are extremely critical to performance (e.g. block ciphers)
+ are implemented as C extensions.
+ .
+ This is the Python 3 version of the package.
+
+Package: python3-pyparsing
+Source: pyparsing
+Version: 3.1.2-1
+Architecture: all
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 472
+Depends: python3:any
+Suggests: python-pyparsing-doc
+Breaks: python3-translate (<< 3.6.0~), translate-toolkit (<< 3.6.0~)
+Filename: pool/main/p/python/python3-pyparsing_3.1.2-1_all.deb
+Size: 145952
+MD5sum: 6947956b6b086c76f790375f91b1d729
+SHA1: b09d3133e0d35839761eeddfd1ac0886911ef816
+SHA256: f784864f3835bc7e62391350418f28958cc004f1d46690a5c03300ec0a9bcc54
+Section: python
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://github.com/pyparsing/pyparsing/
+Description: alternative to creating and executing simple grammars - Python 3.x
+ The parsing module is an alternative approach to creating and
+ executing simple grammars, vs. the traditional lex/yacc approach, or
+ the use of regular expressions.  The parsing module provides a
+ library of classes that client code uses to construct the grammar
+ directly in Python code.
+ .
+ Here's an example:
+ .
+  from pyparsing import Word, alphas
+  greet = Word(alphas) + "," + Word(alphas) + "!"
+  hello = "Hello, World!"
+  print hello, "->", greet.parseString(hello)
+ .
+ This package contains the Python 3.x version of python-pyparsing.
+
+Package: python3-pyzipper
+Source: python-pyzipper
+Version: 0.3.6-5
+Architecture: all
+Maintainer: Debian Python Team <team+python@tracker.debian.org>
+Installed-Size: 131
+Depends: python3-pycryptodome, python3:any
+Suggests: python-pyzipper-doc
+Filename: pool/main/p/python/python3-pyzipper_0.3.6-5_all.deb
+Size: 28132
+MD5sum: d7c1cedd6f652f1fc0f2c9776f921978
+SHA1: f5811e8f6e03b5fde1586816caa972470e3ef2c8
+SHA256: ae5cfcd5b27d04f8e544ce14f0a451d5611bfcc6a03f42f5e4d539afc83249e8
+Section: python
+Priority: optional
+Homepage: https://github.com/danifus/pyzipper
+Description: AES encryption for zipfile
+ PyZipper is a Python library for working with ZIP files in an efficient
+ and user-friendly way. It provides a high-level interface for creating,
+ reading, writing and extracting ZIP files. Additionally, it supports
+ advanced functionalities such as AES encryption and LZMA updates.
+ .
+ Key Features:
+  - Allows you to add, remove, rename and list entries in ZIP files
+    efficiently.
+  - Provides an intuitive Python API, making ZIP archive manipulation
+    simple and straightforward.
+  - AES (Advanced Encryption Standard) encryption support to protect ZIP
+    files with passwords.
+  - Allows you to compress ZIP files using the LZMA compression algorithm,
+    which offers high compression rates.
+
+Package: python3-yara
+Source: yara-python
+Version: 4.5.1-1~bpo12+1
+Architecture: amd64
+Maintainer: Hilko Bengen <bengen@debian.org>
+Installed-Size: 69
+Depends: python3 (<< 3.12), python3 (>= 3.11~), libc6 (>= 2.14), libyara10 (>= 4.3.0~)
+Filename: pool/main/y/yara-python/python3-yara_4.5.1-1~bpo12+1_amd64.deb
+Size: 18484
+MD5sum: 66828403ae56e1edf504e2c2bc007e8b
+SHA1: 1e1e3958fddbd6f089532d5a871d38d36e809661
+SHA256: 20133edd4a04299d401bebcb93e06a0509fea16ab7bf848887729ddd62550302
+Section: python
+Priority: optional
+Homepage: https://github.com/VirusTotal/yara-python
+Description: Python 3 bindings for YARA
+ YARA is a tool aimed at helping malware researchers to identify and
+ classify malware samples. With YARA, it is possible to create
+ descriptions of malware families based on textual or binary patterns
+ contained in samples of those families. Each description consists of
+ a set of strings and a Boolean expression which determines its logic.
+ .
+ Complex and powerful rules can be created by using binary strings with
+ wild-cards, case-insensitive text strings, special operators, regular
+ expressions and many other features.
+ .
+ This package provides Python 3 bindings.
+Python-Version: ,
+
+Package: scalpel
+Version: 1.60-10
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 88
+Depends: libc6 (>= 2.34)
+Filename: pool/main/s/scalpel/scalpel_1.60-10_amd64.deb
+Size: 32616
+MD5sum: e4f766ef59c6122207dfd0e7fde72e23
+SHA1: 5990d4a60760d4086906882fa624c82af537ab81
+SHA256: bd302adc73b74b2469bfa43301189ab71b3612751a154c19ebed92f109ffe6fe
+Section: utils
+Priority: optional
+Homepage: http://www.digitalforensicssolutions.com/Scalpel
+Description: fast filesystem-independent file recovery
+ scalpel is a fast file carver that reads a database of header and footer
+ definitions and extracts matching files from a set of image files or raw
+ device files.
+ .
+ scalpel is filesystem-independent and will carve files from FAT16, FAT32,
+ exFAT, NTFS, Ext2, Ext3, Ext4, JFS, XFS, ReiserFS, raw partitions, etc.
+ .
+ scalpel is a complete rewrite of the Foremost 0.69 file carver and is
+ useful for both digital forensics investigations and file recovery.
+
+Package: sleuthkit
+Source: sleuthkit (4.11.1+dfsg-1)
+Version: 4.11.1+dfsg-1+b1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1607
+Depends: file, libdate-manip-perl, perl:any, libafflib0v5 (>= 3.7.6), libc6 (>= 2.34), libewf2 (>= 20130416), libgcc-s1 (>= 4.2), libstdc++6 (>= 11), libtsk19 (>= 4.11.1+dfsg), libvhdi1 (>= 20150110), libvmdk1 (>= 20150516)
+Suggests: autopsy, mac-robber
+Conflicts: tct
+Filename: pool/main/s/sleuthkit/sleuthkit_4.11.1+dfsg-1+b1_amd64.deb
+Size: 349412
+MD5sum: b381a4f4d2fb124447caf403ae818621
+SHA1: ce0c36053f156735f1cceb34063ef6739285c409
+SHA256: 1f1e770774d2deba4cec557b35fbecc789d28ef48b2e80f7a071314d93d71d17
+Section: admin
+Priority: optional
+Homepage: http://www.sleuthkit.org/sleuthkit
+Description: tools for forensics analysis on volume and filesystem data
+ The Sleuth Kit, also known as TSK, is a collection of UNIX-based command
+ line file and volume system forensic analysis tools. The filesystem tools
+ allow you to examine filesystems of a suspect computer in a non-intrusive
+ fashion. Because the tools do not rely on the operating system to process the
+ filesystems, deleted and hidden content is shown.
+ .
+ The volume system (media management) tools allow you to examine the layout of
+ disks and other media. You can also recover deleted files, get information
+ stored in slack spaces, examine filesystems journal, see partitions layout on
+ disks or images etc. But is very important clarify that the TSK acts over the
+ current filesystem only.
+ .
+ The Sleuth Kit supports DOS partitions, BSD partitions (disk labels), Mac
+ partitions, Sun slices (Volume Table of Contents), and GPT disks. With these
+ tools, you can identify where partitions are located and extract them so that
+ they can be analyzed with filesystem analysis tools.
+ .
+ Currently, TSK supports several filesystems, as NTFS, FAT, exFAT, HFS+, Ext3,
+ Ext4, UFS and YAFFS2.
+ .
+ This package contains the set of command line tools in The Sleuth Kit.
+
+Package: steghide
+Version: 0.5.1-15
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 477
+Depends: libc6 (>= 2.29), libgcc-s1 (>= 3.0), libjpeg62-turbo (>= 1.3.1), libmcrypt4, libmhash2 (>= 0.9.9.9), libstdc++6 (>= 5.2), zlib1g (>= 1:1.1.4)
+Filename: pool/main/s/steghide/steghide_0.5.1-15_amd64.deb
+Size: 143988
+MD5sum: b739686ce2828c6d8cfd0b8780c6d5e6
+SHA1: 30e157a6c450b65ffc8ce9fafc4727f05597a1ea
+SHA256: ae33e98a3a90e3ff968c4d0fe76627aeb8d5e9f0b6d48947c065fb1ebdb7db24
+Section: misc
+Priority: optional
+Homepage: http://steghide.sourceforge.net/
+Description: steganography hiding tool
+ Steghide is steganography program which hides bits of a data file
+ in some of the least significant bits of another file in such a way
+ that the existence of the data file is not visible and cannot be proven.
+ .
+ Steghide is designed to be portable and configurable and features hiding
+ data in bmp, jpeg, wav and au files, blowfish encryption, MD5 hashing of
+ passphrases to blowfish keys, and pseudo-random distribution of hidden bits
+ in the container data.
+ .
+ Steghide is useful in digital forensics investigations.
+
+Package: stegseek
+Version: 0.6-Debian12-Bookworm
+Architecture: amd64
+Maintainer: Astrasics Team <astrasics@local>
+Depends: libc6, libstdc++6, libjpeg62-turbo, libmcrypt4, libmhash2
+Filename: pool/main/s/stegseek/stegseek_0.6-Debian12-Bookworm_amd64.deb
+Size: 114548
+MD5sum: 572a2c1019ada28d09fc596f414092be
+SHA1: abe882ecf3327c1a7c0842b29e95039b3a066705
+SHA256: cbbd8495dd85a0bda1c7f265442a0e97c0e1d364778008f0be61c3e4e45db090
+Section: utils
+Priority: optional
+Description: Worlds fastest steghide cracker
+ Stegseek is a lightning fast steghide cracker.
+
+Package: testdisk
+Version: 7.1-5+nmu1
+Architecture: amd64
+Maintainer: Jean-Michel Kelbert <kelbert@debian.org>
+Installed-Size: 1413
+Depends: libc6 (>= 2.34), libext2fs2 (>= 1.41.0), libjpeg62-turbo (>= 1.3.1), libncursesw6 (>= 6), libntfs-3g89, libtinfo6 (>= 6), libuuid1 (>= 2.16), zlib1g (>= 1:1.1.4), ntfs-3g
+Filename: pool/main/t/testdisk/testdisk_7.1-5+nmu1_amd64.deb
+Size: 414868
+MD5sum: 934a8f5befd16924d97736b74bf73cab
+SHA1: d9555e5a958efe2a36b5eee4cffa78a1932ad1a3
+SHA256: 38ad1c0ce8087688e0d8e34d55e58de55ced2402ef6467af661427f4c9f6a949
+Section: admin
+Priority: optional
+Description: Partition scanner and disk recovery tool, and PhotoRec file recovery tool
+ TestDisk checks the partition and boot sectors of your disks.
+ It is very useful in forensics, recovering lost partitions.
+ It works with :
+  * DOS/Windows FAT12, FAT16 and FAT32
+  * NTFS ( Windows NT/2K/XP )
+  * Linux Ext2 and Ext3
+  * BeFS ( BeOS )
+  * BSD disklabel ( FreeBSD/OpenBSD/NetBSD )
+  * CramFS (Compressed File System)
+  * HFS and HFS+, Hierarchical File System
+  * JFS, IBM's Journaled File System
+  * Linux Raid
+  * Linux Swap (versions 1 and 2)
+  * LVM and LVM2, Linux Logical Volume Manager
+  * Netware NSS
+  * ReiserFS 3.5 and 3.6
+  * Sun Solaris i386 disklabel
+  * UFS and UFS2 (Sun/BSD/...)
+  * XFS, SGI's Journaled File System
+ .
+ PhotoRec is file data recovery software designed to recover
+ lost pictures from digital camera memory or even Hard Disks.
+ It has been extended to search also for non audio/video headers.
+ It searches for following files and is able to undelete them:
+  * Sun/NeXT audio data (.au)
+  * RIFF audio/video (.avi/.wav)
+  * BMP bitmap (.bmp)
+  * bzip2 compressed data (.bz2)
+  * Source code written in C (.c)
+  * Canon Raw picture (.crw)
+  * Canon catalog (.ctg)
+  * FAT subdirectory
+  * Microsoft Office Document (.doc)
+  * Nikon dsc (.dsc)
+  * HTML page (.html)
+  * JPEG picture (.jpg)
+  * MOV video (.mov)
+  * MP3 audio (MPEG ADTS, layer III, v1) (.mp3)
+  * Moving Picture Experts Group video (.mpg)
+  * Minolta Raw picture (.mrw)
+  * Olympus Raw Format picture (.orf)
+  * Portable Document Format (.pdf)
+  * Perl script (.pl)
+  * Portable Network Graphics (.png)
+  * Raw Fujifilm picture (.raf)
+  * Contax picture (.raw)
+  * Rollei picture (.rdc)
+  * Rich Text Format (.rtf)
+  * Shell script (.sh)
+  * Tar archive (.tar )
+  * Tag Image File Format (.tiff)
+  * Microsoft ASF (.wma)
+  * Sigma/Foveon X3 raw picture (.x3f)
+  * zip archive (.zip)
+
+Package: tshark
+Source: wireshark
+Version: 4.0.17-0+deb12u1
+Architecture: amd64
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Installed-Size: 396
+Depends: libc6 (>= 2.34), libglib2.0-0 (>= 2.35.8), libpcap0.8 (>= 1.5.1), libpcre2-8-0 (>= 10.22), libwireshark16 (>= 4.0.0), libwiretap13 (>= 3.5.0), libwsutil14 (>= 3.7.0), zlib1g (>= 1:1.1.4), wireshark-common (= 4.0.17-0+deb12u1)
+Filename: pool/main/w/wireshark/tshark_4.0.17-0+deb12u1_amd64.deb
+Size: 162960
+MD5sum: 9af929dbb3c6e52e474b206cf6df9cc6
+SHA1: b482b37e5831a560200056740ead8f6c53e836b1
+SHA256: 191fc0ba1b53eeb969bc521eda94d4ad7135d36b961b19218c7f9543542a5ce1
+Section: net
+Priority: optional
+Homepage: https://www.wireshark.org/
+Description: network traffic analyzer - console version
+ Wireshark is a network "sniffer" - a tool that captures and analyzes
+ packets off the wire. Wireshark can decode too many protocols to list
+ here.
+ .
+ This package provides the console version of wireshark, named
+ "tshark".
+
+Package: veracrypt
+Version: 1.26.24-1~deb12-1
+Architecture: amd64
+Maintainer: VeraCrypt Team <veracrypt@amcrypto.jp>
+Installed-Size: 33874
+Depends: libwxgtk3.2-1, libayatana-appindicator3-1, libfuse2, dmsetup, sudo
+Conflicts: veracrypt-console
+Filename: pool/main/v/veracrypt/veracrypt_1.26.24-1~deb12-1_amd64.deb
+Size: 13651256
+MD5sum: 69fce56783dd17d4676aa76b9767b12a
+SHA1: 9ad5c275a00954920bcb9131d98410f5603fbc7a
+SHA256: b00d44779accc803831dd42e0d4c3a63445bb0c26701f0a43d131f76e01f025c
+Section: libs
+Priority: optional
+Description: Disk encryption with strong security based on TrueCrypt.
+ Disk encryption with strong security based on TrueCrypt.
+
+Package: volatility3
+Version: 2.5.2
+Architecture: all
+Maintainer: Astrasics Expert <expert@astrasics.local>
+Depends: python3
+Filename: pool/main/v/volatility3/volatility3_fixed.deb
+Size: 492880
+MD5sum: 30daefdfac7ee4bb94d346fba4457800
+SHA1: c69d63fa61a8ab8af689adfbcead04bdffca8c7f
+SHA256: abf48aceaa6a0217bb3a937229a3d060487b30f2c7fe21f382204539d5298d2d
+Section: python
+Priority: optional
+Homepage: https://github.com/volatilityfoundation/volatility3
+Description: Advanced memory forensics framework
+ Volatility is an advanced memory forensics framework.
+
+Package: wireshark-common
+Source: wireshark
+Version: 4.0.17-0+deb12u1
+Architecture: amd64
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Installed-Size: 1386
+Depends: libc6 (>= 2.34), libcap2 (>= 1:2.10), libgcrypt20 (>= 1.10.0), libglib2.0-0 (>= 2.67.3), libmaxminddb0 (>= 1.0.2), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.21), libpcap0.8 (>= 1.5.1), libpcre2-8-0 (>= 10.22), libspeexdsp1 (>= 1.2.1), libssh-gcrypt-4 (>= 0.8.0), libsystemd0 (>= 246), libwireshark16 (>= 4.0.17-0+deb12u1), libwiretap13 (>= 4.0.17-0+deb12u1), libwsutil14 (>= 3.7.0), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0, debconf, libcap2-bin
+Recommends: wireshark (>= 4.0.17-0+deb12u1) | tshark (>= 4.0.17-0+deb12u1)
+Breaks: wireshark (<< 2.0.0~), wireshark-gtk (<< 3.0.0), wireshark-qt (<< 2.0.0~rc3+g841d5e1)
+Replaces: wireshark (<< 2.0.0~), wireshark-qt (<< 2.0.0~rc3+g841d5e1)
+Filename: pool/main/w/wireshark/wireshark-common_4.0.17-0+deb12u1_amd64.deb
+Size: 483652
+MD5sum: d88d79169eaf0dade917d9be60304d2a
+SHA1: 2b0b869be4c0ae2c66efc64b33fe2725ca160212
+SHA256: b5a96859b954c1d4d96641226cc2c8ac64ddb9b994bb62f2a19407d6257f2da4
+Section: net
+Priority: optional
+Homepage: https://www.wireshark.org/
+Description: network traffic analyzer - common files
+ Wireshark is a network "sniffer" - a tool that captures and analyzes
+ packets off the wire. Wireshark can decode too many protocols to list
+ here.
+ .
+ This package provides files common to both wireshark and tshark
+ (the console version).
+
+Package: xmount
+Version: 0.7.6-3
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 271
+Depends: libafflib0v5 (>= 3.7.6), libc6 (>= 2.14), libewf2 (>= 20121209), libfuse2 (>= 2.7.1-2~bpo40+1), zlib1g (>= 1:1.1.4)
+Filename: pool/main/x/xmount/xmount_0.7.6-3_amd64.deb
+Size: 74512
+MD5sum: 85eec6614b5c1bb2cb80efcdcd3766ca
+SHA1: f4c0687bb846c14c7f822b7bcff0083e78b7acb8
+SHA256: d01e40186a47f32356e15a084cb87046c4dc8356a3b495fb509b7e22887e6743
+Section: admin
+Priority: optional
+Homepage: https://www.pinguin.lu/
+Description: tool for crossmounting between disk image formats
+ xmount can be used to boot forensic disk images with QEMU, KVM,
+ VirtualBox, VMware, or the like, since it supports virtual write
+ access with redirection to a cache file.
+ .
+ xmount converts between multiple input and output disk image types
+ on the fly, using FUSE (Filesystem in Userspace) to create a virtual
+ file system representing the input image. The virtual representation
+ can be in raw DD, DMG, VirtualBox VDI format, Microsoft VHD format, or
+ VMware VMDK format; input images can be raw DD, EWF (Expert Witness
+ Compression Format), or AFF (Advanced Forensic Format) files.
+
+Package: yara
+Version: 4.5.2-1~bpo12+1
+Architecture: amd64
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 86
+Depends: libc6 (>= 2.34), libyara10 (>= 4.3.0~)
+Filename: pool/main/y/yara/yara_4.5.2-1~bpo12+1_amd64.deb
+Size: 24532
+MD5sum: 5ec2eb159bc37bd8c7488c7e38f746f7
+SHA1: 0d6fcba6dfd45ecc3718f89889e1592450356bee
+SHA256: 15a9e9cdf7f448be215569bdfb52c521818c5dccf5f5932545f178405cdd8a9b
+Section: utils
+Priority: optional
+Multi-Arch: allowed
+Homepage: https://virustotal.github.io/yara/
+Description: Pattern matching swiss knife for malware researchers
+ YARA is a tool aimed at helping malware researchers to identify and
+ classify malware samples. With YARA, it is possible to create
+ descriptions of malware families based on textual or binary patterns
+ contained in samples of those families. Each description consists of
+ a set of strings and a Boolean expression which determines its logic.
+ .
+ Complex and powerful rules can be created by using binary strings with
+ wild-cards, case-insensitive text strings, special operators, regular
+ expressions and many other features.
+
+Package: yara-doc
+Source: yara
+Version: 4.5.2-1~bpo12+1
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 1310
+Depends: libjs-sphinxdoc (>= 5.2)
+Built-Using: sphinx (= 5.3.0-4)
+Filename: pool/main/y/yara/yara-doc_4.5.2-1~bpo12+1_all.deb
+Size: 141564
+MD5sum: 519ea7deecd71ef46622c3b9cc4178a3
+SHA1: a3fd24e4ab04f3fde8d78f0b76ecbadbe6ccf23f
+SHA256: 80a3650ffab210ba56420e0afe05a247163730fe14425bdf46a9585707c9d628
+Section: doc
+Priority: optional
+Multi-Arch: foreign
+Homepage: https://virustotal.github.io/yara/
+Description: HTML documentation for YARA
+ YARA is a tool aimed at helping malware researchers to identify and
+ classify malware samples. With YARA, it is possible to create
+ descriptions of malware families based on textual or binary patterns
+ contained in samples of those families. Each description consists of
+ a set of strings and a Boolean expression which determines its logic.
+ .
+ Complex and powerful rules can be created by using binary strings with
+ wild-cards, case-insensitive text strings, special operators, regular
+ expressions and many other features.
+ .
+ This package contains the documentation in HTML format.
+
