@@ -1,0 +1,55 @@
+name: Deploy APT Repository to GitHub Pages
+
+on:
+  push:
+    branches: [ "main" ]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Checkout main branch with LFS
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          fetch-depth: 0
+
+      - name: Install APT repository tools
+        run: |
+          sudo apt update
+          sudo apt install -y dpkg-dev
+
+      - name: Generate APT metadata
+        run: |
+          if [ -d "pool" ]; then
+            dpkg-scanpackages pool /dev/null | gzip -9c > dists/v1.1/main/binary-amd64/Packages.gz
+            zcat dists/v1.1/main/binary-amd64/Packages.gz > dists/v1.1/main/binary-amd64/Packages
+            apt-ftparchive release dists/v1.1/ > dists/v1.1/Release
+            echo "APT metadata generated"
+          else
+            echo "No pool directory found, skipping"
+          fi
+
+      - name: Disable LFS for deployment
+        run: |
+          git lfs uninstall
+          rm -f .gitattributes
+
+      - name: Upload artifact for Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: '.'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
