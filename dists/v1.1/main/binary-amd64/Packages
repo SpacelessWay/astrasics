@@ -1040,6 +1040,43 @@ Description: YARA shared library
  .
  This package provides a shared library.
 
+Package: lime-forensics-dkms
+Source: lime-forensics
+Version: 1.9.1-8
+Architecture: all
+Maintainer: Debian Security Tools <team+pkg-security@tracker.debian.org>
+Installed-Size: 52
+Depends: dkms (>= 2.1.0.0)
+Recommends: linux-headers-amd64 | linux-headers-686-pae | linux-headers-686 | linux-headers-arm64 | linux-headers-armmp | linux-headers-loongson-3 | linux-headers-marvell | linux-headers-octeon | linux-headers-powerpc64le | linux-headers-s390x | linux-headers
+Provides: lime-forensics
+Filename: pool/main/l/lime/lime-forensics-dkms_1.9.1-8_all.deb
+Size: 13612
+MD5sum: 765b13e8e6cdd19d87ff5a3dc135c761
+SHA1: f488328c34f1e9114b32d24ee5daa9a1eb90421a
+SHA256: 9b91917a1e49f802d5164231ab3cd32e6be4017d7064986f1d8f8ddf47e52363
+Section: kernel
+Priority: optional
+Homepage: https://github.com/504ensicsLabs/LiME
+Description: kernel module to memory dump (DKMS)
+ LiME (Linux Memory Extractor, formerly DMD) is a Loadable Kernel
+ Module (LKM), which allows the acquisition of volatile memory (RAM)
+ from Linux and Linux-based devices, such as those powered by Android.
+ In others words, you can use it to get a memory image from a machine.
+ .
+ The tool supports acquiring memory either to the file system of the
+ device or over the network. LiME is unique in that it is the first
+ tool that allows full memory captures from Android devices. It also
+ minimizes its interaction between user and kernel space processes
+ during acquisition. It will produce memory captures that are more
+ forensically sound than those of other tools designed for Linux
+ memory acquisition. The dump format provided as "lime" is fully
+ compatible with volatility framework.
+ .
+ This package provides the source code for the lime-forensics kernel
+ modules to be build with dkms.
+ .
+ Kernel source or headers are required to compile these modules.
+
 Package: linux-image-6.1.0-39-amd64
 Source: linux-signed-amd64 (6.1.148+1)
 Version: 6.1.148-1
