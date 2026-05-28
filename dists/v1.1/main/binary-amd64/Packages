@@ -215,18 +215,20 @@ Package: ghidra
 Version: 11.3.1
 Architecture: all
 Maintainer: Astrasics Expert <expert@astrasics.local>
-Depends: openjdk-17-jre | openjdk-17-jdk, wget
+Depends: jdk-21
 Filename: pool/main/g/ghidra/ghidra__all.deb
-Size: 387379964
-MD5sum: 4112869aa92c9851b3a2127869ba1ced
-SHA1: c54edbebe6238ea6ea13cd6e7d6e296310eed5a2
-SHA256: 14dc4f256d4bb805dd1dd8fadb68bd75eb1f473ee53ff870247eab15327ada62
+Size: 387266060
+MD5sum: 55259a0db0985bbd952be59140bee6a5
+SHA1: f9fe40945e1aee37cc1139aaf796499e2abd4b65
+SHA256: a31d0d6095287ca35ff6ef005736478d665c14a24789bfd5aeb17a53d76786d3
 Section: devel
 Priority: optional
 Homepage: https://ghidra-sre.org/
 Description: Software Reverse Engineering Framework
  Ghidra is a software reverse engineering (SRE) framework
  developed by NSA's Research Directorate.
+ .
+ Requires JDK 21 (provided by package jdk-21 in this repository).
 
 Package: hashcat
 Source: hashcat (6.2.6+ds1-1)
@@ -359,6 +361,22 @@ Priority: optional
 Homepage: https://github.com/obsidianforensics/hindsight
 Description: Browser history forensics (full offline)
  Все зависимости внутри пакета.
+
+Package: jdk-21
+Version: 21.0.11-ga
+Architecture: amd64
+Maintainer: jdk-download-help_ww <jdk-download-help_ww@oracle.com>
+Installed-Size: 341284
+Provides: jdk-21
+Filename: pool/main/j/jdk/jdk-21_linux-x64_bin.deb
+Size: 169276508
+MD5sum: 2cff9b03ba3380452550aad575e11446
+SHA1: 860c7ad648c7254849a3c45c2f9076be062cee57
+SHA256: 41f1355f8d4c995f73e292f25f7f3e3074195c13ee3253c22fdd4a4340499039
+Section: java
+Priority: optional
+Description: Java Platform Standard Edition Development Kit
+ The Java Platform Standard Edition Development Kit (JDK) includes both the runtime environment (Java virtual machine, the Java platform classes and supporting files) and development tools (compilers, debuggers, tool libraries and other tools).
 
 Package: john
 Version: 1.9.0-2
