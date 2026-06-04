@@ -719,6 +719,64 @@ Description: Mac OS disk image format access library
  .
  This package contains the shared library.
 
+Package: libpocl-dev
+Source: pocl
+Version: 3.1-3+deb12u1
+Architecture: amd64
+Maintainer: Debian OpenCL Maintainers <pkg-opencl-devel@lists.alioth.debian.org>
+Installed-Size: 67
+Depends: libpocl2 (= 3.1-3+deb12u1), libc6 (>= 2.34), ocl-icd-libopencl1 | libopencl1, ocl-icd-libopencl1 (>= 2.2.8) | libopencl-2.1-1
+Filename: pool/main/p/pocl/libpocl-dev_3.1-3+deb12u1_amd64.deb
+Size: 30104
+MD5sum: 72e5e110a718decea7b16ca19a8fcafb
+SHA1: 512b4f910a36d7341461ca8c2d614e9b01dc813d
+SHA256: 08e62d45716347ed742dc2bef07a7b29fcf5bd7ddccb0f9e50040dc043cbcd55
+Section: libdevel
+Priority: optional
+Homepage: http://portablecl.org
+Description: development files for the pocl library
+ Portable Computing Language is an open source implementation of the OpenCL
+ standard which can be easily adapted for new targets. One of the goals of the
+ project is improving performance portability of OpenCL programs, avoiding the
+ need for target-dependent manual optimizations. A "native" target is included,
+ which allows running OpenCL kernels on the host (CPU).
+ .
+ This package provides the development files for the pocl library. Unless very
+ specific needs, this package is useless. This package is only required to link
+ directly and explicitly with pocl.
+ .
+ To develop OpenCL programs (that can be run with pocl), the opencl-dev virtual
+ package (provided by ocl-icd-opencl-dev for example) is required, not this one.
+
+Package: libpocl2
+Source: pocl
+Version: 3.1-3+deb12u1
+Architecture: amd64
+Maintainer: Debian OpenCL Maintainers <pkg-opencl-devel@lists.alioth.debian.org>
+Installed-Size: 82068
+Depends: libpocl2-common (= 3.1-3+deb12u1), clang-15, libc6 (>= 2.34), libclang-cpp15 (>= 1:15.0.6), libgcc-s1 (>= 3.4), libhwloc15 (>= 2.9.0), libllvm15, libstdc++6 (>= 12)
+Recommends: pocl-opencl-icd
+Breaks: libpocl1-common (<< 0.13-9)
+Replaces: libpocl1-common (<< 0.13-9)
+Provides: libpocl2+llvm15
+Filename: pool/main/p/pocl/libpocl2_3.1-3+deb12u1_amd64.deb
+Size: 13784788
+MD5sum: 166635a6568c2c3bcb86d18d20960a15
+SHA1: 7146b82ac489036a66ab1b728c8cd03df2fd5236
+SHA256: e2848ef61794c40f4d40e6403b18f71c1a1eb9e89407fce7983ff58bf2b1966e
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://portablecl.org
+Description: Portable Computing Language library
+ Portable Computing Language is an open source implementation of the OpenCL
+ standard which can be easily adapted for new targets. One of the goals of the
+ project is improving performance portability of OpenCL programs, avoiding the
+ need for target-dependent manual optimizations. A "native" target is included,
+ which allows running OpenCL kernels on the host (CPU).
+ .
+ This package provides the core of pocl.
+
 Package: libre2-11
 Source: re2
 Version: 20250805-1
@@ -1194,6 +1252,33 @@ Homepage: https://github.com/log2timeline/plaso
 Description: super timeline all the things -- metapackage
  This is a metapackage that depends on the Python 3
  package of the Plaso libraries and scripts.
+
+Package: pocl-opencl-icd
+Source: pocl
+Version: 3.1-3+deb12u1
+Architecture: amd64
+Maintainer: Debian OpenCL Maintainers <pkg-opencl-devel@lists.alioth.debian.org>
+Installed-Size: 44
+Depends: libpocl2 (= 3.1-3+deb12u1)
+Provides: opencl-icd, opencl-icd-1.1-1, opencl-icd-1.2-1
+Filename: pool/main/p/pocl/pocl-opencl-icd_3.1-3+deb12u1_amd64.deb
+Size: 23880
+MD5sum: 910b614e30cb4ecf1792b85e693cf3fc
+SHA1: 36e177ba61df2f3498513447f66b44fd2ff82be6
+SHA256: 8a781d26aa5ee3131d58e29b76d6e894fab676b44f6048162be7f6e24e157a98
+Section: libs
+Priority: optional
+Multi-Arch: same
+Homepage: http://portablecl.org
+Description: pocl ICD
+ Portable Computing Language is an open source implementation of the OpenCL
+ standard which can be easily adapted for new targets. One of the goals of the
+ project is improving performance portability of OpenCL programs, avoiding the
+ need for target-dependent manual optimizations. A "native" target is included,
+ which allows running OpenCL kernels on the host (CPU).
+ .
+ This package allows one to use pocl as an installable client driver (ICD) for
+ OpenCL.
 
 Package: python3-acstore
 Source: acstore
