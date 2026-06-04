@@ -777,6 +777,32 @@ Description: Portable Computing Language library
  .
  This package provides the core of pocl.
 
+Package: libpocl2-common
+Source: pocl
+Version: 3.1-3+deb12u1
+Architecture: all
+Maintainer: Debian OpenCL Maintainers <pkg-opencl-devel@lists.alioth.debian.org>
+Installed-Size: 1038
+Breaks: libpocl1-common
+Replaces: libpocl1-common
+Filename: pool/main/p/pocl/libpocl2-common_3.1-3+deb12u1_all.deb
+Size: 88960
+MD5sum: b61c067504a87bab62f0ad0d4ae655b7
+SHA1: 06be0340e4dbfc38aba0cc593c267adb7b64c020
+SHA256: 73554bccb6238862e301c62987765a2be2292d3cb990b091db30b76eae1db2db
+Section: utils
+Priority: optional
+Multi-Arch: foreign
+Homepage: http://portablecl.org
+Description: common files for the pocl library
+ Portable Computing Language is an open source implementation of the OpenCL
+ standard which can be easily adapted for new targets. One of the goals of the
+ project is improving performance portability of OpenCL programs, avoiding the
+ need for target-dependent manual optimizations. A "native" target is included,
+ which allows running OpenCL kernels on the host (CPU).
+ .
+ This package provides the architecture independent files of the pocl library.
+
 Package: libre2-11
 Source: re2
 Version: 20250805-1
