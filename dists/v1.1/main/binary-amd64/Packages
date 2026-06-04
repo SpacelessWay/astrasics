@@ -351,11 +351,11 @@ Version: 2025.03
 Architecture: all
 Maintainer: Astrasics Expert <expert@astrasics.local>
 Depends: python3
-Filename: pool/main/h/hindsight/hindsight_final_2025.03_all.deb
-Size: 72486932
-MD5sum: 0258a8a49be408099a5907a0c3581a84
-SHA1: 4a7038302e27dd33906db0de1049885fa6e0ce14
-SHA256: e67144ad9c1006d226579934e0dae41e9c1edaba6a5820ead5112ddb09206788
+Filename: pool/main/h/hindsight/hindsight_final_2025.03_all_v2.deb
+Size: 73120964
+MD5sum: eb5dbf7d51a781e43d9d2579d4113520
+SHA1: fdc8d238cc3b2b42dd404d7c7adc0dc52f262d07
+SHA256: c607b7030c380a7ecda301818c0a776d1394d4833f929c7b706f4fc7bbfee99a
 Section: forensics
 Priority: optional
 Homepage: https://github.com/obsidianforensics/hindsight
